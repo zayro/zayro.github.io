@@ -10,83 +10,268 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="componentes/materialize/css/materialize.css" rel="stylesheet" type="text/css"/>
+    <style>
+
+      html{ overflow: hidden;}
+
+      section{         
+        height:100%;
+        width:100%;       
+      }
+
+      #portafolio{ 
+        padding-top: 45px;       
+        padding-bottom: 45%;
+        margin-top: 25px;
+      }
+      .portafolio{ background-color: #E6E6E6;}
+
+      #cursos{
+        padding-top: 45px;
+        padding-bottom: 45%;        
+      }
+      .cursos{ background-color: #006064;}
+
+      #contacto{ 
+        padding-top: 45px;       
+        padding-bottom: 45%;
+      }
+      .contacto{ background-color: #E6E6E6;}
+
+
+
+      .texto-delgado{
+        font-weight: 200;
+        padding: 0px 30px 0px 30px;
+      }
+
+      .titulo{
+        font-weight: 300;   
+      }
+      
+      .card{padding-bottom: 100%; }
+
+
+
+    </style>
   </head>
   <body>
+    
     <header>
-        <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper grey">
-          <a href="#!" class="brand-logo"> &Afr;
-            LOGO </a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html"><i class="mdi-action-search"></i></a></li>
-            <li><a href="components.html"><i class="mdi-action-view-module"></i></a></li>
-            <li><a href="javascript.html"><i class="mdi-navigation-refresh"></i></a></li>
-            <li><a href="mobile.html"><i class="mdi-navigation-more-vert"></i></a></li>
-          </ul>
-        </div>
-        
-        
-      </nav>
-          
-           <div class="col hide-on-small-only m3 l2">
-          <ul class="section table-of-contents">
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#structure">Structure</a></li>
-            <li><a href="#initialization">Intialization</a></li>
-          </ul>
-        </div>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper  blue-grey darken-3">
+            <a href="#!" class="brand-logo texto-delgado" >  ZAV  </a>
 
-           </div>
+            <ul id="nav-mobile" class="right hide-on-med-and-down ">          
+     
+              <li><a href="javascript.html"><i class="small mdi-navigation-menu"></i></a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down table-of-contents  ">
+              <li><a href="#portafolio" class="white-text">Portafolio</a></li>
+              <li><a href="#cursos" class="white-text">Cursos</a></li>
+              <li><a href="#contacto" class="white-text">Contacto</a></li>     
+            </ul>
+
+          </div>
+
+        </nav>
+
+      </div>
     </header>
 
     <main>
+      
+      
 
-      <div class="row">
-        <div class="col s12 m9 l10">
-          <div id="introduction" class="section scrollspy">
-            <p>El software es un producto que se puede distribuir de varias maneras. De forma clásica se hace mediante una instalación directa en equipos del cliente. Normalmente, si alguien quiere usar una aplicación de ventas, compra el CD-producto de instalación, ejecuta un programa de configuración, da sus claves y, de este modo, puede comenzar a utilizar el sistema. Pero si el usuario necesita que otra persona al extremo del globo terráqueo consulte su lista de clientes, o de cobros pendientes, o de precios, y los quisiera manipular con el mismo software, necesitaría otro CD-producto, o necesitaría bajar ese programa ejecutable de la web, y generalmente necesitaría otra licencia para ese producto, o hacer uso de una VPN, o comunicarse mediante correo electrónico con la sede de operaciones. En cambio, si el software está modelado como servicio, los requerimientos pueden ser mucho más simples.</p>
-            <p>El software es un producto que se puede distribuir de varias maneras. De forma clásica se hace mediante una instalación directa en equipos del cliente. Normalmente, si alguien quiere usar una aplicación de ventas, compra el CD-producto de instalación, ejecuta un programa de configuración, da sus claves y, de este modo, puede comenzar a utilizar el sistema. Pero si el usuario necesita que otra persona al extremo del globo terráqueo consulte su lista de clientes, o de cobros pendientes, o de precios, y los quisiera manipular con el mismo software, necesitaría otro CD-producto, o necesitaría bajar ese programa ejecutable de la web, y generalmente necesitaría otra licencia para ese producto, o hacer uso de una VPN, o comunicarse mediante correo electrónico con la sede de operaciones. En cambio, si el software está modelado como servicio, los requerimientos pueden ser mucho más simples.</p>
+      <section class="card  portafolio">
+
+        <div id="portafolio" class="scrollspy" >
+          <div class="card">
+
+
+
+            <div class=" center-align ">
+
+              <h4 class="valign  titulo"> Titulo  </h4>
+              <div class="divider"></div>
+            </div>
+
+            <div class="card-content">
+
+              <span class="card-title activator grey-text text-darken-4">
+                <div class="row">
+                  <div class="col s12">
+                    Card Title <i class="mdi-navigation-more-vert right"></i>
+                  </div>
+                </div>
+
+              </span>
+
+              <div class="row">
+                <div class="col s6"><span>This div is 6-columns wide</span></div>
+                <div class="col s6"><span class="blue-text text-darken-2">This is a card panel with dark blue text</span></div>
+              </div>
+
+              <div class="card-action">
+                <a href="#" class="btn waves-effect waves-light grey white-text ">Cancelar</a>
+                <a href='#' class="btn waves-effect waves-light green white-text">Aceptar</a>
+              </div>
+            </div>
+
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
+              <p>Colocamos la informacion de ayuda para el formulario.</p>
+            </div>
+
+
           </div>
 
-          <div id="structure" class="section scrollspy">
-            <p>Ventajas
-              No es necesario que el cliente cuente con un área especializada de soporte para el sistema, por lo que se reducen sus costes y riesgo de inversión.
-              La responsabilidad de la operación recae en la empresa IT. Esto significa que la garantía de disponibilidad de la aplicación y su correcta funcionalidad, es parte del servicio que da la compañía proveedora del software.
-              La empresa IT no desatiende al cliente. El servicio y atención continua del proveedor al cliente es necesaria para que este último siga pagando el servicio.
-              La empresa IT provee los medios seguros de acceso en los entornos de la aplicación. Si una empresa IT quiere dar SaaS en su cartera de productos, debe ofrecer accesos seguros para que no se infiltren datos privados en la red pública.
-              No es necesaria la compra de una licencia para utilizar el software, sino el pago de un alquiler o renta por el uso del software. Aunque también se dan casos particulares donde el servicio es totalmente gratuito, como por ejemplo en el servicio de blogs que brindan diferentes compañías: Wordpress, Blogger, etc; es decir, se cuenta con el servicio, se puede acceder libremente, se garantiza usabilidad y actualidad, pero no se paga por el servicio.
-              Se le permite al cliente completa flexibilidad en el uso de los sistemas operativos de su preferencia, o al cual pueda tener acceso.</p>
 
-            <p>Ventajas
-              No es necesario que el cliente cuente con un área especializada de soporte para el sistema, por lo que se reducen sus costes y riesgo de inversión.
-              La responsabilidad de la operación recae en la empresa IT. Esto significa que la garantía de disponibilidad de la aplicación y su correcta funcionalidad, es parte del servicio que da la compañía proveedora del software.
-              La empresa IT no desatiende al cliente. El servicio y atención continua del proveedor al cliente es necesaria para que este último siga pagando el servicio.
-              La empresa IT provee los medios seguros de acceso en los entornos de la aplicación. Si una empresa IT quiere dar SaaS en su cartera de productos, debe ofrecer accesos seguros para que no se infiltren datos privados en la red pública.
-              No es necesaria la compra de una licencia para utilizar el software, sino el pago de un alquiler o renta por el uso del software. Aunque también se dan casos particulares donde el servicio es totalmente gratuito, como por ejemplo en el servicio de blogs que brindan diferentes compañías: Wordpress, Blogger, etc; es decir, se cuenta con el servicio, se puede acceder libremente, se garantiza usabilidad y actualidad, pero no se paga por el servicio.
-              Se le permite al cliente completa flexibilidad en el uso de los sistemas operativos de su preferencia, o al cual pueda tener acceso.</p>
-          </div>
-
-          <div id="initialization" class="section scrollspy">
-            <p>Content </p>
-          </div>
         </div>
 
-       
+      </section>
 
+
+      <section  class="card  cursos">
+
+        <div id="cursos" class="scrollspy" >
+
+          <div class="card  ">
+
+
+
+            <div class=" center-align ">
+
+              <h4 class="valign grey-text"> Titulo  </h4>
+              <div class="divider"></div>
+            </div>
+
+
+
+            <div class="card-content">
+
+              <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
+
+              <div class="row">
+
+                <div class="col s12">
+
+                  <div class="col s6"><span>This div is 6-columns wide</span></div>
+                  <div class="col s6"><span class="blue-text text-darken-2">This is a card panel with dark blue text</span></div>
+
+                </div>
+
+              </div>
+
+           
+         
+
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
+              <p>Colocamos la informacion de ayuda para el formulario.</p>
+            </div>
+
+   </div>
+
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+      <section class="card contacto">
+        <div id="contacto" class=" scrollspy">
+          <div class="card  ">
+
+
+
+            <div class=" center-align ">
+
+              <h4 class="valign grey-text titulo"> Contacto  </h4>
+              <div class="divider"></div>
+            </div>
+
+
+ <form class="col s12">
+            <div class="card-content">
+
+              <span class="card-title activator grey-text text-darken-4">Envianos tus dudas ! <i class="mdi-navigation-more-vert right"></i></span>
+
+         <div class="row">
+ 
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="first_name" type="text" class="validate" required>
+        <label for="first_name">First Name</label>
       </div>
+      <div class="input-field col s6">
+        <input id="last_name" type="text" class="validate">
+        <label for="last_name">Last Name</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="username" type="text" class="validate">
+        <label for="username">Username</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="password" type="password" class="validate">
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <input id="email" type="email" class="validate">
+        <label for="email">Email</label>
+      </div>
+    </div>
+</div>
+
+              <div class="card-action">
+                <a href="#" class="btn waves-effect waves-light grey white-text ">Cancelar</a>
+                <a href='#' class="btn waves-effect waves-light green white-text">Aceptar</a>
+              </div>
+            </div>
+   
+     </form>
+
+
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
+              <p>Colocamos la informacion de ayuda para el formulario.</p>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+      </section>
+
+
     </main>
     <script src="componentes/jquery/jquery.min.js" type="text/javascript"></script>
     <script src="componentes/materialize/js/materialize.js" type="text/javascript"></script>
     <script>
+
       $(document).ready(function () {
+         
+    $('.slider').slider({full_width: true});
+
         $('.scrollspy').scrollSpy();
 
         var options = [
-          {selector: '#introduction', callback: 'toast("This is our ScrollFire Demo!", 1500 )'},
-          {selector: '#structure', offset: 205, callback: 'toast("Please continue scrolling!", 1500 )'},
-          {selector: '#initialization', offset: 400, callback: 'showStaggeredList("#staggered-test")'}
-          ];
+          {selector: '#portafolio', offset: 0, callback: 'showStaggeredList("#staggered-test")'},
+          {selector: '#cursos', offset: 0, callback: 'toast("Please continue scrolling!", 1500 )'},
+          {selector: '#contacto', offset: 0, callback: 'showStaggeredList("#staggered-test")'}
+        ];
         scrollFire(options);
 
 
