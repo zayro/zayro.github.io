@@ -9,36 +9,52 @@ and open the template in the editor.
     <title>inicio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="componentes/materialize/css/materialize.css" rel="stylesheet" type="text/css"/>
+    <link href="componentes/materialize/css/materialize.css" rel="stylesheet" type="text/css">
     <style>
 
-      html{ overflow: hidden;}
 
-      section{         
+      html, body{
+        height: 100%;
+      }
+
+      .scrollspy{ padding-top: 60px;}
+
+      section{
+        margin: 0px auto;
+        display: block;
         height:100%;
-        width:100%;       
+        width:90%;
       }
 
-      #portafolio{ 
-        padding-top: 45px;       
-        padding-bottom: 45%;
-        margin-top: 25px;
+      #principal{width:88%;  border: 1px solid #c0c0c0; }
+
+
+      #portafolio{
+        width:98%; 
+        margin: 0px auto;
+        display: block;
+        height:100%;
       }
-      .portafolio{ background-color: #E6E6E6;}
+
+
+      /* .portafolio{ background-color: #E6E6E6;}*/ 
 
       #cursos{
-        padding-top: 45px;
-        padding-bottom: 45%;        
+        width:98%; 
+        margin: 0px auto;
+        display: block;
+        height:100%;
       }
-      .cursos{ background-color: #006064;}
+
+
 
       #contacto{ 
-        padding-top: 45px;       
-        padding-bottom: 45%;
+        width:98%; 
+        margin: 0px auto;
+        display: block;
+        height:100%;      
+
       }
-      .contacto{ background-color: #E6E6E6;}
-
-
 
       .texto-delgado{
         font-weight: 200;
@@ -48,70 +64,182 @@ and open the template in the editor.
       .titulo{
         font-weight: 300;   
       }
-      
-      .card{padding-bottom: 100%; }
 
 
+      .logo{ width: 25%; height: 25%; margin: 0px auto; margin-top: 10px; height: 100%; height: 100vh}
+
+      .logo_svg{ width:150px; height:60px; padding-top: 5px; }
+
+
+      main {
+        flex: 1 0 auto;
+      }  
+
+
+      .contenedor{ height: 100vh;  margin: 0  auto; }
+
+      .barra_inferior{ 
+        margin-left: 1%;
+        margin-top: 10%;
+
+      }
+
+      @media only screen and (max-width : 992px) {
+        .navbar-fixed nav {
+          position: inherit; }
+      }
 
     </style>
   </head>
   <body>
-    
+
     <header>
+
       <div class="navbar-fixed">
-        <nav>
-          <div class="nav-wrapper  blue-grey darken-3">
-            <a href="#!" class="brand-logo texto-delgado" >  ZAV  </a>
+        <nav  class="blue-grey darken-3  ">
 
-            <ul id="nav-mobile" class="right hide-on-med-and-down ">          
-     
-              <li><a href="javascript.html"><i class="small mdi-navigation-menu"></i></a></li>
-            </ul>
 
-            <ul class="right hide-on-med-and-down table-of-contents  ">
-              <li><a href="#portafolio" class="white-text">Portafolio</a></li>
-              <li><a href="#cursos" class="white-text">Cursos</a></li>
-              <li><a href="#contacto" class="white-text">Contacto</a></li>     
-            </ul>
+          <ul class="left hide-on-med-and-down fixed">
 
-          </div>
+            <li>
+              <a href="#principal" title='Logo'  > 
+                <object data="logo_blanco.svg" type="image/svg+xml" class="logo_svg" >
+
+                </object>
+              </a>   
+            </li>
+
+          </ul>
+
+
+          <ul class="right hide-on-med-and-down  ">
+            <li  data-activates="slide-out"  class="mini" >
+              <a href="#menu"><i class="small mdi-navigation-menu"></i></a>
+            </li>
+          </ul>
+
+
+
+          <ul class="right hide-on-med-and-down table-of-contents  ">
+            <li><a href="#principal" class="white-text">Inicio</a></li>
+            <li><a href="#portafolio" class="white-text">Portafolio</a></li>
+            <li><a href="#cursos" class="white-text">Cursos</a></li>
+            <li><a href="#contacto" class="white-text">Contacto</a></li>   
+          </ul>
+
+
+          <ul id="slide-out" class="side-nav overflow_auto  ">
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+
+
+          <a href="#" data-activates="slide-out" class="button-collapse mini"><i class="mdi-navigation-menu"></i></a>
+
+
 
         </nav>
 
       </div>
+
     </header>
 
-    <main>
-      
-      
+    <main>   
 
-      <section class="card  portafolio">
+
+      <section id="principal" class="scrollspy" >
+
+        <div class="logo">
+          <object data="logo_negro.svg" type="image/svg+xml"></object>
+        </div>
+
+
+      </section>
+
+
+      <section class=" portafolio">
 
         <div id="portafolio" class="scrollspy" >
-          <div class="card">
 
-
+          <div class="card"  >
 
             <div class=" center-align ">
-
-              <h4 class="valign  titulo"> Titulo  </h4>
+              <h4 class="valign  titulo"> Portafolio  </h4>
               <div class="divider"></div>
             </div>
 
             <div class="card-content">
 
-              <span class="card-title activator grey-text text-darken-4">
-                <div class="row">
+              <div class="card-title activator grey-text text-darken-4">
+
+                <div class="row" >
                   <div class="col s12">
-                    Card Title <i class="mdi-navigation-more-vert right"></i>
+                    SubTitle <i class="mdi-navigation-more-vert right"></i>
+
+
                   </div>
                 </div>
 
-              </span>
+              </div>
 
-              <div class="row">
-                <div class="col s6"><span>This div is 6-columns wide</span></div>
-                <div class="col s6"><span class="blue-text text-darken-2">This is a card panel with dark blue text</span></div>
+              <div class="row  contenedor">
+                
+                <div class="col s4">
+                       
+                  <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/office.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+            
+                  
+                </div>
+                         <div class="col s4">
+                       
+                  <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/office.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+            
+                  
+                </div>
+                         <div class="col s4">
+                       
+                  <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/office.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+            
+                  
+                </div>
+
               </div>
 
               <div class="card-action">
@@ -128,53 +256,41 @@ and open the template in the editor.
 
           </div>
 
-
         </div>
 
       </section>
 
 
-      <section  class="card  cursos">
+      <section  class="cursos">
 
-        <div id="cursos" class="scrollspy" >
+        <div id="cursos"  class="scrollspy">
 
-          <div class="card  ">
-
-
+          <div class="card">
 
             <div class=" center-align ">
-
-              <h4 class="valign grey-text"> Titulo  </h4>
+              <h4 class="valign grey-text titulo"> Cursos  </h4>
               <div class="divider"></div>
             </div>
 
-
-
-            <div class="card-content">
+            <div class="card-content"  >
 
               <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
 
-              <div class="row">
-
+              <div class="row contenedor">
                 <div class="col s12">
-
                   <div class="col s6"><span>This div is 6-columns wide</span></div>
                   <div class="col s6"><span class="blue-text text-darken-2">This is a card panel with dark blue text</span></div>
-
                 </div>
-
               </div>
 
-           
-         
 
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
-              <p>Colocamos la informacion de ayuda para el formulario.</p>
+
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
+                <p>Colocamos la informacion de ayuda para el formulario.</p>
+              </div>
+
             </div>
-
-   </div>
-
 
           </div>
 
@@ -183,8 +299,10 @@ and open the template in the editor.
 
       </section>
 
-      <section class="card contacto">
-        <div id="contacto" class=" scrollspy">
+
+      <section class=" contacto">
+        
+        <div id="contacto" class="scrollspy">
           <div class="card  ">
 
 
@@ -196,50 +314,54 @@ and open the template in the editor.
             </div>
 
 
- <form class="col s12">
-            <div class="card-content">
+            <form class="col s12 contenedor">
+              <div class="card-content">
 
-              <span class="card-title activator grey-text text-darken-4">Envianos tus dudas ! <i class="mdi-navigation-more-vert right"></i></span>
+                <span class="card-title activator grey-text text-darken-4">Envianos tus dudas ! <i class="mdi-navigation-more-vert right"></i></span>
 
-         <div class="row">
- 
-    <div class="row">
-      <div class="input-field col s6">
-        <input id="first_name" type="text" class="validate" required>
-        <label for="first_name">First Name</label>
-      </div>
-      <div class="input-field col s6">
-        <input id="last_name" type="text" class="validate">
-        <label for="last_name">Last Name</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="username" type="text" class="validate">
-        <label for="username">Username</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="password" type="password" class="validate">
-        <label for="password">Password</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s12">
-        <input id="email" type="email" class="validate">
-        <label for="email">Email</label>
-      </div>
-    </div>
-</div>
+                <div class="row">
 
-              <div class="card-action">
-                <a href="#" class="btn waves-effect waves-light grey white-text ">Cancelar</a>
-                <a href='#' class="btn waves-effect waves-light green white-text">Aceptar</a>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="first_name" type="text" class="validate" required>
+                      <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Last Name</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="username" type="text" class="validate">
+                      <label for="username">Username</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="password" type="password" class="validate">
+                      <label for="password">Password</label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="card-action">
+                  <a href="#" class="btn waves-effect waves-light grey white-text ">Cancelar</a>
+                  <a href='#' class="btn waves-effect waves-light green white-text">Aceptar</a>
+                </div>
               </div>
-            </div>
-   
-     </form>
+
+            </form>
 
 
             <div class="card-reveal">
@@ -247,36 +369,88 @@ and open the template in the editor.
               <p>Colocamos la informacion de ayuda para el formulario.</p>
             </div>
 
-
-
-
           </div>
 
         </div>
       </section>
 
 
+
+
+
+       <!--  lateral superor izquierdo
+      <div class="barra_inferior right-align" >
+
+        <div class="hide-on-small-only">
+
+          <a href="#principal" class="btn-floating btn-large blue-grey">
+            <i class="large mdi-hardware-keyboard-arrow-up"></i>
+          </a>
+
+        </div>
+        
+      </div>
+        -->
+       
+      
+      <!-- Boton lateral inferior derecho -->
+        <div class="fixed-action-btn " >
+          <a class="btn-floating btn-large blue-grey">
+            <i class="large mdi-hardware-keyboard-arrow-up"></i>
+          </a>
+          <ul>
+            <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+            <li><a class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+            <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+          </ul>
+        </div>
+
+
+
+
+
+
+
     </main>
+
     <script src="componentes/jquery/jquery.min.js" type="text/javascript"></script>
     <script src="componentes/materialize/js/materialize.js" type="text/javascript"></script>
+
     <script>
 
       $(document).ready(function () {
-         
-    $('.slider').slider({full_width: true});
+
+
+        $('.button-collapse').sideNav({
+          menuWidth: 300, // Default is 240
+          edge: 'left', // Choose the horizontal origin
+          closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor         
+        });
+
+
+
+
+
 
         $('.scrollspy').scrollSpy();
 
         var options = [
-          {selector: '#portafolio', offset: 0, callback: 'showStaggeredList("#staggered-test")'},
+          {selector: '#portafolio', offset: 0, callback: 'toast("Please continue scrolling!", 1500 )'},
           {selector: '#cursos', offset: 0, callback: 'toast("Please continue scrolling!", 1500 )'},
           {selector: '#contacto', offset: 0, callback: 'showStaggeredList("#staggered-test")'}
         ];
         scrollFire(options);
 
 
+
+       // $('.barra_inferior').pushpin({top: $('#portafolio').offset().top});
+        
       });
 
+
+
     </script>
+
   </body>
 </html>
