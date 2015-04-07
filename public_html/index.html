@@ -9,7 +9,12 @@ and open the template in the editor.
     <title>inicio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="componentes/bootstrap-material-design/css/material-fullpalette.css" rel="stylesheet" type="text/css"/>
+    <link href="componentes/bootstrap-material-design/css/material.css" rel="stylesheet" type="text/css"/>
+
     <link href="componentes/materialize/css/materialize.css" rel="stylesheet" type="text/css">
+
     <style>
 
 
@@ -17,7 +22,11 @@ and open the template in the editor.
         height: 100%;
       }
 
-      .scrollspy{ padding-top: 60px;}
+
+
+      .scrollspy{ margin-top: 60px;}
+
+
 
       section{
         margin: 0px auto;
@@ -26,21 +35,8 @@ and open the template in the editor.
         width:90%;
       }
 
-      #principal{width:88%;  border: 1px solid #c0c0c0; }
-
-
-      #portafolio{
-        width:98%; 
-        margin: 0px auto;
-        display: block;
-        height:100%;
-      }
-
-
-      /* .portafolio{ background-color: #E6E6E6;}*/ 
-
-      #cursos{
-        width:98%; 
+      #principal{
+        border: 1px solid #c0c0c0;           
         margin: 0px auto;
         display: block;
         height:100%;
@@ -48,13 +44,7 @@ and open the template in the editor.
 
 
 
-      #contacto{ 
-        width:98%; 
-        margin: 0px auto;
-        display: block;
-        height:100%;      
 
-      }
 
       .texto-delgado{
         font-weight: 200;
@@ -62,7 +52,9 @@ and open the template in the editor.
       }
 
       .titulo{
-        font-weight: 300;   
+        font-weight: 300; 
+        font-size: 30px;
+        padding: 1% 1% 1% 1%;
       }
 
 
@@ -75,8 +67,9 @@ and open the template in the editor.
         flex: 1 0 auto;
       }  
 
+      .panel{ background-color: white;}
+      .panel-body{ background-color: white; padding: 1% 1% 1% 1%;}
 
-      .contenedor{ height: 100vh;  margin: 0  auto; }
 
       .barra_inferior{ 
         margin-left: 1%;
@@ -89,10 +82,21 @@ and open the template in the editor.
           position: inherit; }
       }
 
+
+      .tarjeta-images{
+        margin: 0px auto;      
+        width: 100%;
+        padding-top: 1%;
+        height: 150px;
+      }
+
     </style>
+
   </head>
+
   <body>
 
+    <!-- MENU PRINCIPAL -->
     <header>
 
       <div class="navbar-fixed">
@@ -145,9 +149,12 @@ and open the template in the editor.
 
     </header>
 
-    <main>   
+    <!-- CONTENEDOR -->    
+    <main class="container-fluid">   
 
 
+
+      <!-- SECCION INICIAL -->
       <section id="principal" class="scrollspy" >
 
         <div class="logo">
@@ -158,135 +165,102 @@ and open the template in the editor.
       </section>
 
 
-      <section class=" portafolio">
+      <!-- SECCION PORTAFOLIO -->
+      <section >
 
-        <div id="portafolio" class="scrollspy" >
+        <div id="portafolio" class="  scrollspy panel panel-material-blue-grey">
+          <div class="panel-heading">
+            <h3 class="panel-title titulo">Portafolio</h3>
+          </div>
+          <div class="panel-body ">
+            <div class="fila">
 
-          <div class="card"  >
-
-            <div class=" center-align ">
-              <h4 class="valign  titulo"> Portafolio  </h4>
-              <div class="divider"></div>
-            </div>
-
-            <div class="card-content">
-
-              <div class="card-title activator grey-text text-darken-4">
-
-                <div class="row" >
-                  <div class="col s12">
-                    SubTitle <i class="mdi-navigation-more-vert right"></i>
-
-
+              <div class="col l4 s12">
+                <div class="tarjeta">
+                  <div class="tarjeta-images center-align waves-effect waves-block waves-light">
+                    <img class="activator" src="img/partmo.png">
+                  </div>
+                  <div class="tarjeta-content">
+                    <span class="tarjeta-title activator grey-text text-darken-4">Industrias Partmo <i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">Ver sitio Web</a></p>
+                  </div>
+                  <div class="tarjeta-reveal">
+                    <span class="tarjeta-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
                   </div>
                 </div>
+              </div>                
 
+              <div class="col l4 s12">
+                <div class="tarjeta">
+                  <div class="tarjeta-images center-align waves-effect waves-block waves-light">
+                    <img class="activator imagen_portafolio" src="img/logo_distribuidora_rayco.jpg" >
+                  </div>
+                  <div class="tarjeta-content">
+                    <span class="tarjeta-title activator grey-text text-darken-4">Distribuidora Rayco <i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">Ver sitio Web</a></p>
+                  </div>
+                  <div class="tarjeta-reveal">
+                    <span class="tarjeta-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
               </div>
 
-              <div class="row  contenedor">
-                
-                <div class="col s4">
-                       
-                  <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/office.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-            
-                  
+              <div class="col l4 s12">
+                <div class="tarjeta">
+                  <div class="tarjeta-images center-align waves-effect waves-block waves-light">
+                    <img class="activator" src="img/ief.jpg">
+                  </div>
+                  <div class="tarjeta-content">
+                    <span class="tarjeta-title activator grey-text text-darken-4"> Ief<i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">Ver sitio Web</a></p>
+                  </div>
+                  <div class="tarjeta-reveal">
+                    <span class="tarjeta-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
                 </div>
-                         <div class="col s4">
-                       
-                  <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/office.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-            
-                  
-                </div>
-                         <div class="col s4">
-                       
-                  <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="images/office.jpg">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-            
-                  
-                </div>
-
               </div>
 
-              <div class="card-action">
-                <a href="#" class="btn waves-effect waves-light grey white-text ">Cancelar</a>
-                <a href='#' class="btn waves-effect waves-light green white-text">Aceptar</a>
-              </div>
+
             </div>
-
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
-              <p>Colocamos la informacion de ayuda para el formulario.</p>
-            </div>
-
-
           </div>
-
         </div>
 
       </section>
 
 
+
+
+
+      <!-- SECCION CURSOS -->
       <section  class="cursos">
 
         <div id="cursos"  class="scrollspy">
 
-          <div class="card">
+          <div class="tarjeta">
 
             <div class=" center-align ">
               <h4 class="valign grey-text titulo"> Cursos  </h4>
               <div class="divider"></div>
             </div>
 
-            <div class="card-content"  >
+            <div class="tarjeta-content"  >
 
-              <span class="card-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
+              <span class="tarjeta-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
 
-              <div class="row contenedor">
+              <div class="fila contenedor">
                 <div class="col s12">
                   <div class="col s6"><span>This div is 6-columns wide</span></div>
-                  <div class="col s6"><span class="blue-text text-darken-2">This is a card panel with dark blue text</span></div>
+                  <div class="col s6"><span class="blue-text text-darken-2">This is a tarjeta panel with dark blue text</span></div>
                 </div>
               </div>
 
 
 
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
+              <div class="tarjeta-reveal">
+                <span class="tarjeta-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
                 <p>Colocamos la informacion de ayuda para el formulario.</p>
               </div>
 
@@ -299,29 +273,30 @@ and open the template in the editor.
 
       </section>
 
-
+      <!-- SECCION CONTACTO -->
       <section class=" contacto">
-        
+
         <div id="contacto" class="scrollspy">
-          <div class="card  ">
 
-
+          <div class="tarjeta  ">
 
             <div class=" center-align ">
 
               <h4 class="valign grey-text titulo"> Contacto  </h4>
               <div class="divider"></div>
+
             </div>
 
 
             <form class="col s12 contenedor">
-              <div class="card-content">
 
-                <span class="card-title activator grey-text text-darken-4">Envianos tus dudas ! <i class="mdi-navigation-more-vert right"></i></span>
+              <div class="tarjeta-content">
 
-                <div class="row">
+                <span class="tarjeta-title activator grey-text text-darken-4">Envianos tus dudas ! <i class="mdi-navigation-more-vert right"></i></span>
 
-                  <div class="row">
+                <div class="fila">
+
+                  <div class="fila">
                     <div class="input-field col s6">
                       <input id="first_name" type="text" class="validate" required>
                       <label for="first_name">First Name</label>
@@ -332,21 +307,21 @@ and open the template in the editor.
                     </div>
                   </div>
 
-                  <div class="row">
+                  <div class="fila">
                     <div class="input-field col s12">
                       <input id="username" type="text" class="validate">
                       <label for="username">Username</label>
                     </div>
                   </div>
 
-                  <div class="row">
+                  <div class="fila">
                     <div class="input-field col s12">
                       <input id="password" type="password" class="validate">
                       <label for="password">Password</label>
                     </div>
                   </div>
 
-                  <div class="row">
+                  <div class="fila">
                     <div class="input-field col s12">
                       <input id="email" type="email" class="validate">
                       <label for="email">Email</label>
@@ -355,17 +330,17 @@ and open the template in the editor.
 
                 </div>
 
-                <div class="card-action">
-                  <a href="#" class="btn waves-effect waves-light grey white-text ">Cancelar</a>
-                  <a href='#' class="btn waves-effect waves-light green white-text">Aceptar</a>
+                <div class="tarjeta-action valign-wrapper">
+                  <a href="#" class="btn waves-effect waves-light grey white-text valign ">Cancelar</a>
+                  <a href="#" class="btn waves-effect waves-light green white-text valign ">Aceptar</a>
                 </div>
               </div>
 
             </form>
 
 
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
+            <div class="tarjeta-reveal">
+              <span class="tarjeta-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
               <p>Colocamos la informacion de ayuda para el formulario.</p>
             </div>
 
@@ -378,44 +353,45 @@ and open the template in the editor.
 
 
 
-       <!--  lateral superor izquierdo
-      <div class="barra_inferior right-align" >
+      <!--  lateral superor izquierdo
+     <div class="barra_inferior right-align" >
 
-        <div class="hide-on-small-only">
+       <div class="hide-on-small-only">
 
-          <a href="#principal" class="btn-floating btn-large blue-grey">
-            <i class="large mdi-hardware-keyboard-arrow-up"></i>
-          </a>
+         <a href="#principal" class="btn-floating btn-large blue-grey">
+           <i class="large mdi-hardware-keyboard-arrow-up"></i>
+         </a>
 
-        </div>
-        
-      </div>
-        -->
+       </div>
        
-      
+     </div>
+      -->
+
+
       <!-- Boton lateral inferior derecho -->
-        <div class="fixed-action-btn " >
-          <a class="btn-floating btn-large blue-grey">
-            <i class="large mdi-hardware-keyboard-arrow-up"></i>
-          </a>
-          <ul>
-            <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
-            <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
-            <li><a class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
-            <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
-          </ul>
-        </div>
-
-
-
+      <div class="fixed-action-btn " >
+        <a class="btn-floating btn-large blue-grey">
+          <i class="large mdi-hardware-keyboard-arrow-up"></i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+          <li><a class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+          <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+        </ul>
+      </div>
 
 
 
 
     </main>
 
+
+    <!-- CARGAR JAVASCRIPT -->
     <script src="componentes/jquery/jquery.min.js" type="text/javascript"></script>
+    <script src="componentes/bootstrap-material-design/js/material.js" type="text/javascript"></script>
     <script src="componentes/materialize/js/materialize.js" type="text/javascript"></script>
+
 
     <script>
 
@@ -444,8 +420,8 @@ and open the template in the editor.
 
 
 
-       // $('.barra_inferior').pushpin({top: $('#portafolio').offset().top});
-        
+        // $('.barra_inferior').pushpin({top: $('#portafolio').offset().top});
+
       });
 
 
