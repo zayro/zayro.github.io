@@ -1985,7 +1985,7 @@ ul {
 .clearfix {
   clear: both; }
 
-.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, ul.side-nav {
+.z-depth-1, nav, .tarjeta-panel, .tarjeta, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, ul.side-nav {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
@@ -2646,7 +2646,7 @@ span.badge {
 .mdi-action-class:before {
   content: "\e61d"; }
 
-.mdi-action-credit-card:before {
+.mdi-action-credit-tarjeta:before {
   content: "\e61e"; }
 
 .mdi-action-dashboard:before {
@@ -3930,7 +3930,7 @@ span.badge {
 .mdi-hardware-security:before {
   content: "\e7c9"; }
 
-.mdi-hardware-sim-card:before {
+.mdi-hardware-sim-tarjeta:before {
   content: "\e7ca"; }
 
 .mdi-hardware-smartphone:before {
@@ -4656,10 +4656,10 @@ span.badge {
 .mdi-notification-play-install:before {
   content: "\e8bb"; }
 
-.mdi-notification-sd-card:before {
+.mdi-notification-sd-tarjeta:before {
   content: "\e8bc"; }
 
-.mdi-notification-sim-card-alert:before {
+.mdi-notification-sim-tarjeta-alert:before {
   content: "\e8bd"; }
 
 .mdi-notification-sms:before {
@@ -4795,7 +4795,7 @@ span.badge {
     width: 70%; }
  }
 
-.container .row {
+.container .fila {
   margin-left: -0.75rem;
   margin-right: -0.75rem; }
 
@@ -4809,248 +4809,248 @@ span.badge {
   .section.no-pad-top {
     padding-top: 0; }
 
-.row {
+.fila {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px; }
-  .row:after {
+  .fila:after {
     content: "";
     display: table;
     clear: both; }
-  .row .col {
+  .fila .col {
     float: left;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0 0.75rem; }
-    .row .col.s1 {
+    .fila .col.s1 {
       width: 8.33333%;
       margin-left: 0; }
-    .row .col.s2 {
+    .fila .col.s2 {
       width: 16.66667%;
       margin-left: 0; }
-    .row .col.s3 {
+    .fila .col.s3 {
       width: 25%;
       margin-left: 0; }
-    .row .col.s4 {
+    .fila .col.s4 {
       width: 33.33333%;
       margin-left: 0; }
-    .row .col.s5 {
+    .fila .col.s5 {
       width: 41.66667%;
       margin-left: 0; }
-    .row .col.s6 {
+    .fila .col.s6 {
       width: 50%;
       margin-left: 0; }
-    .row .col.s7 {
+    .fila .col.s7 {
       width: 58.33333%;
       margin-left: 0; }
-    .row .col.s8 {
+    .fila .col.s8 {
       width: 66.66667%;
       margin-left: 0; }
-    .row .col.s9 {
+    .fila .col.s9 {
       width: 75%;
       margin-left: 0; }
-    .row .col.s10 {
+    .fila .col.s10 {
       width: 83.33333%;
       margin-left: 0; }
-    .row .col.s11 {
+    .fila .col.s11 {
       width: 91.66667%;
       margin-left: 0; }
-    .row .col.s12 {
+    .fila .col.s12 {
       width: 100%;
       margin-left: 0; }
-    .row .col.offset-s1 {
+    .fila .col.offset-s1 {
       margin-left: 8.33333%; }
-    .row .col.offset-s2 {
+    .fila .col.offset-s2 {
       margin-left: 16.66667%; }
-    .row .col.offset-s3 {
+    .fila .col.offset-s3 {
       margin-left: 25%; }
-    .row .col.offset-s4 {
+    .fila .col.offset-s4 {
       margin-left: 33.33333%; }
-    .row .col.offset-s5 {
+    .fila .col.offset-s5 {
       margin-left: 41.66667%; }
-    .row .col.offset-s6 {
+    .fila .col.offset-s6 {
       margin-left: 50%; }
-    .row .col.offset-s7 {
+    .fila .col.offset-s7 {
       margin-left: 58.33333%; }
-    .row .col.offset-s8 {
+    .fila .col.offset-s8 {
       margin-left: 66.66667%; }
-    .row .col.offset-s9 {
+    .fila .col.offset-s9 {
       margin-left: 75%; }
-    .row .col.offset-s10 {
+    .fila .col.offset-s10 {
       margin-left: 83.33333%; }
-    .row .col.offset-s11 {
+    .fila .col.offset-s11 {
       margin-left: 91.66667%; }
-    .row .col.offset-s12 {
+    .fila .col.offset-s12 {
       margin-left: 100%; }
     @media only screen and (min-width : 601px) {
-      .row .col.m1 {
+      .fila .col.m1 {
         width: 8.33333%;
         margin-left: 0; }
 
-      .row .col.m2 {
+      .fila .col.m2 {
         width: 16.66667%;
         margin-left: 0; }
 
-      .row .col.m3 {
+      .fila .col.m3 {
         width: 25%;
         margin-left: 0; }
 
-      .row .col.m4 {
+      .fila .col.m4 {
         width: 33.33333%;
         margin-left: 0; }
 
-      .row .col.m5 {
+      .fila .col.m5 {
         width: 41.66667%;
         margin-left: 0; }
 
-      .row .col.m6 {
+      .fila .col.m6 {
         width: 50%;
         margin-left: 0; }
 
-      .row .col.m7 {
+      .fila .col.m7 {
         width: 58.33333%;
         margin-left: 0; }
 
-      .row .col.m8 {
+      .fila .col.m8 {
         width: 66.66667%;
         margin-left: 0; }
 
-      .row .col.m9 {
+      .fila .col.m9 {
         width: 75%;
         margin-left: 0; }
 
-      .row .col.m10 {
+      .fila .col.m10 {
         width: 83.33333%;
         margin-left: 0; }
 
-      .row .col.m11 {
+      .fila .col.m11 {
         width: 91.66667%;
         margin-left: 0; }
 
-      .row .col.m12 {
+      .fila .col.m12 {
         width: 100%;
         margin-left: 0; }
 
-      .row .col.offset-m1 {
+      .fila .col.offset-m1 {
         margin-left: 8.33333%; }
 
-      .row .col.offset-m2 {
+      .fila .col.offset-m2 {
         margin-left: 16.66667%; }
 
-      .row .col.offset-m3 {
+      .fila .col.offset-m3 {
         margin-left: 25%; }
 
-      .row .col.offset-m4 {
+      .fila .col.offset-m4 {
         margin-left: 33.33333%; }
 
-      .row .col.offset-m5 {
+      .fila .col.offset-m5 {
         margin-left: 41.66667%; }
 
-      .row .col.offset-m6 {
+      .fila .col.offset-m6 {
         margin-left: 50%; }
 
-      .row .col.offset-m7 {
+      .fila .col.offset-m7 {
         margin-left: 58.33333%; }
 
-      .row .col.offset-m8 {
+      .fila .col.offset-m8 {
         margin-left: 66.66667%; }
 
-      .row .col.offset-m9 {
+      .fila .col.offset-m9 {
         margin-left: 75%; }
 
-      .row .col.offset-m10 {
+      .fila .col.offset-m10 {
         margin-left: 83.33333%; }
 
-      .row .col.offset-m11 {
+      .fila .col.offset-m11 {
         margin-left: 91.66667%; }
 
-      .row .col.offset-m12 {
+      .fila .col.offset-m12 {
         margin-left: 100%; }
  }
     @media only screen and (min-width : 993px) {
-      .row .col.l1 {
+      .fila .col.l1 {
         width: 8.33333%;
         margin-left: 0; }
 
-      .row .col.l2 {
+      .fila .col.l2 {
         width: 16.66667%;
         margin-left: 0; }
 
-      .row .col.l3 {
+      .fila .col.l3 {
         width: 25%;
         margin-left: 0; }
 
-      .row .col.l4 {
+      .fila .col.l4 {
         width: 33.33333%;
         margin-left: 0; }
 
-      .row .col.l5 {
+      .fila .col.l5 {
         width: 41.66667%;
         margin-left: 0; }
 
-      .row .col.l6 {
+      .fila .col.l6 {
         width: 50%;
         margin-left: 0; }
 
-      .row .col.l7 {
+      .fila .col.l7 {
         width: 58.33333%;
         margin-left: 0; }
 
-      .row .col.l8 {
+      .fila .col.l8 {
         width: 66.66667%;
         margin-left: 0; }
 
-      .row .col.l9 {
+      .fila .col.l9 {
         width: 75%;
         margin-left: 0; }
 
-      .row .col.l10 {
+      .fila .col.l10 {
         width: 83.33333%;
         margin-left: 0; }
 
-      .row .col.l11 {
+      .fila .col.l11 {
         width: 91.66667%;
         margin-left: 0; }
 
-      .row .col.l12 {
+      .fila .col.l12 {
         width: 100%;
         margin-left: 0; }
 
-      .row .col.offset-l1 {
+      .fila .col.offset-l1 {
         margin-left: 8.33333%; }
 
-      .row .col.offset-l2 {
+      .fila .col.offset-l2 {
         margin-left: 16.66667%; }
 
-      .row .col.offset-l3 {
+      .fila .col.offset-l3 {
         margin-left: 25%; }
 
-      .row .col.offset-l4 {
+      .fila .col.offset-l4 {
         margin-left: 33.33333%; }
 
-      .row .col.offset-l5 {
+      .fila .col.offset-l5 {
         margin-left: 41.66667%; }
 
-      .row .col.offset-l6 {
+      .fila .col.offset-l6 {
         margin-left: 50%; }
 
-      .row .col.offset-l7 {
+      .fila .col.offset-l7 {
         margin-left: 58.33333%; }
 
-      .row .col.offset-l8 {
+      .fila .col.offset-l8 {
         margin-left: 66.66667%; }
 
-      .row .col.offset-l9 {
+      .fila .col.offset-l9 {
         margin-left: 75%; }
 
-      .row .col.offset-l10 {
+      .fila .col.offset-l10 {
         margin-left: 83.33333%; }
 
-      .row .col.offset-l11 {
+      .fila .col.offset-l11 {
         margin-left: 91.66667%; }
 
-      .row .col.offset-l12 {
+      .fila .col.offset-l12 {
         margin-left: 100%; }
  }
 
@@ -5118,8 +5118,17 @@ nav {
       transition: background-color 0.3s;
       float: left;
       padding: 0px; }
-      nav ul li:hover, nav ul li.active {
-        background-color: rgba(0, 0, 0, 0.1); }
+    /*
+    esta session fue editada
+    */
+      nav ul li.active, nav ul li:hover  {
+        background-color: rgba(0, 0, 0, 0.1);
+    border-left: 2px solid #ea4a4f;
+
+      }
+      
+      
+
     nav ul a {
       font-size: 1rem;
       color: #fff;
@@ -5397,7 +5406,7 @@ small {
     .flow-text {
       line-height: 2.88rem; } }
 
-.card-panel {
+.tarjeta-panel {
   padding: 20px;
   margin: 0.5rem 0 1rem 0;
   -webkit-border-radius: 2px;
@@ -5406,7 +5415,7 @@ small {
   background-clip: padding-box;
   background-color: #fff; }
 
-.card {
+.tarjeta {
   position: relative;
   overflow: hidden;
   margin: 0.5rem 0 1rem 0;
@@ -5418,13 +5427,13 @@ small {
   -moz-border-radius: 2px;
   border-radius: 2px;
   background-clip: padding-box; }
-  .card .card-title {
+  .tarjeta .tarjeta-title {
     color: #fff;
     font-size: 24px;
     font-weight: 300; }
-    .card .card-title.activator {
+    .tarjeta .tarjeta-title.activator {
       cursor: pointer; }
-  .card a {
+  .tarjeta a {
     color: #ffab40;
     margin-right: 20px;
     -webkit-transition: color 0.3s ease;
@@ -5433,40 +5442,40 @@ small {
     -ms-transition: color 0.3s ease;
     transition: color 0.3s ease;
     text-transform: uppercase; }
-    .card a:hover {
+    .tarjeta a:hover {
       color: #ffd8a6; }
-  .card.small, .card.medium, .card.large {
+  .tarjeta.small, .tarjeta.medium, .tarjeta.large {
     position: relative; }
-    .card.small .card-image, .card.medium .card-image, .card.large .card-image {
+    .tarjeta.small .tarjeta-image, .tarjeta.medium .tarjeta-image, .tarjeta.large .tarjeta-image {
       overflow: hidden; }
-    .card.small .card-content, .card.medium .card-content, .card.large .card-content {
+    .tarjeta.small .tarjeta-content, .tarjeta.medium .tarjeta-content, .tarjeta.large .tarjeta-content {
       overflow: hidden; }
-    .card.small .card-action, .card.medium .card-action, .card.large .card-action {
+    .tarjeta.small .tarjeta-action, .tarjeta.medium .tarjeta-action, .tarjeta.large .tarjeta-action {
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0; }
-  .card.small {
+  .tarjeta.small {
     height: 300px; }
-    .card.small .card-image {
+    .tarjeta.small .tarjeta-image {
       height: 150px; }
-    .card.small .card-content {
+    .tarjeta.small .tarjeta-content {
       height: 150px; }
-  .card.medium {
+  .tarjeta.medium {
     height: 400px; }
-    .card.medium .card-image {
+    .tarjeta.medium .tarjeta-image {
       height: 250px; }
-    .card.medium .card-content {
+    .tarjeta.medium .tarjeta-content {
       height: 150px; }
-  .card.large {
+  .tarjeta.large {
     height: 500px; }
-    .card.large .card-image {
+    .tarjeta.large .tarjeta-image {
       height: 330px; }
-    .card.large .card-content {
+    .tarjeta.large .tarjeta-content {
       height: 170px; }
-  .card .card-image {
+  .tarjeta .tarjeta-image {
     position: relative; }
-    .card .card-image img {
+    .tarjeta .tarjeta-image img {
       -webkit-border-radius: 2px 2px 0 0;
       -moz-border-radius: 2px 2px 0 0;
       border-radius: 2px 2px 0 0;
@@ -5477,12 +5486,12 @@ small {
       top: 0;
       bottom: 0;
       width: 100%; }
-    .card .card-image .card-title {
+    .tarjeta .tarjeta-image .tarjeta-title {
       position: absolute;
       bottom: 0;
       left: 0;
       padding: 20px; }
-  .card .card-content {
+  .tarjeta .tarjeta-content {
     padding: 20px;
     -webkit-border-radius: 0 0 2px 2px;
     -moz-border-radius: 0 0 2px 2px;
@@ -5491,15 +5500,15 @@ small {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    .card .card-content p {
+    .tarjeta .tarjeta-content p {
       margin: 0;
       color: inherit; }
-    .card .card-content .card-title {
+    .tarjeta .tarjeta-content .tarjeta-title {
       line-height: 48px; }
-  .card .card-action {
+  .tarjeta .tarjeta-action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px; }
-  .card .card-reveal {
+  .tarjeta .tarjeta-reveal {
     padding: 20px;
     position: absolute;
     background-color: #FFF;
@@ -5511,7 +5520,7 @@ small {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    .card .card-reveal .card-title {
+    .tarjeta .tarjeta-reveal .tarjeta-title {
       cursor: pointer;
       display: block; }
 
