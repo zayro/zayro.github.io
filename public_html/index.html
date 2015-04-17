@@ -10,11 +10,11 @@ and open the template in the editor.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+
     <link href="componentes/fullPage.js-master/jquery.fullPage_edit.css" rel="stylesheet" type="text/css"/>
-    
+
     <link href="componentes/bootstrap-material-design/css/material-fullpalette.css" rel="stylesheet" type="text/css"/>
-    
+
     <link href="componentes/bootstrap-material-design/css/material.css" rel="stylesheet" type="text/css"/>
 
     <link href="componentes/materialize/css/materialize.css" rel="stylesheet" type="text/css">
@@ -31,16 +31,21 @@ and open the template in the editor.
       }
 
 
-      /*
-            .scrollspy{ margin-top: 60px;}
-      */
-      
       .scrollspy{
         margin: 0px auto;
-        display: block;
         width:90%;
+        /*
         height:100%;
+        display: block;
+        */
       } 
+
+      #principal{
+        margin: 0px auto;
+        width: 300px;
+        height: 300px;
+
+      }
 
       .texto-delgado{
         font-weight: 200;
@@ -81,21 +86,38 @@ and open the template in the editor.
 
       .tarjeta-images{
         margin: 0px auto;      
-        width: 100%;
+
         padding-top: 1%;
+
+
+      }
+
+      .imagen_tarjeta{
+        width: 150px;
         height: 150px;
       }
 
-      html {
+      /* Fixed header and footer.
+      * --------------------------------------- */
+      #footer{
+        position:fixed;
 
-        scrollbar-face-color: #6685CA; 
-        scrollbar-highlight-color: #6685CA; 
-        scrollbar-shadow-color: #6685CA; 
-        scrollbar-3dlight-color:#FFFFFF;
-        scrollbar-arrow-color:#FFFFFF; 
-        scrollbar-track-color:#E5E5E5; 
-        scrollbar-drakshadow-color:#000000;
+        display:block;
+        width: 100%;
+
+        z-index:9;
+
+
+
       }
+
+      #header{
+        top:0px;
+      }
+      #footer{
+        bottom:0px;
+      }
+
     </style>
 
 
@@ -105,7 +127,7 @@ and open the template in the editor.
   <body>
 
     <!-- MENU PRINCIPAL -->
-    <header>
+    <header id="header">
 
       <div class="navbar-fixed">
         <nav  class="blue-grey darken-3  ">
@@ -124,16 +146,11 @@ and open the template in the editor.
           </ul>
 
 
-  
-
-
-
-
           <ul id="menu_frontal" class="right hide-on-med-and-down  "  >
-            <li data-menuanchor="firstPage"><a href="#firstPage" class="white-text">First slide</a></li>
-            <li ><a data-menuanchor="secondPage" href="#secondPage" class="white-text">Second slide</a></li>
-            <li data-menuanchor="3rdPage"><a href="#3rdPage" class="white-text"> Third slide</a></li>
-            <li data-menuanchor="4thpage"><a href="#4thpage" class="white-text">Fourth slide</a></li>
+            <li data-menuanchor="firstPage"><a href="#firstPage" class="white-text">INICIO</a></li>
+            <li data-menuanchor="secondPage"><a  href="#secondPage" class="white-text">PORTAFOLIO</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage" class="white-text"> CURSOS</a></li>
+            <li data-menuanchor="4thpage"><a href="#4thpage" class="white-text"> CONTACTO</a></li>
           </ul>
 
 
@@ -144,7 +161,7 @@ and open the template in the editor.
           </ul>
 
 
-<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
 
 
@@ -154,13 +171,30 @@ and open the template in the editor.
 
     </header>
 
+    <footer class="page-footer blue-grey darken-3 " id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Mas informacion !</h5>
+            <p class="grey-text text-lighten-4">Nos  puedes seguir en nuestras redes sociales.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          ZAV © 2015 Copyright 
+          <a class="grey-text text-lighten-4 right" href="#!">Marlon Zayro Arias Vargas</a>
+        </div>
+      </div>
+    </footer>
     <!-- CONTENEDOR -->    
     <main class="container-fluid"  id="fullpage">   
 
 
 
       <!-- SECCION INICIAL -->
-      <section  class="section active" id="section0"  >
+      <section  class="section " id="section0"  >
 
         <div class="logo scrollspy" id="principal">
           <object data="logo_negro.svg" type="image/svg+xml"></object>
@@ -238,44 +272,122 @@ and open the template in the editor.
 
 
       <!-- SECCION CURSOS -->
-      <section  class="section" id="section2" >
+      <section class="section" id="section2" >
 
-        <div id="cursos"  class="scrollspy">
+        <div id="cursos" class="  scrollspy panel panel-material-blue-grey">
+          <div class="panel-heading">
+            <h3 class="panel-title titulo">Cursos</h3>
+          </div>
+          <div class="panel-body ">
 
-          <div class="tarjeta">
+            <div class="fila">
 
-            <div class=" center-align ">
-              <h4 class="valign grey-text titulo"> Cursos  </h4>
-              <div class="divider"></div>
-            </div>
+              <div class="col l4 s12">
+                <div class="tarjeta">
+                  <div class="center-align waves-effect waves-block waves-light">
+                    <img class="activator imagen_tarjeta" src="svg/LibreOffice_external_logo.svg">
+                  </div>
+                  <div class="tarjeta-content">
+                    <span class="tarjeta-title activator grey-text text-darken-4">Ofimatica <i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">Ver sitio Web</a></p>
+                  </div>
+                  <div class="tarjeta-reveal">
+                    <span class="tarjeta-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>                
 
-            <div class="tarjeta-content"  >
-
-
-              <span class="tarjeta-title activator grey-text text-darken-4">Card Title <i class="mdi-navigation-more-vert right"></i></span>
-
-              <div class="fila contenedor">
-                <div class="col s12">
-                  <div class="col s6"><span>This div is 6-columns wide</span></div>
-                  <div class="col s6"><span class="blue-text text-darken-2">This is a tarjeta panel with dark blue text</span></div>
+              <div class="col l4 s12">
+                <div class="tarjeta">
+                  <div class="tarjeta-images center-align waves-effect waves-block waves-light">
+                    <img class="activator imagen_portafolio" src="svg/1429065098_48_github.svg" >
+                  </div>
+                  <div class="tarjeta-content">
+                    <span class="tarjeta-title activator grey-text text-darken-4">Versionamiento Proyectos web<i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">Ver sitio Web</a></p>
+                  </div>
+                  <div class="tarjeta-reveal">
+                    <span class="tarjeta-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
                 </div>
               </div>
 
 
 
-              <div class="tarjeta-reveal">
-                <span class="tarjeta-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
-                <p>Colocamos la informacion de ayuda para el formulario.</p>
+              <div class="col l4 s12">
+                <div class="tarjeta">
+                  <div class="tarjeta-images center-align waves-effect waves-block waves-light">
+                    <img class="activator imagen_tarjeta" src="svg/1429065139_php.svg">
+                  </div>
+                  <div class="tarjeta-content">
+                    <span class="tarjeta-title activator grey-text text-darken-4"> Lenguaje Servidor PhP<i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">Ver sitio Web</a></p>
+                  </div>
+                  <div class="tarjeta-reveal">
+                    <span class="tarjeta-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
               </div>
 
+              <div class="col l4 s12">
+                <div class="tarjeta">
+                  <div class="tarjeta-images center-align waves-effect waves-block waves-light">
+                    <img class="activator imagen_tarjeta" src="svg/js-logo.svg">
+                  </div>
+                  <div class="tarjeta-content">
+                    <span class="tarjeta-title activator grey-text text-darken-4"> Sitios Web Dinamicos<i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">Ver sitio Web</a></p>
+                  </div>
+                  <div class="tarjeta-reveal">
+                    <span class="tarjeta-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col l4 s12">
+                <div class="tarjeta">
+                  <div class="tarjeta-images center-align waves-effect waves-block waves-light">
+                    <img class="activator imagen_tarjeta" src="svg/1429069032_badge-html-5.svg" alt="web" >
+                  </div>
+                  <div class="tarjeta-content">
+                    <span class="tarjeta-title activator grey-text text-darken-4"> Maquetacion Web<i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">Ver sitio Web</a></p>
+                  </div>
+                  <div class="tarjeta-reveal">
+                    <span class="tarjeta-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col l4 s12">
+                <div class="tarjeta">
+                  <div class="tarjeta-images center-align waves-effect waves-block waves-light">
+                    <img class="activator imagen_tarjeta" src="svg/1429068901_badge-css-3.svg" alt="web" >
+                  </div>
+                  <div class="tarjeta-content">
+                    <span class="tarjeta-title activator grey-text text-darken-4"> Diseño Web<i class="mdi-navigation-more-vert right"></i></span>
+                    <p><a href="#">Ver sitio Web</a></p>
+                  </div>
+                  <div class="tarjeta-reveal">
+                    <span class="tarjeta-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
-
           </div>
-
-
         </div>
 
       </section>
+
+
 
       <!-- SECCION CONTACTO -->
       <section class="section" id="section3" >
@@ -369,11 +481,8 @@ and open the template in the editor.
        </div>
        
      </div>
-      -->
-
-
-      <!-- Boton lateral inferior derecho -->
-      <div class="fixed-action-btn " >
+      
+       <div class="fixed-action-btn " >
         <a class="btn-floating btn-large blue-grey">
           <i class="large mdi-hardware-keyboard-arrow-up"></i>
         </a>
@@ -384,20 +493,11 @@ and open the template in the editor.
           <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
         </ul>
       </div>
-
-
-
-
-      <div class="section" id="section2">
-        <div class="intro">
-          <h1>Easy to use plugin</h1>
-          <p>HTML markup example to define 4 sections.</p>
-          <img src="http://static.webpie.net/files/11/images/web68-logo-small.png" alt="web68" />
-        </div>
-      </div>
+      -->
 
 
     </main>
+
 
 
     <!-- CARGAR JAVASCRIPT -->
@@ -425,9 +525,9 @@ and open the template in the editor.
           menu: '#menu_frontal',
           css3: true,
           navigation: true,
-	  navigationPosition: 'right',
+          navigationPosition: 'right',
           scrollOverflow: true
-          
+
         });
 
 
@@ -437,10 +537,6 @@ and open the template in the editor.
           closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor         
         });
 
-
-
-
-		
 
 
         var options = [
