@@ -20,9 +20,6 @@ and open the template in the editor.
     <link href="componentes/materialize/css/materialize.css" rel="stylesheet" type="text/css">
 
 
-
-
-
     <style>
 
 
@@ -78,10 +75,6 @@ and open the template in the editor.
 
       }
 
-      @media only screen and (max-width : 992px) {
-        .navbar-fixed nav {
-          position: inherit; }
-      }
 
 
       .tarjeta-images{
@@ -99,6 +92,12 @@ and open the template in the editor.
 
       /* Fixed header and footer.
       * --------------------------------------- */
+
+      footer.page-footer{
+        padding-top:1px;
+
+      }
+
       #footer{
         position:fixed;
 
@@ -106,9 +105,6 @@ and open the template in the editor.
         width: 100%;
 
         z-index:9;
-
-
-
       }
 
       #header{
@@ -129,64 +125,57 @@ and open the template in the editor.
     <!-- MENU PRINCIPAL -->
     <header id="header">
 
-      <div class="navbar-fixed">
-        <nav  class="blue-grey darken-3  ">
 
 
-          <ul class="left hide-on-med-and-down fixed">
 
-            <li>
-              <a href="#principal" title='Logo'  > 
-                <object data="logo_blanco.svg" type="image/svg+xml" class="logo_svg" >
+      <nav  class="blue-grey darken-3  ">
+        <div class="nav-wrapper">
 
-                </object>
-              </a>   
-            </li>
-
-          </ul>
+          <a href="#principal" title='Logo' class="brand-logo">
+            <object data="logo_blanco.svg" type="image/svg+xml" class="logo_svg" >
+            </object>
+          </a>
 
 
-          <ul id="menu_frontal" class="right hide-on-med-and-down  "  >
+
+
+          <ul id="menu_frontal" class="right hide-on-med-and-down "  >
             <li data-menuanchor="firstPage"><a href="#firstPage" class="white-text">INICIO</a></li>
             <li data-menuanchor="secondPage"><a  href="#secondPage" class="white-text">PORTAFOLIO</a></li>
             <li data-menuanchor="3rdPage"><a href="#3rdPage" class="white-text"> CURSOS</a></li>
             <li data-menuanchor="4thpage"><a href="#4thpage" class="white-text"> CONTACTO</a></li>
           </ul>
 
-
-          <ul id="slide-out" class="side-nav overflow_auto  ">
-            <li><a href="#portafolio">Portafolio</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-
-
           <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
 
 
-        </nav>
+          <ul id="slide-out" class="side-nav">
+            <li><a href="#secondPage">PORTAFOLIO</a></li>
+            <li><a href="#3rdPage">CURSOS</a></li>
+            <li><a href="#4thpage">CONTACTO</a></li>
+          </ul>
 
-      </div>
+
+
+
+
+        </div>
+      </nav>
+
+
 
     </header>
 
-    <footer class="page-footer blue-grey darken-3 " id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Mas informacion !</h5>
-            <p class="grey-text text-lighten-4">Nos  puedes seguir en nuestras redes sociales.</p>
-          </div>
+    <footer class="page-footer blue-grey darken-3 hide-on-small-only " id="footer">
 
-        </div>
-      </div>
       <div class="footer-copyright">
         <div class="container">
           ZAV © 2015 Copyright 
           <a class="grey-text text-lighten-4 right" href="#!">Marlon Zayro Arias Vargas</a>
         </div>
       </div>
+
     </footer>
     <!-- CONTENEDOR -->    
     <main class="container-fluid"  id="fullpage">   
@@ -415,27 +404,14 @@ and open the template in the editor.
                   <div class="fila">
                     <div class="input-field col s6">
                       <input id="first_name" type="text" class="validate" required>
-                      <label for="first_name">First Name</label>
+                      <label for="first_name">Primer Nombre</label>
                     </div>
                     <div class="input-field col s6">
                       <input id="last_name" type="text" class="validate">
-                      <label for="last_name">Last Name</label>
+                      <label for="last_name">Segundo Nombre</label>
                     </div>
-                  </div>
+                  </div>       
 
-                  <div class="fila">
-                    <div class="input-field col s12">
-                      <input id="username" type="text" class="validate">
-                      <label for="username">Username</label>
-                    </div>
-                  </div>
-
-                  <div class="fila">
-                    <div class="input-field col s12">
-                      <input id="password" type="password" class="validate">
-                      <label for="password">Password</label>
-                    </div>
-                  </div>
 
                   <div class="fila">
                     <div class="input-field col s12">
@@ -444,11 +420,22 @@ and open the template in the editor.
                     </div>
                   </div>
 
+                  <div class="fila">
+                    <form class="col s12">
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="textarea1" class="materialize-textarea"></textarea>
+                          <label for="textarea1">Mensaje</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+
                 </div>
 
-                <div class="tarjeta-action valign-wrapper">
-                  <a href="#" class="btn waves-effect waves-light grey white-text valign ">Cancelar</a>
-                  <a href="#" class="btn waves-effect waves-light green white-text valign ">Aceptar</a>
+                <div class="tarjeta-action valign-wrapper">                
+                  <a href="#" class="btn waves-effect waves-light green white-text valign ">Enviar</a>
                 </div>
               </div>
 
@@ -539,16 +526,6 @@ and open the template in the editor.
 
 
 
-        var options = [
-          {selector: '#portafolio', offset: 0, callback: 'toast("Please continue scrolling!", 1500 )'},
-          {selector: '#cursos', offset: 0, callback: 'toast("Please continue scrolling!", 1500 )'},
-          {selector: '#contacto', offset: 0, callback: 'showStaggeredList("#staggered-test")'}
-        ];
-        scrollFire(options);
-
-
-
-        // $('.barra_inferior').pushpin({top: $('#portafolio').offset().top});
 
       });
 

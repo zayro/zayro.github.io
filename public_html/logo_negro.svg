@@ -1,28 +1,41 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="736 279 255 111">
   <defs>
-      <style type="text/css">
+      <style TYPE="text/css">
 
-        @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
-        @import url(http://fonts.googleapis.com/css?family=Pacifico);
-        @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+		
+		@font-face {
+		font-family: 'Roboto Slab 300';
+		src:url(componentes/fuentes/Roboto%20Slab%20300.ttf)
+		}      
+		
+		@font-face {
+		font-family: 'Pacifico_regular';
+		src:url(componentes/fuentes/Pacifico-regular.ttf);
+		}
 
-        .Roboto{
-          font-family: 'Roboto Slab', serif;	 
+		
+       	@font-face {
+		font-family: 'Open Sans 300';
+		src:url(componentes/fuentes/Open%20Sans%20300.ttf);
+		}
+
+       .Roboto{
+          font-family: 'Roboto Slab 300';	 
           font-size: 32px;
-	  word-spacing:1px;
+	  
           
         }
 
         .Pacifico{
-          font-family: 'Pacifico', cursive;
+          font-family: 'Pacifico_regular', cursive;
           color:#B53133;	 
           font-size: 16px;	
         }
 
         .Open{
-          font-family: 'Open Sans', sans-serif;		  
+          font-family: 'Open Sans 300';		  
           font-size: 20px;
-	  word-spacing:2px;
+		  word-spacing:2px;
           letter-spacing: 1px;
           font-weight: normal;
           font-style: normal;
@@ -37,7 +50,7 @@
 
       <g  transform="translate(832 320.411) scale(2.320304017372421 2.320304017372421) rotate(0 0 0)">
 
-      <text dy="0.5ex" class="Roboto"  >ZAV</text>
+      <text dy="0.5ex" class="Roboto">ZAV</text>
 
       </g>
 
