@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html lang="es-ES" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage">
 
 <head>
@@ -20,18 +16,18 @@ and open the template in the editor.
     <!-- Schema.org para Google+ -->
     <meta itemprop="name" content="WEB ZAV DESARROLLO">
     <meta itemprop="description" content="Desarrollo web">
-    <meta itemprop="image" content="http://zayro.github.io/img/yo/zayro.jpg">
+    <meta itemprop="image" content="http://zayro.github.io/tema_proyecto/public_html/img/yo/zayro.jpg">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="Portafolio Marlon Zayro Arias Vargas" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://zayro.github.io/" />
-    <meta property="og:image" content="http://zayro.github.io/img/icono.png" />
+    <meta property="og:url" content="http://zayro.github.io/tema_proyecto/public_html/" />
+    <meta property="og:image" content="http://zayro.github.io/tema_proyecto/public_html/img/icono.png" />
     <meta property="og:description" content="Marlon Zayro Arias Vargas: Zav">
     <meta property="og:site_name" content="Web Zav" />
 
-    <meta name="geo.placename" content="Bucaramanga" />
-    <meta name="google-signin-client_id" content="903616966895-2crc44t103bopqlv9q9ob92qmmpjvahp.apps.googleusercontent.com" />
+    <meta name="geo.placename" content="Bucaramanga">
+    <meta name="google-signin-client_id" content="903616966895-2crc44t103bopqlv9q9ob92qmmpjvahp.apps.googleusercontent.com">
 
 
 
@@ -40,10 +36,10 @@ and open the template in the editor.
     <link rel="publisher" href="https://plus.google.com/+ZayroArias" />
 
     <!-- desahibiliar cache
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="pragma" content="no-cache" />
+      <meta http-equiv="cache-control" content="max-age=0" />
+      <meta http-equiv="cache-control" content="no-cache" />
+      <meta http-equiv="expires" content="0" />
+      <meta http-equiv="pragma" content="no-cache" />
     -->
 
     <!-- Add to homescreen for Chrome on Android -->
@@ -62,9 +58,7 @@ and open the template in the editor.
     <link rel="shortcut icon" href="img/iconos/icono.png">
 
     <!-- Include manifest file in the page -->
-    <link rel="manifest" href="manifest.json">
-
-
+    <link rel="manifest" href="cache/manifest.json">
 
     <script type="application/ld+json">
         {
@@ -85,7 +79,7 @@ and open the template in the editor.
 
     <link href="componentes/fullPage.js-master/jquery.fullPage_edit.css" rel="stylesheet" type="text/css" media="screen" />
 
-    <link href="componentes/materialize-v0.97.0/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="componentes/materialize-v0.97.5/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen" />
 
     <link href="css/local.css" rel="stylesheet" type="text/css" media="screen" />
 
@@ -93,6 +87,18 @@ and open the template in the editor.
     <script src="componentes/pace-1.0.2/pace.min.js"></script>
 
     <link href="componentes/pace-1.0.2/themes/yellow/pace-theme-barber-shop.css" rel="stylesheet" />
+
+    <style>
+        .linea-inferior li a {
+            border-bottom: 1px solid#CCCCCC;
+        }
+        
+        .navbar-fixed li a {
+            cursor: pointer;
+            cursor: hand;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -106,29 +112,35 @@ and open the template in the editor.
             <nav class="blue-grey darken-3  ">
                 <div class="nav-wrapper">
 
-                    <a href="#principal" title="Logo" class="brand-logo">
-                        <object data="svg/logo_blanco.svg" type="image/svg+xml" class="logo_svg">
-            </object>
+                    <a title="Logo" class="brand-logo">
+                        <object data="assets/svg/logo_blanco.svg" type="image/svg+xml" class="logo_svg"></object>
                     </a>
 
 
 
 
                     <ul id="menu_frontal" class="right hide-on-med-and-down ">
-                        <li data-menuanchor="firstPage"><a href="#firstPage" class="white-text">INICIO</a></li>
-                        <li data-menuanchor="secondPage"><a href="#secondPage" class="white-text">PORTAFOLIO</a></li>
-                        <li data-menuanchor="3rdPage"><a href="#3rdPage" class="white-text"> CURSOS</a></li>
-                        <li data-menuanchor="4thpage"><a href="#4thpage" class="white-text"> CONTACTO</a></li>
+                        <li data-menuanchor="MenuInicio"><a href="#MenuInicio" class="white-text">INICIO</a></li>
+                        <li data-menuanchor="MenuPortafolio"><a href="#MenuPortafolio" class="white-text">PORTAFOLIO</a></li>
+                        <li data-menuanchor="MenuCursos"><a href="#MenuCursos" class="white-text"> CURSOS</a></li>
+                        <li data-menuanchor="MenuContacto"><a href="#MenuContacto" class="white-text"> CONTACTO</a></li>
+                        <li data-menuanchor="MenuSoftware"><a href="./plantillas/" class="white-text"> PLANTILLAS </a></li>
                     </ul>
 
                     <a data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
 
 
-                    <ul id="slide-out" class="side-nav">
-                        <li><a href="#secondPage">PORTAFOLIO</a></li>
-                        <li><a href="#3rdPage">CURSOS</a></li>
-                        <li><a href="#4thpage">CONTACTO</a></li>
+                    <ul id="slide-out" class="side-nav linea-inferior">
+                        <li class="center-align">
+                            <a title="Logo">
+                                <object data="assets/svg/logo_negro.svg" type="image/svg+xml" class="logo_svg"></object>
+                            </a>
+                        </li>
+                        <li><a href="#MenuPortafolio">PORTAFOLIO</a></li>
+                        <li><a href="#MenuCursos">CURSOS</a></li>
+                        <li><a href="#MenuContacto">CONTACTO</a></li>
+                        <li><a href="software/">SOFTWARE</a></li>
                     </ul>
 
 
@@ -140,16 +152,7 @@ and open the template in the editor.
 
     </header>
 
-    <footer class="page-footer blue-grey darken-3 hide-on-small-only " id="footer">
 
-        <div class="footer-copyright">
-            <div class="container">
-                ZAV © 2015 Copyright
-                <a class="grey-text text-lighten-4 right" href="#!">Marlon Zayro Arias Vargas</a>
-            </div>
-        </div>
-
-    </footer>
     <!-- CONTENEDOR -->
     <main class="container-fluid" id="fullpage">
 
@@ -159,7 +162,7 @@ and open the template in the editor.
         <section class="section  centrar" id="section0">
 
             <div class="logo scrollspy" id="principal">
-                <object data="svg/logo_negro.svg" type="image/svg+xml"></object>
+                <object data="assets/svg/logo_negro.svg" type="image/svg+xml"></object>
             </div>
 
             <div class="centrar">
@@ -195,7 +198,7 @@ and open the template in the editor.
                         <div class="col l4 s12">
                             <div class="card">
                                 <div class="card-images center-align waves-effect waves-block waves-light">
-                                    <img class="activator imagen_portafolio" src="img/partmo-min.png" alt="partmo">
+                                    <img class="activator imagen_portafolio" src="assets/mg/partmo-min.png" alt="partmo">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Industrias Partmo <i class="mdi-navigation-more-vert right"></i></span>
@@ -220,7 +223,7 @@ and open the template in the editor.
                         <div class="col l4 s12">
                             <div class="card">
                                 <div class="card-images center-align waves-effect waves-block waves-light">
-                                    <img class="activator imagen_portafolio" src="img/logo_distribuidora_rayco.jpg" alt="rayco">
+                                    <img class="activator imagen_portafolio" src="assets/mg/logo_distribuidora_rayco.jpg" alt="rayco">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4">Distribuidora Rayco <i class="mdi-navigation-more-vert right"></i></span>
@@ -236,7 +239,7 @@ and open the template in the editor.
                         <div class="col l4 s12">
                             <div class="card">
                                 <div class="card-images center-align waves-effect waves-block waves-light">
-                                    <img class="activator" src="img/ief-min.jpg" alt="ief">
+                                    <img class="activator" src="assets/mg/ief-min.jpg" alt="ief">
                                 </div>
                                 <div class="card-content">
                                     <span class="card-title activator grey-text text-darken-4"> Ief<i class="mdi-navigation-more-vert right"></i></span>
@@ -390,7 +393,7 @@ and open the template in the editor.
                     </div>
 
 
-                    <form class="col s12 contenedor">
+                    <form id="EnviarEmail" class="col s12 contenedor">
 
                         <div class="card-content">
 
@@ -399,41 +402,41 @@ and open the template in the editor.
                             <div class="row">
 
                                 <div class="row">
-                                    <div class="input-field col s6">
-                                        <input id="first_name" type="text" class="validate" required>
-                                        <label for="first_name">Primer Nombre</label>
+                                    <div class="input-field col s12">
+                                        <input name="nombre" id="nombre" type="text" class="validate" required>
+                                        <label for="first_name">Nombre</label>
                                     </div>
-                                    <div class="input-field col s6">
-                                        <input id="last_name" type="text" class="validate">
-                                        <label for="last_name">Segundo Nombre</label>
-                                    </div>
+
                                 </div>
 
 
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input id="email" type="email" class="validate">
+                                        <input name="email" id="email" type="email" class="validate" required>
                                         <label for="email">Email</label>
                                     </div>
                                 </div>
 
                                 <div class="row">
+
+                                    <div class="input-field col s12">
+                                        <textarea name="mensaje" id="textarea1" class="materialize-textarea" required></textarea>
+                                        <label for="textarea1">Mensaje</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
                                     <form class="col s12">
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                                <label for="textarea1">Mensaje</label>
-                                            </div>
-                                        </div>
+                                        <button id="botonEnviar" class="btn waves-effect waves-light green white-text valign ">Enviar</button>
                                     </form>
                                 </div>
 
 
+
                             </div>
 
-                            <div class="card-action valign-wrapper">
-                                <a href="#" class="btn waves-effect waves-light green white-text valign ">Enviar</a>
-                            </div>
+
                         </div>
 
                     </form>
@@ -449,104 +452,100 @@ and open the template in the editor.
             </div>
         </section>
 
+        <!--  
         <section class="section" id="section4">
 
-            <p class="centrar">
-                <button class="js-push-button btn blue-grey " disabled>
-          HABILITAR NOTIFICACIONES PUSH
-        </button>
-            </p>
 
-            <br>
-            <hr>
+            <div class="row">
+                <p class="centrar">
+                    <button class="js-push-button btn blue-grey " disabled>
+              HABILITAR NOTIFICACIONES PUSH
+            </button>
+                </p>
 
-            <div class="center-align col s12 m12 l12" class="centrar">
+                <br>
 
+                <hr>
 
-                <div id="my-signin2"></div>
-
-
+                <div class="center-align col s12 m12 l12" class="centrar">
 
 
 
+
+
+
+                </div>
+
+
+
+                <div class="js-curl-command"></div>
             </div>
 
 
-
-            <div class="js-curl-command"></div>
-
         </section>
+        -->
 
 
 
 
 
         <!--  lateral superor izquierdo
-     <div class="barra_inferior right-align" >
-
-       <div class="hide-on-small-only">
-
-         <a href="#principal" class="btn-floating btn-large blue-grey">
-           <i class="large mdi-hardware-keyboard-arrow-up"></i>
-         </a>
-
+       <div class="barra_inferior right-align" >
+  
+         <div class="hide-on-small-only">
+  
+           <a href="#principal" class="btn-floating btn-large blue-grey">
+             <i class="large mdi-hardware-keyboard-arrow-up"></i>
+           </a>
+  
+         </div>
+  
        </div>
-
-     </div>
-
-       <div class="fixed-action-btn " >
-        <a class="btn-floating btn-large blue-grey">
-          <i class="large mdi-hardware-keyboard-arrow-up"></i>
-        </a>
-        <ul>
-          <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
-          <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
-          <li><a class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
-          <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
-        </ul>
-      </div>
+  
+         <div class="fixed-action-btn " >
+          <a class="btn-floating btn-large blue-grey">
+            <i class="large mdi-hardware-keyboard-arrow-up"></i>
+          </a>
+          <ul>
+            <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+            <li><a class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+            <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+          </ul>
+        </div>
       -->
 
 
     </main>
-    <script>
-        function onSuccess(googleUser) {
-            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-        }
 
-        function onFailure(error) {
-            console.log(error);
-        }
+    <footer class="page-footer blue-grey darken-3 hide-on-small-only " id="footer">
 
-        function renderButton() {
-            console.log("ejecuto boton google");
-            gapi.signin2.render('my-signin2', {
-                'scope': 'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email',
-                'width': 200,
-                'height': 50,
-                'longtitle': true,
-                'theme': 'dark',
-                'onsuccess': onSuccess,
-                'onfailure': onFailure
-            });
-        }
-    </script>
+        <div class="footer-copyright">
+            <div class="container">
+                ZAV © 2015 Copyright
+                <a class="grey-text text-lighten-4 right" href="#!">Marlon Zayro Arias Vargas</a>
+            </div>
+        </div>
 
-    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+    </footer>
 
-    <script src="js/less.min.js" type="text/javascript"></script>
+
     <!-- CARGAR JAVASCRIPT -->
-    <script src="js/basket.full.min.js" type="text/javascript"></script>
+    <script src="assets/js/basket.full.min.js" type="text/javascript"></script>
+
+    <script src="componentes/jquery/jquery-2.1.2.min.js" type="text/javascript"></script>
+
+
 
     <script>
         basket.require({
-            url: 'componentes/jquery/jquery.min.js',
+            url: 'componentes/jquery/jquery-2.1.1.min.js',
             expire: 2
         }).then(function() {
             // Success
 
             basket.require({
-                url: 'componentes/materialize-v0.97.0/js/materialize.min.js',
+                url: 'componentes/materialize-v0.97.5/js/materialize.min.js',
                 expire: 2
             }, {
                 url: 'componentes/fullPage.js-master/jquery.slimscroll.js',
@@ -559,11 +558,25 @@ and open the template in the editor.
             }, {
                 url: 'main.js'
             }, {
-                url: 'push.js'
-            }, {
                 url: 'js/local.js'
             });
 
+        });
+
+
+
+        $("#EnviarEmail").submit(function(event) {
+            event.preventDefault();
+
+            $.ajax({
+                    method: "POST",
+                    type: "POST",
+                    url: "email.php",
+                    data: $("#EnviarEmail").serialize()
+                })
+                .done(function(msg) {
+                    alert("enviando exitosamente");
+                });
         });
     </script>
 
