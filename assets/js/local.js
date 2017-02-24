@@ -12,7 +12,7 @@ $(document).ready(function () {
   $('#fullpage').fullpage({
     verticalCentered: false,
     sectionsColor: ['whitesmoke', 'whitesmoke', 'whitesmoke', 'whitesmoke', 'whitesmoke'],
-    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+    anchors: ['MenuInicio', 'MenuPortafolio', 'MenuCursos', 'MenuContacto', 'MenuIngresar'],
     menu: '#menu_frontal',
     css3: true,
     navigation: true,
@@ -27,8 +27,4 @@ $(document).ready(function () {
     edge: 'left', // Choose the horizontal origin
     closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor         
   });
-
-
-
-
 });
