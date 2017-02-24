@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="es-ES" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+    <title itemprop="name">ZAV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="author" content="MARLON ZAYRO ARIAS VARGAS">
+    <meta name="description" content="Desarrollo Android Web">
+    <meta name="rating" content="GENERAL">
+
+
+    <!-- Schema.org para Google+ -->
+    <meta itemprop="name" content="WEB ZAV DESARROLLO">
+    <meta itemprop="description" content="Desarrollo web">
+    <meta itemprop="image" content="http://zayro.github.io/img/yo/zayro.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Portafolio Marlon Zayro Arias Vargas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://zayro.github.io/" />
+    <meta property="og:image" content="http://zayro.github.io/img/icono.png" />
+    <meta property="og:description" content="Marlon Zayro Arias Vargas: Zav">
+    <meta property="og:site_name" content="Web Zav" />
+
+    <meta name="geo.placename" content="Bucaramanga" />
+    <meta name="google-signin-client_id" content="903616966895-2crc44t103bopqlv9q9ob92qmmpjvahp.apps.googleusercontent.com" />
+
+
+
+    <!-- Enlaces Google+ -->
+    <link rel="author" href="https://plus.google.com/u/0/+ZayroArias/posts" />
+    <link rel="publisher" href="https://plus.google.com/+ZayroArias" />
+
+    <!-- desahibiliar cache
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    -->
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Zav">
+    <meta name="theme-color" content="#263238">
+
+    <!-- Status bar style -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Color of navigation buttons (back/forward) (Desktop) -->
+    <meta name="msapplication-navbutton-color" content="#FF3300" />
+
+
+
+    <link rel="shortcut icon" href="img/iconos/icono.png">
+
+    <!-- Include manifest file in the page -->
+    <link rel="manifest" href="manifest.json">
+
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Marlon Zayro Arias Vargas : ZAV",
+            "url": "http://zayro.github.io/tema_proyecto/public_html",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+57(301-3199303)",
+                "contactType": "customer service",
+                "areaServed": "CO"
+            }],
+            "sameAs": ["https://www.facebook.com/marlon.zayro", "https://twitter.com/marlon_zayro", "http://co.linkedin.com/in/zayro", "https://plus.google.com/+ZayroArias/posts"]
+        }
+    </script>
+
+
+    <link href="componentes/fullPage.js-master/jquery.fullPage_edit.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <link href="componentes/materialize-v0.97.0/css/materialize.min.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <link href="css/local.css" rel="stylesheet" type="text/css" media="screen" />
+
+    <!-- Loader inicial -->
+    <script src="componentes/pace-1.0.2/pace.min.js"></script>
+
+    <link href="componentes/pace-1.0.2/themes/yellow/pace-theme-barber-shop.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- MENU PRINCIPAL -->
+    <header id="header">
+
+
+
+        <div class="navbar-fixed">
+            <nav class="blue-grey darken-3  ">
+                <div class="nav-wrapper">
+
+                    <a href="#principal" title="Logo" class="brand-logo">
+                        <object data="svg/logo_blanco.svg" type="image/svg+xml" class="logo_svg">
+            </object>
+                    </a>
+
+
+
+
+                    <ul id="menu_frontal" class="right hide-on-med-and-down ">
+                        <li data-menuanchor="firstPage"><a href="#firstPage" class="white-text">INICIO</a></li>
+                        <li data-menuanchor="secondPage"><a href="#secondPage" class="white-text">PORTAFOLIO</a></li>
+                        <li data-menuanchor="3rdPage"><a href="#3rdPage" class="white-text"> CURSOS</a></li>
+                        <li data-menuanchor="4thpage"><a href="#4thpage" class="white-text"> CONTACTO</a></li>
+                    </ul>
+
+                    <a data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+
+
+                    <ul id="slide-out" class="side-nav">
+                        <li><a href="#secondPage">PORTAFOLIO</a></li>
+                        <li><a href="#3rdPage">CURSOS</a></li>
+                        <li><a href="#4thpage">CONTACTO</a></li>
+                    </ul>
+
+
+
+                </div>
+            </nav>
+        </div>
+
+
+    </header>
+
+    <footer class="page-footer blue-grey darken-3 hide-on-small-only " id="footer">
+
+        <div class="footer-copyright">
+            <div class="container">
+                ZAV © 2015 Copyright
+                <a class="grey-text text-lighten-4 right" href="#!">Marlon Zayro Arias Vargas</a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- CONTENEDOR -->
+    <main class="container-fluid" id="fullpage">
+
+
+
+        <!-- SECCION INICIAL -->
+        <section class="section  centrar" id="section0">
+
+            <div class="logo scrollspy" id="principal">
+                <object data="svg/logo_negro.svg" type="image/svg+xml"></object>
+            </div>
+
+            <div class="centrar">
+
+
+
+                <picture>
+
+                    <source srcset="img/portada/portada_mediana.png" media="(max-width: 1100px)">
+                    <source srcset="img/portada/portada_mini.png" media="(max-width: 600px)">
+                    <source srcset="img/portada/portada_grande.png">
+                    <img srcset="img/portada/portada_grande.png" alt="portada.">
+
+                </picture>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- SECCION PORTAFOLIO -->
+        <section class="section" id="section1">
+
+            <div id="portafolio" class="  scrollspy panel panel-material-blue-grey">
+                <div class="panel-heading">
+                    <h3 class="panel-title titulo">Portafolio</h3>
+                </div>
+                <div class="panel-body ">
+
+                    <div class="row">
+
+                        <div class="col l4 s12">
+                            <div class="card">
+                                <div class="card-images center-align waves-effect waves-block waves-light">
+                                    <img class="activator imagen_portafolio" src="img/partmo-min.png" alt="partmo">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Industrias Partmo <i class="mdi-navigation-more-vert right"></i></span>
+                                    <p><a href="http://www.partmo.com">Ver sitio Web</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Cargo <i class="mdi-navigation-close right"></i></span>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                MANEJO DE BASE DE DATOS (MYSQL, SQLSERVER)
+                                            </li>
+                                            <li>
+                                                LENGUAJES DE PROGRAMACION (PHP, VISUAL.NET, VISUAL FOXPRO)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l4 s12">
+                            <div class="card">
+                                <div class="card-images center-align waves-effect waves-block waves-light">
+                                    <img class="activator imagen_portafolio" src="img/logo_distribuidora_rayco.jpg" alt="rayco">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Distribuidora Rayco <i class="mdi-navigation-more-vert right"></i></span>
+                                    <p><a href="http://disrayco.com">Ver sitio Web</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Cargo <i class="mdi-navigation-close right"></i></span>
+                                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l4 s12">
+                            <div class="card">
+                                <div class="card-images center-align waves-effect waves-block waves-light">
+                                    <img class="activator" src="img/ief-min.jpg" alt="ief">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4"> Ief<i class="mdi-navigation-more-vert right"></i></span>
+                                    <p><a href="http://validacion.ief.com.co">Ver sitio Web</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Cargo <i class="mdi-navigation-close right"></i></span>
+                                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- SECCION CURSOS -->
+        <section class="section" id="section2">
+
+            <div id="cursos" class="  scrollspy panel panel-material-blue-grey">
+                <div class="panel-heading">
+                    <h3 class="panel-title titulo">Cursos</h3>
+                </div>
+                <div class="panel-body ">
+
+                    <div class="row">
+
+                        <div class="col l4 s12">
+                            <div class="card">
+                                <div class="center-align waves-effect waves-block waves-light">
+                                    <img class="activator imagen_card" src="svg/LibreOffice_external_logo.svg" alt="ofimatica">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Ofimatica <i class="mdi-navigation-more-vert right"></i></span>
+                                    <p><a href="#">Ver sitio Web</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l4 s12">
+                            <div class="card">
+                                <div class="card-images center-align waves-effect waves-block waves-light">
+                                    <img class="activator imagen_portafolio" src="svg/1429065098_48_github.svg" alt="imagen git">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Versionamiento Proyectos web<i class="mdi-navigation-more-vert right"></i></span>
+                                    <p><a href="#">Ver sitio Web</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col l4 s12">
+                            <div class="card">
+                                <div class="card-images center-align waves-effect waves-block waves-light">
+                                    <img class="activator imagen_card" src="svg/1429065139_php.svg" alt="imagen php">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4"> Lenguaje Servidor PhP<i class="mdi-navigation-more-vert right"></i></span>
+                                    <p><a href="#">Ver sitio Web</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l4 s12">
+                            <div class="card">
+                                <div class="card-images center-align waves-effect waves-block waves-light">
+                                    <img class="activator imagen_card" src="svg/js-logo.svg" alt="imagen">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4"> Sitios Web Dinamicos<i class="mdi-navigation-more-vert right"></i></span>
+                                    <p><a href="#">Ver sitio Web</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l4 s12">
+                            <div class="card">
+                                <div class="card-images center-align waves-effect waves-block waves-light">
+                                    <img class="activator imagen_card" src="svg/1429069032_badge-html-5.svg" alt="web">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4"> Maquetacion Web<i class="mdi-navigation-more-vert right"></i></span>
+                                    <p><a href="#">Ver sitio Web</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l4 s12">
+                            <div class="card">
+                                <div class="card-images center-align waves-effect waves-block waves-light">
+                                    <img class="activator imagen_card" src="svg/1429068901_badge-css-3.svg" alt="diseño web">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4"> Diseño Web<i class="mdi-navigation-more-vert right"></i></span>
+                                    <p><a href="#">Ver sitio Web</a></p>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+                                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <!-- SECCION CONTACTO -->
+        <section class="section" id="section3">
+
+            <div id="contacto" class="scrollspy">
+
+                <div class="card ">
+
+                    <div class=" center-align ">
+
+                        <h4 class="valign grey-text titulo"> Contacto </h4>
+                        <div class="divider"></div>
+
+                    </div>
+
+
+                    <form class="col s12 contenedor">
+
+                        <div class="card-content">
+
+                            <span class="card-title activator grey-text text-darken-4">Envianos tus dudas ! <i class="mdi-navigation-more-vert right"></i></span>
+
+                            <div class="row">
+
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="first_name" type="text" class="validate" required>
+                                        <label for="first_name">Primer Nombre</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="last_name" type="text" class="validate">
+                                        <label for="last_name">Segundo Nombre</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <form class="col s12">
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                                <label for="textarea1">Mensaje</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+                            </div>
+
+                            <div class="card-action valign-wrapper">
+                                <a href="#" class="btn waves-effect waves-light green white-text valign ">Enviar</a>
+                            </div>
+                        </div>
+
+                    </form>
+
+
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Ayuda <i class="mdi-navigation-close right"></i></span>
+                        <p>Colocamos la informacion de ayuda para el formulario.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section" id="section4">
+
+            <p class="centrar">
+                <button class="js-push-button btn blue-grey " disabled>
+          HABILITAR NOTIFICACIONES PUSH
+        </button>
+            </p>
+
+            <br>
+            <hr>
+
+            <div class="center-align col s12 m12 l12" class="centrar">
+
+
+                <div id="my-signin2"></div>
+
+
+
+
+
+            </div>
+
+
+
+            <div class="js-curl-command"></div>
+
+        </section>
+
+
+
+
+
+        <!--  lateral superor izquierdo
+     <div class="barra_inferior right-align" >
+
+       <div class="hide-on-small-only">
+
+         <a href="#principal" class="btn-floating btn-large blue-grey">
+           <i class="large mdi-hardware-keyboard-arrow-up"></i>
+         </a>
+
+       </div>
+
+     </div>
+
+       <div class="fixed-action-btn " >
+        <a class="btn-floating btn-large blue-grey">
+          <i class="large mdi-hardware-keyboard-arrow-up"></i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+          <li><a class="btn-floating green"><i class="large mdi-editor-publish"></i></a></li>
+          <li><a class="btn-floating blue"><i class="large mdi-editor-attach-file"></i></a></li>
+        </ul>
+      </div>
+      -->
+
+
+    </main>
+    <script>
+        function onSuccess(googleUser) {
+            console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        }
+
+        function onFailure(error) {
+            console.log(error);
+        }
+
+        function renderButton() {
+            console.log("ejecuto boton google");
+            gapi.signin2.render('my-signin2', {
+                'scope': 'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email',
+                'width': 200,
+                'height': 50,
+                'longtitle': true,
+                'theme': 'dark',
+                'onsuccess': onSuccess,
+                'onfailure': onFailure
+            });
+        }
+    </script>
+
+    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+
+    <script src="js/less.min.js" type="text/javascript"></script>
+    <!-- CARGAR JAVASCRIPT -->
+    <script src="js/basket.full.min.js" type="text/javascript"></script>
+
+    <script>
+        basket.require({
+            url: 'componentes/jquery/jquery.min.js',
+            expire: 2
+        }).then(function() {
+            // Success
+
+            basket.require({
+                url: 'componentes/materialize-v0.97.0/js/materialize.min.js',
+                expire: 2
+            }, {
+                url: 'componentes/fullPage.js-master/jquery.slimscroll.js',
+                expire: 2
+            }, {
+                url: 'componentes/fullPage.js-master/jquery.fullPage.min.js',
+                expire: 2
+            }, {
+                url: 'config.js'
+            }, {
+                url: 'main.js'
+            }, {
+                url: 'push.js'
+            }, {
+                url: 'js/local.js'
+            });
+
+        });
+    </script>
+
+
+
+</body>
+
+</html>
