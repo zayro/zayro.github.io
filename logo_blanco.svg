@@ -40,7 +40,7 @@
         .Open{
           font-family: 'Open Sans 300';		  
           font-size: 20px;
-		  word-spacing:2px;
+		      word-spacing:2px;
           letter-spacing: 1px;
           font-weight: normal;
           font-style: normal;
