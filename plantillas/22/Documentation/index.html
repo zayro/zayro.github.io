@@ -1,0 +1,708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+<title>RISE - HTML Template</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="top_line" id="top"></div>
+    <div class="wrapper">
+	<div class="one-third">
+        <div class="logo">	
+            <a href="index.html"><img src="images/1px.png" alt=" " width="220px" height="240px"/></a>
+        </div>
+      </div>
+        <div class="one-third over">
+        <h3>Overview:</h3>
+        <p>Hello, firstly I would like to thank you for purchasing <span class="colored">"RISE - HTML Template"</span>.</p>
+        <p class="margin15">If you have any questions that are beyond the scope of this help file, please feel free to email.</p>
+        <p class="margin15">
+        	<p><span class="colored">Creator: </span>Orange Idea</p>
+            <p><span class="colored">Contact: </span><a href="mailto:orangeidea@mail.ru">orangeidea@mail.ru</a></p>
+            <p><span class="colored">Created On: </span> 24/11/2011</p>
+        </p>
+        </div>
+        <div class="one-third  last">
+        	<h3>Table of Contents:</h3>
+            <ul>
+                <li><a class="link" href="#top">Template overview</a></li>
+                <li><a class="link" href="#get">Getting Started</a></li>
+                <li><a class="link" href="#sliders">Working With Sliders</a></li>
+                <li><a class="link" href="#init">JavaScript initialization</a></li>
+                <li><a class="link" href="#columns">Column Layouts and Headers</a></li>
+                <li><a class="link" href="#colors">Changing colors</a></li>
+                <li><a class="link" href="#tf">Twitter feed</a></li>
+                <li><a class="link" href="#end">End of documentation</a></li>
+			</ul>
+
+        </div>
+    </div>
+	<div class="one"></div>
+    <div class="content-break margin15">
+        <div class="wrapper">
+            <div class="page-title">
+                <h3 class="colored">Template overview</h3>
+            </div>           
+		</div>
+    </div>        
+    <!-- CONTENT WRAPPER -->
+	<div class="wrapper">
+		<div class="one-third">
+        	<h4>RISE works in:</h4>
+        	<ul class="check-list">
+                <li>Internet Explorer 8</li>
+                <li>Internet Explorer 9</li>
+                <li>Firefox 3.5</li>
+                <li>Firefox 3.6</li>
+                <li>Firefox 4</li>
+                <li>Safari 4</li>
+                <li>Safari 5</li>
+                <li>Opera</li>
+                <li>Chrome 10</li>
+                <li>Chrome 11</li>
+            </ul>
+		</div>
+        <div class="one-third">
+        	<h4>Template features:</h4>
+        	<ul class="check-list">
+                <li>25 Valid Pages</li>
+                <li>6 Portfolio Pages</li>
+                <li>Awesome Sliders to work with</li>
+                <li>20 Patterns</li>
+                <li>Pricing Boxes, Shortcodes and more!</li>
+                <li>Working Google Maps</li>
+                <li>JQuery Dropdown menu</li>
+                <li>Many more jQuery Features</li>
+            </ul>
+		</div>
+         <div class="one-third last">
+        	<h4>Homepage:</h4>
+        	<ul class="check-list">
+            	<li>Vertical Slider</li>
+                <li>Nivo Slider</li>
+                <li>Grid Slider</li>
+                <li>Accordian Slider</li>
+				<li>Vertical Accordian Slider</li>
+                <li>Home page with Vidoe block</li>
+                <li>Home page without Slider</li>
+            </ul>
+		</div>
+    </div>
+	<!---->
+    <div class="one"></div>
+    <div class="content-break margin15">
+<div class="wrapper">
+            <div class="page-title">
+                <h3 class="colored" id="get">Get started</h3>
+            </div> 
+  <div class="one">
+            	<h4>Installation:</h4>
+                <p>RISE is HTML template so there's no really "installation" required just unzip the main file you've downloaded from themeforest and after unziping you have your all template ready to be used.</p>
+                <h4 class="margin15">Setting Up The Grid:</h4>
+                <p>Before starting to work deeper with this template, you'll need to know how to use template's grid, it's simple and easy to use. RISE is being build using one of the most popular grid, the 960 grid, which means your site container is 960px wide.To make it work without problem you be using columns for everything starting from sliders , portfolio , blog and more.</p>
+            	<h4 class="margin15">Working With Navigation:</h4>
+                <p>I have used jQuery improved dropdown menu but the menu itself is easy to edit. Its structure base on a nested unorederd lists structure.</p><p>Your code should look like the following.</p>
+			<div class="one code margin15">
+                    <pre>
+&lt;div class="span-17 last"&gt;
+    &lt;ul id="menu"&gt;
+        &lt;li class="active"&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Default&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="index-light.html"&gt;Light version&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="index-extended.html"&gt;Extended version&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="index.html"&gt;Nivo Slider&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="homepage-accordian-slider.html"&gt;Accordian Slider&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="homepage-vertical-accordian-slider.html"&gt;Vercical accordion&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="homepage-video-block.html"&gt;Video Block&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="homepage-static.html"&gt;Static Homepage&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Pages&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=""&gt;Typography&lt;/a&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="headings.html"&gt;Headings&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="blockquotes.html"&gt;Blockquotes&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="dropcaps.html"&gt;Dropcaps&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="highlight.html"&gt;Text Highlight&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="column-layouts.html"&gt;Column Layouts&lt;/a&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;a href="pricing-tables.html"&gt;Tables&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/li&gt;
+                &lt;li&gt;&lt;a href="about-us.html"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="services.html"&gt;Our Services&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Portfolio&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="2-column-portfolio.html"&gt;2 Columns Portfolio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="3-column-portfolio.html"&gt;3 Columns Portfolio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="4-column-portfolio.html"&gt;4 Columns Portfolio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="portfolio-with-sidebar.html"&gt;Portfolio With Sidebar&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="gallery.html"&gt;Gallery&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="portfolio-details.html"&gt;Portfolio Details&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Blog&lt;/a&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="blog.html"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="blog-2.html"&gt;Blog Style II&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="blog-post.html"&gt;Blog Post&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href="contact-us.html"&gt;Contact us&lt;/a&gt;&lt;/li&gt;		
+    &lt;/ul&gt;
+&lt;/div&gt;                    </pre>
+    </div>
+                <div class="one">Navigation CSS:</div>
+                <div class="one code">
+                	<pre>
+/*-------------------------------------------------------------------------------------------------*/
+	/*MENU */
+/*-------------------------------------------------------------------------------------------------*/
+
+/*** arrows **/
+
+.sf-sub-indicator {
+	position: absolute;
+	display: block;
+	right: 15px;
+	top: 40px; /* IE6 only */
+	width: 10px;
+	height: 20px;
+	text-indent: -999em;
+	overflow: hidden;
+	background: url('../images/arrows.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	top: 10px;
+	background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator,
+a:active > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator,
+li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+
+/* point right for anchors in subs */
+#menu ul .sf-sub-indicator { background-position:  -10px 0; }
+#menu ul a > .sf-sub-indicator { background-position:  0 0; }
+/* apply hovers to modern browsers */
+#menu ul a:focus > .sf-sub-indicator,
+#menu ul a:hover > .sf-sub-indicator,
+#menu ul a:active > .sf-sub-indicator,
+#menu ul li:hover > a > .sf-sub-indicator,
+#menu ul li.sfHover > a > .sf-sub-indicator {
+	background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+
+
+	#menu, #menu ul {
+		float:right;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	#menu {
+		width:620px;
+		padding-left:0px;
+		border: 1px solid #222;
+		background-color: #111;
+		background-image: -moz-linear-gradient(#444, #111); 
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));	
+		background-image: -webkit-linear-gradient(#444, #111);	
+		background-image: -o-linear-gradient(#444, #111);
+		background-image: -ms-linear-gradient(#444, #111);
+		background-image: linear-gradient(#444, #111);
+		-moz-border-radius: 6px;
+		-webkit-border-radius: 6px;
+		border-radius: 6px;
+		-moz-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+		-webkit-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+		box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+	}
+	
+	#menu:before,
+	#menu:after {
+		content: "";
+		display: table;
+	}
+	
+	#menu:after {
+		clear: both;
+	}
+	
+	#menu {
+		zoom:1;
+	}
+	
+	#menu li {
+		float: left;
+		border-right: 1px solid #222;
+		-moz-box-shadow: 1px 0 0 #444;
+		-webkit-box-shadow: 1px 0 0 #444;
+		box-shadow: 1px 0 0 #444;
+		position: relative;
+	}
+	#menu li:last-child {
+		border-right: none !important;
+		-moz-box-shadow: 0px 0 0 #444;
+		-webkit-box-shadow: 0px 0 0 #444;
+		box-shadow: 0px 0 0 #444;
+		}
+	
+	#menu a {
+		float: left;
+		padding: 8px 30px;
+		color: #a8a8a8;
+		font-family:Oswald;
+		text-transform:uppercase;
+		text-decoration: none;
+		text-shadow: 1px 1px 0 #121212;
+	}
+	
+	#menu li:hover > a{
+		color: #fff;
+	}
+	
+	*html #menu li a:hover { /* IE6 only */
+		color: #fff;
+	}
+	#menu .active a{color: #fff;}
+	
+	#menu ul {
+		font-size:12px;
+		_margin: 0; /*IE6 only*/
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: 46px;
+		left: 0;
+		z-index: 9999;    
+		background: #444;
+		background: -moz-linear-gradient(#444, #111);
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));
+		background: -webkit-linear-gradient(#444, #111);    
+		background: -o-linear-gradient(#444, #111);	
+		background: -ms-linear-gradient(#444, #111);	
+		background: linear-gradient(#444, #111);
+		-moz-box-shadow: 0 -1px rgba(255,255,255,.3);
+		-webkit-box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+		box-shadow: 0 -1px 0 rgba(255,255,255,.3);	
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;  
+	}
+
+
+	#menu li:hover > ul {
+		opacity: 1;
+		visibility: visible;
+		margin: 0;
+	}
+	
+	#menu ul ul {
+		top: 0;
+		left: 165px;
+		margin: 0 0 0 20px;
+		_margin: 0; /*IE6 only*/
+		-moz-box-shadow: -1px 0 0 rgba(255,255,255,.3);
+		-webkit-box-shadow: -1px 0 0 rgba(255,255,255,.3);
+		box-shadow: -1px 0 0 rgba(255,255,255,.3);		
+	}
+	
+	
+	#menu ul li {
+		float: none;
+		display: block;
+		border: 0;
+		_line-height: 0; /*IE6 only*/
+		-moz-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+		-webkit-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+		box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+	}
+	
+	#menu ul li:last-child {   
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;    
+	}
+	
+	#menu ul a {    
+		padding: 8px;
+		font-size:11px;
+		width: 140px;
+		_height: 8px; /*IE6 only*/
+		display: block;
+		white-space: nowrap;
+		float: none;
+		text-transform: none;
+	}
+	
+	#menu ul a:hover {
+		background-color: #ff6600;	
+		background-image: -moz-linear-gradient(#ff8000,  #ff6600);	
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8000), to(#ff6600));
+		background-image: -webkit-linear-gradient(#ff8000, #ff6600);
+		background-image: -o-linear-gradient(#ff8000, #ff6600);
+		background-image: -ms-linear-gradient(#ff8000, #ff6600);
+		background-image: linear-gradient(#ff8000, #ff6600);
+		text-shadow:0px 1px #333;	
+	}
+	
+	#menu ul li:first-child > a {
+		-moz-border-radius: 3px 3px 0 0;
+		-webkit-border-radius: 3px 3px 0 0;
+		border-radius: 3px 3px 0 0;
+	}
+	
+	#menu ul li:first-child > a:after {
+		content: '';
+		position: absolute;
+		left: 40px;
+		top: -6px;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-bottom: 6px solid #444;
+	}
+	
+	#menu ul ul li:first-child a:after {
+		left: -6px;
+		top: 50%;
+		margin-top: -6px;
+		border-left: 0;	
+		border-bottom: 6px solid transparent;
+		border-top: 6px solid transparent;
+		border-right: 6px solid #444;
+	}
+	
+	#menu ul li:first-child a:hover:after {
+		border-bottom-color: #ff8000; 
+	}
+	
+	#menu ul ul li:first-child a:hover:after {
+		border-right-color: #ff7000; 
+		border-bottom-color: transparent; 	
+	}
+	
+	#menu ul li:last-child > a {
+		-moz-border-radius: 0 0 3px 3px;
+		-webkit-border-radius: 0 0 3px 3px;
+		border-radius: 0 0 3px 3px;
+	}
+
+                    </pre>
+                </div>
+				<p>For more information please visit <a class="link" href="http://users.tpg.com.au/j_birch/plugins/superfish/">this site</a></p>
+    </div>
+    <div class="one" id="sliders">
+      <h3>Working With Sliders:</h3>
+      <div class="one">
+      <h4>Vertical Slider</h4>
+      <img src="images/vertical-slider.jpg" alt="" />
+      <div class="one code">
+      <p class="colored">HTML code:</p>
+      <pre>
+&lt;div id="va-accordion" class="va-container slider-area"&gt;
+    &lt;div class="va-nav"&gt;
+        &lt;span class="va-nav-prev"&gt;Previous&lt;/span&gt;
+        &lt;span class="va-nav-next"&gt;Next&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="va-wrapper"&gt;
+        &lt;div class="va-slice va-slice-1"&gt;
+            &lt;h3 class="va-title"&gt;Programming&lt;/h3&gt;
+            &lt;div class="va-content"&gt;
+                &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry....&lt;/p&gt;
+                &lt;a href="#" class="va-more"&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="va-slice va-slice-2"&gt;
+            &lt;h3 class="va-title"&gt;Management&lt;/h3&gt;
+            &lt;div class="va-content"&gt;
+                &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry....&lt;/p&gt;
+                &lt;a href="#" class="va-more"&gt;&lt;/a&gt;
+            &lt;/div&gt;	
+        &lt;/div&gt;
+        &lt;div class="va-slice va-slice-3"&gt;
+            &lt;h3 class="va-title"&gt;Visual Design&lt;/h3&gt;
+            &lt;div class="va-content"&gt;
+                &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry....&lt;/p&gt;
+                &lt;a href="#" class="va-more"&gt;&lt;/a&gt;
+            &lt;/div&gt;	
+        &lt;/div&gt;
+        &lt;div class="va-slice va-slice-4"&gt;
+            &lt;h3 class="va-title"&gt;Social Marketing&lt;/h3&gt;
+            &lt;div class="va-content"&gt;
+                &lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry....&lt;/p&gt;
+                &lt;a href="#" class="va-more"&gt;&lt;/a&gt;
+            &lt;/div&gt;	
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+      </pre>
+	</div>
+    </div>
+      <div class="one">
+      <h4>NIVO Slider</h4>
+      <img src="images/nivo-slider.jpg" alt="" />
+      <div class="one code">
+      <p class="colored">HTML code:</p>
+      <pre>
+&lt;div class="slider-wrapper theme-default"&gt;
+    &lt;div id="slider" class="nivoSlider"&gt;
+        &lt;img src="images/slide-1.jpg" alt="" /&gt;
+        &lt;a href=""&gt;&lt;img src="images/slide-2.jpg" alt="" title="This is an example of a caption" /&gt;&lt;/a&gt;
+        &lt;img src="images/slide-3.jpg" alt="" /&gt;
+        &lt;img src="images/slide-4.jpg" alt="" title="#htmlcaption" /&gt;
+    &lt;/div&gt;
+    &lt;div id="htmlcaption" class="nivo-html-caption"&gt;
+        &lt;strong&gt;This&lt;/strong&gt; is an example of a &lt;em&gt;HTML&lt;/em&gt; caption with &lt;a href="#"&gt;a link&lt;/a&gt;.
+&lt;/div&gt;
+      </pre>
+	</div>
+    </div>
+	<div class="one">
+      <h4>ACCORDIAN Slider</h4>
+      <img src="images/accordian-slider.jpg" alt="" />
+      <div class="one code">
+      <p class="colored">HTML code:</p>
+      <pre>
+&lt;div class="kwicks-box"&gt;
+    &lt;ul class="kwicks horizontal" &gt;
+        &lt;li id="kwick_1"&gt;&lt;img src="images/slide-1.jpg" alt="" /&gt;
+            &lt;a href=""&gt;
+                &lt;p class="accordian-slider-caption"&gt;
+                    &lt;span class="accordian-slider-captiontitle"&gt;
+                        Tyrum in fuerat construeret.
+                    &lt;/span&gt;
+                    &lt;span&gt;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tortor enim, sit amet eleifend lorem. Dolor sit amet, consectetur adipiscing elit.
+                    &lt;/span&gt;
+                &lt;/p&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li id="kwick_2"&gt;&lt;img src="images/slide-2.jpg" alt="" /&gt;
+            &lt;a href=""&gt;
+                &lt;p class="accordian-slider-caption"&gt;
+                    &lt;span class="accordian-slider-captiontitle"&gt;
+                        Tyrum in fuerat construeret.
+                    &lt;/span&gt;
+                    &lt;span&gt;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tortor enim, sit amet eleifend lorem. Dolor sit amet, consectetur adipiscing elit.
+                    &lt;/span&gt;
+                &lt;/p&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li id="kwick_3"&gt;&lt;img src="images/slide-3.jpg" alt="" /&gt;
+            &lt;a href=""&gt;
+                &lt;p class="accordian-slider-caption"&gt;
+                    &lt;span class="accordian-slider-captiontitle"&gt;
+                        Tyrum in fuerat construeret.
+                    &lt;/span&gt;
+                    &lt;span&gt;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tortor enim, sit amet eleifend lorem. Dolor sit amet, consectetur adipiscing elit.
+                    &lt;/span&gt;
+                &lt;/p&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li id="kwick_4"&gt;&lt;img src="images/slide-4.jpg" alt="" /&gt;
+            &lt;a href=""&gt;
+                &lt;p class="accordian-slider-caption"&gt;
+                    &lt;span class="accordian-slider-captiontitle"&gt;
+                        Tyrum in fuerat construeret.
+                    &lt;/span&gt;
+                    &lt;span&gt;
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tortor enim, sit amet eleifend lorem. Dolor sit amet, consectetur adipiscing elit.
+                    &lt;/span&gt;
+                &lt;/p&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+      </pre>
+	</div>
+	
+    </div>
+	
+    <div class="one">
+      <h4>VIDEO BLOCK</h4>
+      <img src="images/video-slider.jpg" alt="" />
+      <div class="one code">
+      <p class="colored">HTML code:</p>
+      <pre>
+&lt;div id="video-block"&gt;
+    &lt;iframe src="http://player.vimeo.com/video/23534361?title=0&lt;amp;byline=0&lt;amp;portrait=0" width="940" height="350" &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+      </pre>
+	</div>
+    </div>  
+    <div class="one" id="init"><h3>JavaScript initialization</h3></div> 
+    <div class="one">
+      <h4>Vertical Slider</h4>
+      <div class="one code">
+      <p class="colored">JS code:</p>
+      <pre>
+jQuery.noConflict()(function($) {
+	$('#va-accordion').vaccordion();
+});
+      </pre>
+	</div>
+    </div>   
+      
+    <div class="one">
+      <h4>NIVO Slider</h4>
+      <div class="one code">
+      <p class="colored">JS code:</p>
+      <pre>
+jQuery.noConflict()(function($){
+	$(document).ready(function() {
+        $('#slider').nivoSlider({
+            pauseTime:5000,
+            pauseOnHover:false
+        });        
+    });
+});
+      </pre>
+	</div>
+    </div> 
+    <div class="one">
+      <h4>ACCORDIAN Slider</h4>
+      <div class="one code">
+      <p class="colored">JS code:</p>
+      <pre>
+jQuery.noConflict()(function($){
+    $('.kwicks').kwicks({
+        max : 900,
+        spacing : 0
+    });
+});
+      </pre>
+	</div>
+    </div> 
+     
+    
+    <div class="one" id="columns"><h3>Column Layouts and Headers</h3></div>
+    <div class="span-24 notopmargin columns">
+        <div class="span-24 notopmargin">span-24</div>
+        <div class="span-23">span-23</div>
+        <div class="span-1 last">1</div>
+        <div class="span-22">span-22</div>
+        <div class="span-2 last">span-2</div>
+        <div class="span-21">span-21</div>
+        <div class="span-3 last">span-3</div>
+        <div class="span-20">span-20</div>
+        <div class="span-4 last">span-4</div>
+        <div class="span-19">span-29</div>
+        <div class="span-5 last">span-5</div>
+        <div class="span-18">span-18</div>
+        <div class="span-6 last">span-6</div>
+        <div class="span-17">span-17</div>
+        <div class="span-7 last">span-7</div>
+        <div class="span-16">span-16</div>
+        <div class="span-8 last">span-8</div>
+        <div class="span-15">span-15</div>
+        <div class="span-9 last">span-9</div>
+        <div class="span-14">span-14</div>
+        <div class="span-10 last">span-10</div>
+        <div class="span-13">span-13</div>
+        <div class="span-11 last">span-11</div>
+        <div class="span-12">span-12</div>
+        <div class="span-12 last">span-12</div>
+    </div>
+      <div class="one code">
+      <pre>
+<p class="colored">Column Layouts:</p>
+&lt;div class="span-24 notopmargin columns"&gt;
+    &lt;div class="span-24 notopmargin"&gt;span-24&lt;/div&gt;
+    &lt;div class="span-23"&gt;span-23&lt;/div&gt;
+    &lt;div class="span-1 last"&gt;1&lt;/div&gt;
+    &lt;div class="span-22"&gt;span-22&lt;/div&gt;
+    &lt;div class="span-2 last"&gt;span-2&lt;/div&gt;
+    &lt;div class="span-21"&gt;span-21&lt;/div&gt;
+    &lt;div class="span-3 last"&gt;span-3&lt;/div&gt;
+    &lt;div class="span-20"&gt;span-20&lt;/div&gt;
+    &lt;div class="span-4 last"&gt;span-4&lt;/div&gt;
+    &lt;div class="span-19"&gt;span-29&lt;/div&gt;
+    &lt;div class="span-5 last"&gt;span-5&lt;/div&gt;
+    &lt;div class="span-18"&gt;span-18&lt;/div&gt;
+    &lt;div class="span-6 last"&gt;span-6&lt;/div&gt;
+    &lt;div class="span-17"&gt;span-17&lt;/div&gt;
+    &lt;div class="span-7 last"&gt;span-7&lt;/div&gt;
+    &lt;div class="span-16"&gt;span-16&lt;/div&gt;
+    &lt;div class="span-8 last"&gt;span-8&lt;/div&gt;
+    &lt;div class="span-15"&gt;span-15&lt;/div&gt;
+    &lt;div class="span-9 last"&gt;span-9&lt;/div&gt;
+    &lt;div class="span-14"&gt;span-14&lt;/div&gt;
+    &lt;div class="span-10 last"&gt;span-10&lt;/div&gt;
+    &lt;div class="span-13"&gt;span-13&lt;/div&gt;
+    &lt;div class="span-11 last"&gt;span-11&lt;/div&gt;
+    &lt;div class="span-12"&gt;span-12&lt;/div&gt;
+    &lt;div class="span-12 last"&gt;span-12&lt;/div&gt;
+&lt;/div&gt;
+      </pre>
+    </div>
+    
+                	
+	
+    	
+    </div>
+    
+    <div class="clear"></div>
+    <div class="one" id="colors">
+    <h3>Changing colors</h3>
+	<div class="one icon-block margin15 last">
+Easiest way:
+
+1) Open style/color folder – There is 18 css file (1 file 1 color scheme, name of file – color  )
+ 2) Open one of them and copy all to clipboard (ctrl+c)
+ 3) Open css folder and open there style.css
+ 4) In the BOTTOM of style.css past from clipboard (ctrl+v) and safe file
+
+ Thats all        </div>
+	
+    
+    </div>
+    <div class="one" id="tf"><h3>Twitter feed</h3></div>
+    <div class="one code">
+    This is html code
+    &lt;div id="jstwitter"&gt;&lt;/div&gt; and thats all ;)<br/>
+    --------------<br/><br/>
+    Main settings in twitter.js file.
+    Open twitter.js in js folder<br/><br/>
+	// Set twitter username, number of tweets & id/class to append tweets<br/>
+	user: 'Orange_Idea_RU', // Put here your twitter accaunt name<br/>
+	numTweets: 1, // Dont tuch this<br/>
+	appendTo: '#jstwitter', // Dont tuch this<br/>
+    
+    </div>
+    
+    <div class="one" id="end"><h3>End of documentation</h3></div>
+    <p>Once again, thank you so much for purchasing this theme. Just rate my work from your download page and mail me using contact form on my profile page an i will send to you HOMEPAGE.PSD for free )</p>
+    <div class="one"></div>
+    <div class="clear"></div>
+    </div>
+    </div> 
+	<div class="clear"></div>
+	<div class="top_line margin15"></div>
+
+	<!-- END CONTENT -->
+
+</body>
+</html>

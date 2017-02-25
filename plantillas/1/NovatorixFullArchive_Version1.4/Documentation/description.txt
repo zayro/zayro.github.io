@@ -1,0 +1,54 @@
+Novatorix - Business, Portfolio and Blog theme
+
+WordPress Version: 2.9.2, 2.3.0, Columns: 2, Widget Ready: Yes, Functionality: CMS
+
+Novatorix is a Wordpress Theme, best suited for Business and Portfolio sites. It comes with a fantastic 3D Image slideshow that can be controlled from your backend with a custom tool. The Theme has a huge wordpress custom backend (7 different option pages) that make customization of the Theme easy for those who dont know much about coding or wordpress. 
+
+
+<ul>Novatorix also has 10 Fantastic skins to choose from:
+<li><a href="http://novatorix.atixscripts.info/?color=arsenic.css">Arsenic</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=burlywood.css">BurlyWood</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=chocolate.css">Chocolate</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=darkgreen.css">DarkGreen</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=firebrick.css">FireBrick</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=ivoryblack.css">IvoryBlack</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=purpletaupe.css">PurpleTaupe</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=seagreen.css">SeaGreen</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=steelblue.css">SteelBlue</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=teal.css">Teal</a></li></li>
+</ul>
+	
+<ul>Features:
+<li>Multiple CSS Styles</li>
+	<ul><li> Select from 10 Custom CSS styles from Admin Area</li></ul>
+<li>Homepage 3D slider</li>
+	<ul><li>The 3D image slider is editable without the use of flash. You can add and remove slides, change transitions with the help of a backend</li></ul>
+<li>jQuery Drop-down menu</li>
+<li>Portfolio Gallery Templates</li>
+	<ul><li>Create as many Portfolio Galleries as you like</li>
+		<li>Two layout options (full or gallery view)</li>
+		<li>Lightbox (prettyPhoto) Effect for Pop-up Images</li></ul>
+<li>Page Templates</li>
+	<ul><li>Contact Template</li>
+		<li>Blog Template</li>
+		<li>Full Width (no Sidebar)</li>
+		<li>Sitemap</li>
+		<li>404 Error and archives pages/li></ul>
+<li>Custom Style Shortcodes</li>
+<li>Custom admin panel with 7 different option settings: General options, Homepage, Portfolio, Footer, Get in touch and 3D Homepage slider</li>
+<li>5 custom widgets: Flickr, Header Search form, Popular Posts, Post Author Info, Related Posts</li>
+<li>15 Custom widget sidebars</li>
+<li>Ajax Contact Form</li>
+<li>Font Replacement (font-face)</li>
+<li>Breadcrumbs Navigation</li>
+<li>Multi Level menu</li>
+<li>All PSDs files (with all 10 colors)</li>
+	<ul><li>Layered PSDs are included for easy modification</li></ul>
+<li>Detailed documentation included</li>
+</ul>
+
+External scripts and resources used:
+<a href="http://www.komodomedia.com/download/#social-network-icon-pack">Social Network Icon Pack</a>
+<a href="http://www.modularweb.net/piecemaker/">Piecemaker 3D slider</a>
+<a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">prettyPhoto jQuery lightbox</a>
+<a href="http://www.zvr.gr/typo/mgopen/index">MgOpen Modata</a>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    
+    <!-- Include CSS stylesheet. -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+   
+   <!-- Include jQuery and Flow Slider scripts. -->
+    <script src="../../js/jquery-1.7.1.min.js"></script>
+    <script src="../../flowslider.jquery.js"></script>
+    
+    <!-- Write some code to start sliding. -->    
+    <script>
+        jQuery(document).ready(function($) {
+            // create a slider out of each element with .simple-cycle class name
+            $(".simple-cycle").each(function(k, sc) {
+                var $sc = $(sc);
+                $sc.children(".flow-slider").FlowSlider({
+                    marginStart: 0,
+                    marginEnd: 0,
+                    infinite: true,
+                    startPosition: 0.0,
+                    position: 0.0,
+                    animationOptions: {
+                        snap: true
+                    },
+                    controllers: ["Event", "Event"],
+                    controllerOptions: [
+                        {
+                            el: $sc.children(".arrow-left"),
+                            step: -137
+                        },
+                        {
+                            el: $sc.children(".arrow-right"),
+                            step: 137
+                        },
+                    ]
+                });
+            });
+        });
+    </script>
+    
+</head>
+<body>
+
+    <!-- This is your actual Flow Slider. ---------------------------------- -->
+    <div class="simple-cycle">
+        <div class="arrow arrow-left"></div>
+        <div class="flow-slider">
+            <div class="item">
+                <img src="img/magazine1.jpg" />
+                <div class="subtext">Time</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine2.jpg" />
+                <div class="subtext">Popular Science</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine3.jpg" />
+                <div class="subtext">Smart Money</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine4.jpg" />
+                <div class="subtext">Forbes</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine5.jpg" />
+                <div class="subtext">Money</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine6.jpg" />
+                <div class="subtext">Bazaar</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine7.jpg" />
+                <div class="subtext">The Economist</div>
+            </div>
+        </div>
+        <div class="arrow arrow-right"></div>
+        <!-- Help support Flow Slider. -->
+        <noscript><p>Powered By <a href="http://www.flowslider.com" title="jQuery Thumbnail Slider">Flow Slider</a></p></noscript>
+    </div>
+    <!-- End of the slider. ------------------------------------------------ -->
+
+    <!-- This is your actual Flow Slider. ---------------------------------- -->
+    <div class="simple-cycle simple-cycle-2">
+        <div class="arrow arrow-left"></div>
+        <div class="flow-slider">
+            <div class="item">
+                <img src="img/magazine1.jpg" />
+                <div class="subtext">Time</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine2.jpg" />
+                <div class="subtext">Popular Science</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine3.jpg" />
+                <div class="subtext">Smart Money</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine4.jpg" />
+                <div class="subtext">Forbes</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine5.jpg" />
+                <div class="subtext">Money</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine6.jpg" />
+                <div class="subtext">Bazaar</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine7.jpg" />
+                <div class="subtext">The Economist</div>
+            </div>
+        </div>
+        <div class="arrow arrow-right"></div>
+        <!-- Help support Flow Slider. -->
+        <noscript><p>Powered By <a href="http://www.flowslider.com" title="jQuery Thumbnail Slider">Flow Slider</a></p></noscript>
+    </div>
+    <!-- End of the slider. ------------------------------------------------ -->
+
+    <!-- This is your actual Flow Slider. ---------------------------------- -->
+    <div class="simple-cycle simple-cycle-3">
+        <div class="arrow arrow-left"></div>
+        <div class="flow-slider">
+            <div class="item">
+                <img src="img/magazine1.jpg" />
+                <div class="subtext">Time</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine2.jpg" />
+                <div class="subtext">Popular Science</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine3.jpg" />
+                <div class="subtext">Smart Money</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine4.jpg" />
+                <div class="subtext">Forbes</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine5.jpg" />
+                <div class="subtext">Money</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine6.jpg" />
+                <div class="subtext">Bazaar</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine7.jpg" />
+                <div class="subtext">The Economist</div>
+            </div>
+        </div>
+        <div class="arrow arrow-right"></div>
+        <!-- Help support Flow Slider. -->
+        <noscript><p>Powered By <a href="http://www.flowslider.com" title="jQuery Thumbnail Slider">Flow Slider</a></p></noscript>
+    </div>
+    <!-- End of the slider. ------------------------------------------------ -->
+
+    <!-- This is your actual Flow Slider. ---------------------------------- -->
+    <div class="simple-cycle simple-cycle-4">
+        <div class="arrow arrow-left"></div>
+        <div class="flow-slider">
+            <div class="item">
+                <img src="img/magazine1.jpg" />
+                <div class="subtext">Time</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine2.jpg" />
+                <div class="subtext">Popular Science</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine3.jpg" />
+                <div class="subtext">Smart Money</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine4.jpg" />
+                <div class="subtext">Forbes</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine5.jpg" />
+                <div class="subtext">Money</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine6.jpg" />
+                <div class="subtext">Bazaar</div>
+            </div>
+            <div class="item">
+                <img src="img/magazine7.jpg" />
+                <div class="subtext">The Economist</div>
+            </div>
+        </div>
+        <div class="arrow arrow-right"></div>
+        <!-- Help support Flow Slider. -->
+        <noscript><p>Powered By <a href="http://www.flowslider.com" title="jQuery Thumbnail Slider">Flow Slider</a></p></noscript>
+    </div>
+    <!-- End of the slider. ------------------------------------------------ -->
+    
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* MgOpen Modata - http://www.zvr.gr/typo/mgopen/index */
+@font-face {
+	font-family: 'MgRegular';
+	src: url('mgopenmodataregular-webfont.eot');
+	src: local('☺'), url('mgopenmodataregular-webfont.woff') format('woff'), url('mgopenmodataregular-webfont.ttf') format('truetype'), url('mgopenmodataregular-webfont.svg#webfontYqlM9QOF') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,0 +1,81 @@
+Adventure is an awesome clean & simple HTML5 template which could be suitable for almost all 
+kinds of business .You can use it as Business template, Your personal portfolio or even a Blog. 
+
+It’s comes with valid well written code, working contact form, google maps and much more.
+
+
+Updated 1.1 – 14.07.2011
+
+    * Added 3 more PSD files
+    * Added 5 more HTML Files
+          o Homepage Cycle Slider
+          o Forms
+          o Tables
+          o Sign Up Form
+          o Portfolio Five Columns
+    * 10 More Custom Fonts
+    * Some HTML & CSS erros fixed
+
+
+
+Features
+
+    * Simple Design
+    * 35 Valid HTML 5 Pages
+    * Homepage Nivo Slider
+    * Homepage Nivo Slider with thumbs
+    * Homepage Simple Content Slider
+    * 3D Slider
+    * Simple Slider
+    * Accordion Slider
+    * Video Homepage
+    * Grid Homepage
+    * Static Homepage
+    * About
+    * News
+    * Services
+    * Team
+    * Testimonials
+    * Jobs
+    * F.A.Q.
+    * Typography
+    * Columns
+    * Fullwidth
+    * Pricing Boxes
+    * Pricing Table
+    * 404 Error Page
+    * Blog
+    * Blog Style 2
+    * Blog Post
+    * Portfolio One Column
+    * Portfolio Two Columns
+    * Portfolio Three Column s
+    * Portfolio Four Columns
+    * Portfolio Four Columns Style 2
+    * Portfolio with Sidebar
+    * Gallery
+    * Portfolio Details Page
+    * Portfolio Details Page 2
+    * Contact
+    * Fully tableless design
+    * Tabs
+    * Working Contact Form
+    * Google Map
+    * 40+ Google Fonts
+    * Filterable Portfolio
+    * PrettyPhoto – Supports Images, Videos ,Flash
+    * 40 Background Images
+    * 20 Different Styles
+    * Unlimited Background Colors
+    * Awesome CSS3 Pricing Boxes
+    * 60+ HTML Shortcodes (Buttons ,columns, portfolio, pricing boxes and more… )
+    * 9 Homepage Styles
+    * PSD Included
+    * Full Documentation
+
+
+
+Demo: http://themes.trendywebstar.com/Adventure/
+
+Info: http://themeforest.net/item/adventure-clean-simple-html-5-template/306473
+

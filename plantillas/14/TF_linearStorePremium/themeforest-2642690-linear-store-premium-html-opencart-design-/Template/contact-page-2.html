@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Linear Html - OpenCart Store Design</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link href="css/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<link href="css/ie8.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/cufon/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon/open-sans-latin.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+
+<body class="hideall">
+
+<!-- Facebook code -->
+<div id="fb-root"></div>
+<script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
+
+<!-- end Facebook code --> 
+<!-- start topbar -->
+<div class="topbar">
+  <div class="box"> 
+    <!-- start topnav -->
+    <div class="topnav">
+      <ul class="lava">
+        <li><a href="account-page.html" class="active">My Account</a></li>
+        <li><a href="wishlist-page.html">Wish List ( <strong>0</strong> )</a></li>
+        <li class="info"><a><span>Information</span></a>
+          <ul>
+            <li><a href="about-page.html">About Us</a></li>
+            <li><a href="page-full-elements.html">Delivery Information</a></li>
+            <li><a href="page-full-elements.html">Privacy Policy</a></li>
+            <li><a href="page-full-elements.html">Terms and Conditions</a></li>
+            <li><a href="contact-page.html" title="">Contact Us</a></li>
+          </ul>
+        </li>
+        <li><a href="contact-page.html">Support</a></li>
+        <li><a href="#">Buy Theme!</a></li>
+      </ul>
+    </div>
+    <!-- end topnav --> 
+    <!-- topbar right -->
+    <div class="tb-right">
+      <div class="language">
+        <ul>
+          <li class="active">EN <span><img src="images/flag_en.png" width="16" height="11" alt="en" /></span></li>
+          <li><a href="#" title="">IT</a> <span><img src="images/flag_it.png" width="16" height="11" alt="en" /></span></li>
+          <li><a href="#" title="">FR</a> <span><img src="images/flag_fr.png" width="16" height="11" alt="en" /></span></li>
+        </ul>
+      </div>
+      <div class="currency">
+        <ul>
+          <li><strong>Currency:</strong></li>
+          <li>
+            <select id="default-usage-select">
+              <option value="01">USD</option>
+              <option value="02">EUR</option>
+              <option value="03">GBP</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- topbar right --> 
+  </div>
+</div>
+<!-- end topbar --> 
+<!-- start header -->
+<div id="header">
+  <div class="box"> 
+    <!-- logo -->
+    <div id="logo"> <a href="index.html" title="Linear"><img src="images/logo.png" width="166" height="30" alt="Linear" /></a> </div>
+    <!-- logo --> 
+    <!-- start header right -->
+    <div id="header-right"> 
+      <!-- cart -->
+      <div class="cart">
+        <h6><a href="cart-page.html">Shopping Cart</a></h6>
+        <div class="cart-box"><span class="item"><a>2 Item(s) - $165.98</a></span>
+          <div id="cart-container">
+            <div id="cart-content">
+              <ul>
+                <li>
+                  <div class="cont">
+                    <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-3-3.jpg" width="54" height="54" alt="offer" /></a></div>
+                    <div class="txtb gap"><span class="title"><a href="product-page.html">Donec Nunc</a></span>
+                      <div class="clear"></div>
+                      <span class="price">$87,34</span></div>
+                    <div class="quantity">Quantity: <span>x1</span></div>
+                    <div class="clear"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cont">
+                    <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-6-6.jpg" width="54" height="54" alt="offer" /></a></div>
+                    <div class="txtb gap"><span class="title"><a href="product-page.html">Urna Accumsan</a></span>
+                      <div class="clear"></div>
+                      <span class="price">$56,99</span></div>
+                    <div class="quantity">Quantity: <span>x1</span></div>
+                    <div class="clear"></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="left">
+                <div class="button-cart"><a href="cart-page.html">View Cart</a></div>
+                <div class="clear"></div>
+                <div class="button-cart dark"><a href="checkout-page.html">Checkout</a></div>
+              </div>
+              <div class="right totalbox"> <span><strong>Sub-Total:</strong> $144.33</span>
+                <div class="clear"></div>
+                <span><strong>VAT 15%:</strong> $21.65</span>
+                <div class="clear"></div>
+                <span><strong>Total:</strong> $165.98</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cart --> 
+      <!-- feature -->
+      <div class="feature"> <span class="heading"><img src="images/ico_man.png" width="15" height="15" alt="man" /><a href="account-page.html">Your Account</a></span> <span><a href="register-page.html" title="Create an Account">Create an Account</a> or <a href="login-page.html" title="Log-in">Log-in</a></span> </div>
+      <div class="feature number"> <span class="heading"><img src="images/ico_phone.png" width="15" height="15" alt="phone" /> +39 234 3567</span> <span>Call Us <em>Monday - Saturday</em>: 8:30 am - 6:00 pm</span> </div>
+      <!-- feature --> 
+    </div>
+    <!-- end header right -->
+    <div class="clear"></div>
+    <!-- start menu bar -->
+    <div id="menu-bar"> 
+      <!-- navigation -->
+      <div id="navigation">
+        <ul>
+          <li><a href="index.html" title="" class="active">Home</a></li>
+          <li><a href="category-page.html">Office</a></li>
+          <li><a href="category-page.html" title="">Kitchen</a>
+            <ul class="sub">
+              <li class="space"></li>
+              <li>
+                <h3>INSIDE KITCHEN</h3>
+                <ul>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Cabinets</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Taps &amp; Sinks</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Panels</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html"><span>Appliances</span></a>
+                    <ul class="sub2">
+                      <li class="space"></li>
+                      <li><a href="category-page.html">Fridges</a></li>
+                      <li><a href="category-page.html">Ovens</a></li>
+                      <li><a href="category-page.html">Dishwashers</a></li>
+                      <li><a href="category-page.html">Cookers</a></li>
+                    </ul>
+                  </li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Islands &amp; Trolleys</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Lighting</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Knobs</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Worktops</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>KITCHEN BRANDS</h3>
+                <ul>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Nutid</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Fintorp</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Berloni</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Bygel</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="category-page.html" title="">Children</a></li>
+          <li><a href="category-page.html" title="">Living Room</a></li>
+          <li><a href="category-page.html" title="">Outdoor</a>
+            <ul class="sub2">
+              <li class="space"></li>
+              <li><a href="category-page.html">Storage</a></li>
+              <li><a href="category-page.html">Relax</a></li>
+              <li><a href="category-page.html">Sunshields</a></li>
+              <li><a href="category-page.html">Plant pots</a></li>
+            </ul>
+          </li>
+          <li><a href="category-page.html" title="">Decoration</a></li>
+        </ul>
+      </div>
+      <!-- navigation --> 
+      <!-- search -->
+      <div class="search">
+        <form action="">
+          <div>
+            <input type="text" value="Search..." name="field" class="input" onfocus="if(this.value == 'Search...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search...'; }" />
+          </div>
+          <div>
+            <input type="submit" value="" name="button" class="button" />
+          </div>
+        </form>
+      </div>
+      <!-- search --> 
+    </div>
+    <!-- end menu bar --> 
+  </div>
+</div>
+<!-- end header --> 
+<!-- start container -->
+<div id="container"> 
+  <!-- start breadcrumb -->
+  <div class="breadcrumb"> 
+    <!-- start box -->
+    <div class="box"> <span>You are here:</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact-page.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- end box -->
+    <div class="clear"></div>
+  </div>
+  <!-- end breadcrumb --> 
+  <!-- start box -->
+  <div class="box"> 
+    <!-- start leftcol -->
+    <div id="leftcol" class="medium"> 
+      <!-- start contact -->
+      <div class="contact">
+        <h1 class="red">Contact Us</h1>
+        <h5><span>Quick contact</span></h5>
+        <div class="fill-form">
+          <form action="">
+            <div class="col1">
+              <label for="FirstName2">First Name</label>
+              <input name="field" type="text" id="FirstName2" class="input"/>
+            </div>
+            <div class="col1">
+              <label for="EmailAdress2">Email Adress</label>
+              <input name="field" type="text" id="EmailAdress2" value="" class="input" />
+            </div>
+            <div class="clear"></div>
+            <div>
+              <label for="Enquiry2">Enquiry</label>
+            </div>
+            <div>
+              <textarea cols="" rows="" id="Enquiry2" class="textarea"></textarea>
+            </div>
+            <div class="row">
+              <label for="Enterthecode">Enter the code</label>
+              <input name="field" type="text" value="" class="input2" id="Enterthecode" />
+              <img src="images/captcha.jpg" alt="captcha" />
+              <div class="clear"></div>
+            </div>
+            <div>
+              <label for="check2">
+                <input name="check" type="checkbox" id="check2" value="" class="checkbox" />
+                <span class="gray">I have read and agree to the <a href="typography.html">Privacy Policy</a></span></label>
+            </div>
+            <div class="clear"></div>
+            <div class="submit-review"> <a class="sub-hover" onclick="$(this).closest('form').submit();">CONTINUE</a> <a onclick="$(this).closest('form').submit();">CONTINUE</a> </div>
+          </form>
+        </div>
+      </div>
+      <!-- end contact -->  
+    </div>
+    <!-- end leftcol --> 
+    <!-- start rightcol -->
+    <div id="rightcol"> 
+      <!-- widget -->
+      <div class="widget contact-page rightcol-block">
+        <h4 class="red">Address</h4>
+        <p>Aldema Studio<br />
+          12, Blandit Street<br />
+          <strong>Aenean, Pretium 1021</strong><br />
+          Italy</p>
+      </div>
+      <!-- widget --> 
+      <!-- widget -->
+      <div class="widget contact-page rightcol-block">
+        <h4 class="red">Phone/Fax</h4>
+        <p>+39 1110001111<br />
+          +39 1110001112</p>
+      </div>
+      <!-- widget --> 
+    </div>
+    <!-- end rightcol -->
+    <div class="clear"></div>
+  </div>
+  <!-- end box --> 
+  <!-- start category -->
+  <div class="category">
+    <div class="box"> 
+      <!-- start common -->
+      <div class="common2 first">
+        <h3 class="red">Linear Theme</h3>
+        <p>Integer interdum pretium leo, venenatis commodo male uada sit amet. Suspe disse ut neque neque. <strong>Aenean tincidunt</strong> ullamcorper nibh sit amet singur lopsem egestas. Fermentum erat <strong>condimentum</strong> ac. Sed liget Morbi por ta eget ferment.</p>
+      </div>
+      <!-- end common --> 
+      <!-- start twitter -->
+      <div class="common2 twitter">
+        <h3 class="red">Twitter</h3>
+        <ul id="twitter_update_list">
+          <li></li>
+        </ul>
+        <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/WPNewsStation.json?callback=twitterCallback2&amp;count=2"></script> 
+      </div>
+      <!-- end twitter --> 
+      <!-- start facebook -->
+      <div class="common2 last facebook">
+        <h3 class="red">Facebook</h3>
+        <div class="fb-box"> 
+          <script type="text/javascript" src="js/facebook-box.js"></script> 
+        </div>
+        <!-- the css needs an absolute path to work properly --> 
+      </div>
+      <!-- end facebook -->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- end category --> 
+</div>
+<!-- end container --> 
+<!-- start footer -->
+<div id="footer"> 
+  <!-- start footer top -->
+  <div id="footer-top">
+    <div class="box"> 
+      <!-- list -->
+      <div class="list">
+        <h5>Information</h5>
+        <ul>
+          <li><a href="about-page.html" title="">About Us</a></li>
+          <li><a href="typography.html" title="">Delivery Information</a></li>
+          <li><a href="typography.html" title="">Privacy Policy</a></li>
+          <li><a href="typography.html" title="">Terms &amp; Conditions</a></li>
+          <li><a href="typography.html" title="">Sitemap</a></li>
+        </ul>
+      </div>
+      <!-- list --> 
+      <!-- list -->
+      <div class="list">
+        <h5>Customer Service</h5>
+        <ul>
+          <li><a href="contact-page.html" title="">Contact Us</a></li>
+          <li><a href="typography.html" title="">Returns</a></li>
+          <li><a href="typography.html" title="">Site Map</a></li>
+        </ul>
+      </div>
+      <!-- list --> 
+      <!-- list -->
+      <div class="list">
+        <h5>Extras</h5>
+        <ul>
+          <li><a href="typography.html" title="">Brands</a></li>
+          <li><a href="typography.html" title="">Gift Vouchers</a></li>
+          <li><a href="typography.html" title="">Affiliates</a></li>
+          <li><a href="typography.html" title="">Specials</a></li>
+        </ul>
+      </div>
+      <!-- list --> 
+      <!-- list -->
+      <div class="list last">
+        <h5>My Account</h5>
+        <ul>
+          <li><a href="account-page.html" title="">My Account</a></li>
+          <li><a href="typography.html" title="">Order History</a></li>
+          <li><a href="wishlist-page.html" title="">Wish List</a></li>
+          <li><a href="typography.html" title="">Newsletter</a></li>
+        </ul>
+      </div>
+      <!-- list -->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- end footer top --> 
+  <!-- start footer bottom -->
+  <div id="footer-bottom">
+    <div class="box"> 
+      <!-- common -->
+      <div class="common2"> <span class="copyright">&copy; 2012 - Your Linear Store.</span> <span>Powered By <a href="http://themeforest.net/user/aldema">Aldema Studio</a></span> </div>
+      <!-- common --> 
+      <!-- common -->
+      <div class="common2">
+        <div class="payment">
+          <ul>
+            <li><img src="images/ico_mc.png" width="35" height="21" alt="mc" /></li>
+            <li><img src="images/ico_visa.png" width="35" height="21" alt="visa" /></li>
+            <li><img src="images/ico_amex.png" width="35" height="21" alt="amex" /></li>
+            <li><img src="images/ico_pp.png" width="70" height="21" alt="pp" /></li>
+          </ul>
+        </div>
+      </div>
+      <!-- common -->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- end footer bottom --> 
+</div>
+<!-- end footer --> 
+<!-- back to top link -->
+<div id="top-container"> <a id="top-link"></a> </div>
+<!-- end back to top link --> 
+<script type="text/javascript" src="js/common_footer.js"></script>
+
+</body>
+</html>

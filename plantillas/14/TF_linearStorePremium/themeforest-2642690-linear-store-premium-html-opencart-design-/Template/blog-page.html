@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Linear Html - OpenCart Store Design</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link href="css/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<link href="css/ie8.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/cufon/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon/open-sans-latin.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+
+<body class="hideall">
+
+<!-- Facebook code -->
+<div id="fb-root"></div>
+<script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
+
+<!-- end Facebook code --> 
+<!-- start topbar -->
+<div class="topbar">
+  <div class="box"> 
+    <!-- start topnav -->
+    <div class="topnav">
+      <ul class="lava">
+        <li><a href="account-page.html" class="active">My Account</a></li>
+        <li><a href="wishlist-page.html">Wish List ( <strong>0</strong> )</a></li>
+        <li class="info"><a><span>Information</span></a>
+          <ul>
+            <li><a href="about-page.html">About Us</a></li>
+            <li><a href="page-full-elements.html">Delivery Information</a></li>
+            <li><a href="page-full-elements.html">Privacy Policy</a></li>
+            <li><a href="page-full-elements.html">Terms and Conditions</a></li>
+            <li><a href="contact-page.html" title="">Contact Us</a></li>
+          </ul>
+        </li>
+        <li><a href="contact-page.html">Support</a></li>
+        <li><a href="#">Buy Theme!</a></li>
+      </ul>
+    </div>
+    <!-- end topnav --> 
+    <!-- topbar right -->
+    <div class="tb-right">
+      <div class="language">
+        <ul>
+          <li class="active">EN <span><img src="images/flag_en.png" width="16" height="11" alt="en" /></span></li>
+          <li><a href="#" title="">IT</a> <span><img src="images/flag_it.png" width="16" height="11" alt="en" /></span></li>
+          <li><a href="#" title="">FR</a> <span><img src="images/flag_fr.png" width="16" height="11" alt="en" /></span></li>
+        </ul>
+      </div>
+      <div class="currency">
+        <ul>
+          <li><strong>Currency:</strong></li>
+          <li>
+            <select id="default-usage-select">
+              <option value="01">USD</option>
+              <option value="02">EUR</option>
+              <option value="03">GBP</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- topbar right --> 
+  </div>
+</div>
+<!-- end topbar --> 
+<!-- start header -->
+<div id="header">
+  <div class="box"> 
+    <!-- logo -->
+    <div id="logo"> <a href="index.html" title="Linear"><img src="images/logo.png" width="166" height="30" alt="Linear" /></a> </div>
+    <!-- logo --> 
+    <!-- start header right -->
+    <div id="header-right"> 
+      <!-- cart -->
+      <div class="cart">
+        <h6><a href="cart-page.html">Shopping Cart</a></h6>
+        <div class="cart-box"><span class="item"><a>2 Item(s) - $165.98</a></span>
+          <div id="cart-container">
+            <div id="cart-content">
+              <ul>
+                <li>
+                  <div class="cont">
+                    <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-3-3.jpg" width="54" height="54" alt="offer" /></a></div>
+                    <div class="txtb gap"><span class="title"><a href="product-page.html">Donec Nunc</a></span>
+                      <div class="clear"></div>
+                      <span class="price">$87,34</span></div>
+                    <div class="quantity">Quantity: <span>x1</span></div>
+                    <div class="clear"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cont">
+                    <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-6-6.jpg" width="54" height="54" alt="offer" /></a></div>
+                    <div class="txtb gap"><span class="title"><a href="product-page.html">Urna Accumsan</a></span>
+                      <div class="clear"></div>
+                      <span class="price">$56,99</span></div>
+                    <div class="quantity">Quantity: <span>x1</span></div>
+                    <div class="clear"></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="left">
+                <div class="button-cart"><a href="cart-page.html">View Cart</a></div>
+                <div class="clear"></div>
+                <div class="button-cart dark"><a href="checkout-page.html">Checkout</a></div>
+              </div>
+              <div class="right totalbox"> <span><strong>Sub-Total:</strong> $144.33</span>
+                <div class="clear"></div>
+                <span><strong>VAT 15%:</strong> $21.65</span>
+                <div class="clear"></div>
+                <span><strong>Total:</strong> $165.98</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cart --> 
+      <!-- feature -->
+      <div class="feature"> <span class="heading"><img src="images/ico_man.png" width="15" height="15" alt="man" /><a href="account-page.html">Your Account</a></span> <span><a href="register-page.html" title="Create an Account">Create an Account</a> or <a href="login-page.html" title="Log-in">Log-in</a></span> </div>
+      <div class="feature number"> <span class="heading"><img src="images/ico_phone.png" width="15" height="15" alt="phone" /> +39 234 3567</span> <span>Call Us <em>Monday - Saturday</em>: 8:30 am - 6:00 pm</span> </div>
+      <!-- feature --> 
+    </div>
+    <!-- end header right -->
+    <div class="clear"></div>
+    <!-- start menu bar -->
+    <div id="menu-bar"> 
+      <!-- navigation -->
+      <div id="navigation">
+        <ul>
+          <li><a href="index.html" title="" class="active">Home</a></li>
+          <li><a href="category-page.html">Office</a></li>
+          <li><a href="category-page.html" title="">Kitchen</a>
+            <ul class="sub">
+              <li class="space"></li>
+              <li>
+                <h3>INSIDE KITCHEN</h3>
+                <ul>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Cabinets</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Taps &amp; Sinks</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Panels</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html"><span>Appliances</span></a>
+                    <ul class="sub2">
+                      <li class="space"></li>
+                      <li><a href="category-page.html">Fridges</a></li>
+                      <li><a href="category-page.html">Ovens</a></li>
+                      <li><a href="category-page.html">Dishwashers</a></li>
+                      <li><a href="category-page.html">Cookers</a></li>
+                    </ul>
+                  </li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Islands &amp; Trolleys</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Lighting</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Knobs</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Worktops</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>KITCHEN BRANDS</h3>
+                <ul>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Nutid</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Fintorp</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Berloni</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Bygel</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="category-page.html" title="">Children</a></li>
+          <li><a href="category-page.html" title="">Living Room</a></li>
+          <li><a href="category-page.html" title="">Outdoor</a>
+            <ul class="sub2">
+              <li class="space"></li>
+              <li><a href="category-page.html">Storage</a></li>
+              <li><a href="category-page.html">Relax</a></li>
+              <li><a href="category-page.html">Sunshields</a></li>
+              <li><a href="category-page.html">Plant pots</a></li>
+            </ul>
+          </li>
+          <li><a href="category-page.html" title="">Decoration</a></li>
+        </ul>
+      </div>
+      <!-- navigation --> 
+      <!-- search -->
+      <div class="search">
+        <form action="">
+          <div>
+            <input type="text" value="Search..." name="field" class="input" onfocus="if(this.value == 'Search...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search...'; }" />
+          </div>
+          <div>
+            <input type="submit" value="" name="button" class="button" />
+          </div>
+        </form>
+      </div>
+      <!-- search --> 
+    </div>
+    <!-- end menu bar --> 
+  </div>
+</div>
+<!-- end header --> 
+<!-- start container -->
+<div id="container"> 
+  <!-- start breadcrumb -->
+  <div class="breadcrumb"> 
+    <!-- start box -->
+    <div class="box"> <span>You are here:</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog-page.html">Blog</a></li>
+      </ul>
+    </div>
+    <!-- end box -->
+    <div class="clear"></div>
+  </div>
+  <!-- end breadcrumb --> 
+  <!-- start box -->
+  <div class="box"> 
+    <!-- start leftcol -->
+    <div id="leftcol"> 
+      <!-- start featured2 -->
+      <div class="Featured blog">
+        <h1>Last Post / Blog</h1>
+        <!-- post1 -->
+        <div class="post-col"> 
+          <!-- left -->
+          <div class="date">
+            <div class="first">29<br />
+              MAY</div>
+            <span class="line"></span>
+            <div class="gray">2 <span>Comments</span></div>
+          </div>
+          <!-- left --> 
+          <!-- mid -->
+          <div class="imgb1"><a href="#" class="fadeable"><img src="images/prodotto-1.jpg" alt="Gray" width="258" height="213" /></a></div>
+          <!-- mid --> 
+          <!-- right -->
+          <div class="txtb">
+            <h1 class="red"><a href="#">Proin lacinia felis in purus fringilla euismod</a></h1>
+            <p>Cras ipsum arcu, interdum vitae consequat ac, euismod id nisi. Donec eu dolor id sem mollis volutpat ac volutpat est. Donec varius cursus aliquet ante erat, facilisis at vulputate sit amet. <a href="#" title="Read more">Read more &raquo;</a></p>
+          </div>
+          <!-- right -->
+          <div class="clear"></div>
+        </div>
+        <!-- post1 -->
+        <div class="dotted"></div>
+        <!-- post2 -->
+        <div class="post-col"> 
+          <!-- left -->
+          <div class="date">
+            <div class="first">28<br />
+              MAY</div>
+            <span class="line"></span>
+            <div class="gray">1 <span>Comments</span></div>
+          </div>
+          <!-- left --> 
+          <!-- mid -->
+          <div class="imgb1"><a href="#" class="fadeable"><img src="images/prodotto-4.jpg" alt="Gray" width="258" height="213" /></a></div>
+          <!-- mid --> 
+          <!-- right -->
+          <div class="txtb">
+            <h1 class="red"><a href="#">Aliquam interdum pharetra massa</a></h1>
+            <p>Vitae placerat sapien vulputate ac. Praesent mollis, nisi eu auctor tristique, elit enim varius elit, ut adipiscing ante metus quis leo. Nulla dignissim eleifend odio, non gravida dolor. <a href="#" title="Read more">Read more &raquo;</a></p>
+          </div>
+          <!-- right -->
+          <div class="clear"></div>
+        </div>
+        <!-- post2 -->
+        <div class="dotted"></div>
+        <!-- post3 -->
+        <div class="post-col"> 
+          <!-- left -->
+          <div class="date">
+            <div class="first">21<br />
+              MAY</div>
+            <span class="line"></span>
+            <div class="gray">12 <span>Comments</span></div>
+          </div>
+          <!-- left --> 
+          <!-- mid -->
+          <div class="imgb1"><a href="#" class="fadeable"><img src="images/prodotto-3.jpg" alt="Gray" width="258" height="213" /></a></div>
+          <!-- mid --> 
+          <!-- right -->
+          <div class="txtb">
+            <h1 class="red"><a href="#">In accumsan felis at nulla placerat euismod luctus ut a arcu</a></h1>
+            <p> Nullam sit amet orci dui, id condimentum metus. Mauris rhoncus, lorem ac facilisis convallis, mauris felis ultricies nisi, sed tempus nunc massa ac ipsum. <a href="#" title="Read more">Read more &raquo;</a></p>
+          </div>
+          <!-- right -->
+          <div class="clear"></div>
+        </div>
+        <!-- post3 -->
+        <div class="dotted"></div>
+        <!-- post4 -->
+        <div class="post-col"> 
+          <!-- left -->
+          <div class="date">
+            <div class="first">16<br />
+              MAY</div>
+            <span class="line"></span>
+            <div class="gray">5 <span>Comments</span></div>
+          </div>
+          <!-- left --> 
+          <!-- mid -->
+          <div class="imgb1"><a href="#" class="fadeable"><img src="images/prodotto-7.jpg" alt="Gray" width="258" height="213" /></a></div>
+          <!-- mid --> 
+          <!-- right -->
+          <div class="txtb">
+            <h1 class="red"><a href="#">Cras ut nulla vel lorem venenatis ullamcorper </a></h1>
+            <p>Duis bibendum consectetur justo eget tristique. Etiam euismod, nibh sed mollis vulputate, quam mi luctus arcu, non facilisis libero sem in leo. Sed id diam vitae sapien molestie malesuada. <a href="#" title="Read more">Read more &raquo;</a></p>
+          </div>
+          <!-- right -->
+          <div class="clear"></div>
+        </div>
+        <!-- post4 -->
+        <div class="dotted"></div>
+        <!-- post5 -->
+        <div class="post-col"> 
+          <!-- left -->
+          <div class="date">
+            <div class="first">2<br />
+              MAY</div>
+            <span class="line"></span>
+            <div class="gray">0 <span>Comments</span></div>
+          </div>
+          <!-- left --> 
+          <!-- mid -->
+          <div class="imgb1"><a href="#" class="fadeable"><img src="images/prodotto-9.jpg" alt="Gray" width="258" height="213" /></a></div>
+          <!-- mid --> 
+          <!-- right -->
+          <div class="txtb">
+            <h1 class="red"><a href="#">Proin vestibulum eros tincidunt velit feugiat lobortis aenean fermentum </a></h1>
+            <p>Vestibulum vitae nulla non felis euismod luctus ut a arcu. Donec ac risus nunc. Nunc nulla sem, mollis non dapibus nec, semper id augue. <a href="#" title="Read more">Read more &raquo;</a></p>
+          </div>
+          <!-- right -->
+          <div class="clear"></div>
+        </div>
+        <!-- post5 -->
+        <div class="dotted"></div>
+        <!--start pagination2 -->
+        <div class="pagination2">
+          <ul>
+            <li class="previous">&laquo; Previous</li>
+            <li><span class="current">1</span></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><span>...</span></li>
+            <li class="next"><a href="#">Next &raquo;</a></li>
+          </ul>
+        </div>
+        <!--end pagination2 --> 
+      </div>
+      <!-- end featured2 --> 
+      
+    </div>
+    <!-- end leftcol --> 
+    <!-- start rightcol -->
+    <div id="rightcol"> 
+      <!-- start subnav -->
+      <div class="subnav rightcol-block">
+        <h4 class="red">Categories</h4>
+        <ul class="sf-menu sf-vertical">
+          <li><a class="subnav-link" href="#" title=""><strong>Quis Herit </strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Ultrices Auctor</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Risus Un</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Lectus Ut Dei</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Vivamus</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Dolor Sit Erat</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Vitae Placerat</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Tincidunt </strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Dapibus Nec</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Pellentesque</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Varius Metus</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Viverra</strong></a></li>
+        </ul>
+      </div>
+      <!-- end subnav --> 
+      <!-- start offer block -->
+      <div class="offer common rightcol-block">
+        <h4 class="red">Popular Posts</h4>
+        <ul>
+          <li class="first">
+            <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-4-4.jpg" width="54" height="54" alt="offer" /></a></div>
+            <div class="txtb"><span class="title"><a href="product-page.html">Aliquam Interdum</a></span>
+              <div class="clear"></div>
+              <span class="price"><span class="blog-click">7341 views</span></span></div>
+            <div class="clear"></div>
+          </li>
+          <li>
+            <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-1-1.jpg" width="54" height="54" alt="offer" /></a></div>
+            <div class="txtb gap"><span class="title"><a href="product-page.html">Proin Lacinia</a></span>
+              <div class="clear"></div>
+              <span class="price"><span class="blog-click">5472 views</span></span></div>
+            <div class="clear"></div>
+          </li>
+          <li class="last">
+            <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-7-7.jpg" width="54" height="54" alt="offer" /></a></div>
+            <div class="txtb gap"><span class="title"><a href="product-page.html">In Accumsan</a></span>
+              <div class="clear"></div>
+              <span class="price"><span class="blog-click">3239 views</span></span></div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+      <!-- end offer block --> 
+      <!-- widget -->
+      <div class="widget rightcol-block">
+        <h4 class="red">Widget Text</h4>
+        <p>Pellentesque lacus urna, pellentesque <strong> vehicula adipiscing</strong> scelerisque a eros. Mauris id tortor et vitae velit auctor convallis nec non metus.</p>
+      </div>
+      <!-- widget --> 
+      <!-- start subnav -->
+      <div class="subnav common rightcol-block">
+        <h4 class="red">Meta</h4>
+        <ul class="sf-menu sf-vertical">
+          <li><a class="subnav-link" href="#" title=""><strong>Log In</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Entries RSS</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Comments RSS</strong></a></li>
+          <li><a class="subnav-link" href="#" title=""><strong>Wordpress.org</strong></a></li>
+        </ul>
+      </div>
+      <!-- end subnav --> 
+    </div>
+    <!-- end rightcol -->
+    <div class="clear"></div>
+  </div>
+  <!-- end box --> 
+  <!-- start category -->
+  <div class="category">
+    <div class="box"> 
+      <!-- start common -->
+      <div class="common2 first">
+        <h3 class="red">Linear Theme</h3>
+        <p>Integer interdum pretium leo, venenatis commodo male uada sit amet. Suspe disse ut neque neque. <strong>Aenean tincidunt</strong> ullamcorper nibh sit amet singur lopsem egestas. Fermentum erat <strong>condimentum</strong> ac. Sed liget Morbi por ta eget ferment.</p>
+      </div>
+      <!-- end common --> 
+      <!-- start twitter -->
+      <div class="common2 twitter">
+        <h3 class="red">Twitter</h3>
+        <ul id="twitter_update_list">
+          <li></li>
+        </ul>
+        <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/WPNewsStation.json?callback=twitterCallback2&amp;count=2"></script> 
+      </div>
+      <!-- end twitter --> 
+      <!-- start facebook -->
+      <div class="common2 last facebook">
+        <h3 class="red">Facebook</h3>
+        <div class="fb-box"> 
+          <script type="text/javascript" src="js/facebook-box.js"></script> 
+        </div>
+        <!-- the css needs an absolute path to work properly --> 
+      </div>
+      <!-- end facebook -->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- end category --> 
+</div>
+<!-- end container --> 
+<!-- start footer -->
+<div id="footer" class="light"> 
+  <!-- start footer bottom -->
+  <div id="footer-bottom">
+    <div class="box"> 
+      <!-- common -->
+      <div class="common2"> <span class="copyright">&copy; 2012 - Your Linear Store.</span> <span>Powered By <a href="http://themeforest.net/user/aldema">Aldema Studio</a></span> </div>
+      <!-- common --> 
+      <!-- common -->
+      <div class="common4">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-page.html">About Us</a></li>
+          <li><a href="blog-page.html">Blog</a></li>
+          <li><a href="typography.html">Feed RSS</a></li>
+          <li><a href="typography.html">Sitemap</a></li>
+          <li><a href="contact-page.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- common -->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- end footer bottom --> 
+</div>
+<!-- end footer --> 
+<!-- back to top link -->
+<div id="top-container"> <a id="top-link"></a> </div>
+<!-- end back to top link --> 
+<script type="text/javascript" src="js/common_footer.js"></script>
+
+</body>
+</html>

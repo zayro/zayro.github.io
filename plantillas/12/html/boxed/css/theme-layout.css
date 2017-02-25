@@ -1,0 +1,49 @@
+body { 
+	background-color:#1a1a1a;
+	/* background:url(../images/pattern/1.jpg) repeat; */
+	/* background:url(../images/pattern/2.jpg) repeat; */
+	/* background:url(../images/pattern/3.jpg) repeat; */
+	/* background:url(../images/pattern/4.jpg) repeat; */
+	/* background:url(../images/pattern/5.jpg) repeat; */
+	/* background:url(../images/pattern/6.jpg) repeat; */
+	/* background:url(../images/pattern/7.jpg) repeat; */
+	/* background:url(../images/pattern/8.jpg) repeat; */
+	/* background:url(../images/pattern/9.jpg) repeat; */
+	background:url(../images/pattern/10.jpg) repeat;
+	/* background:url(../images/pattern/11.jpg) repeat; */
+	/* background:url(../images/pattern/12.jpg) repeat; */
+	/* background:url(../images/pattern/13.jpg) repeat; */
+	/* background:url(../images/pattern/14.jpg) repeat; */
+}
+
+.theme-layout {
+	width:1220px;
+	margin:0px auto;
+	background-color:#FFF;
+}
+
+.ie .theme-layout { width:980px; }
+
+@media (min-width: 980px) and (max-width: 1199px) {
+	
+	.theme-layout { width:980px; }
+	
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	
+	.theme-layout { width:760px; }
+		
+}
+
+@media (max-width: 767px) {
+	
+	body { background:#FFF; }
+	
+	.theme-layout {
+		width:100%;
+		border:0px;
+		background-color:transparent;
+	}
+	
+}

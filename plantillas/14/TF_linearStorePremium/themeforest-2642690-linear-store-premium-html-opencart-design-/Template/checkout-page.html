@@ -1,0 +1,684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Linear Html - OpenCart Store Design</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link href="css/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<link href="css/ie8.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/cufon/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon/open-sans-latin.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+
+<body class="hideall">
+
+<!-- Facebook code -->
+<div id="fb-root"></div>
+<script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
+
+<!-- end Facebook code --> 
+<!-- start topbar -->
+<div class="topbar">
+  <div class="box"> 
+    <!-- start topnav -->
+    <div class="topnav">
+      <ul class="lava">
+        <li><a href="account-page.html" class="active">My Account</a></li>
+        <li><a href="wishlist-page.html">Wish List ( <strong>0</strong> )</a></li>
+        <li class="info"><a><span>Information</span></a>
+          <ul>
+            <li><a href="about-page.html">About Us</a></li>
+            <li><a href="page-full-elements.html">Delivery Information</a></li>
+            <li><a href="page-full-elements.html">Privacy Policy</a></li>
+            <li><a href="page-full-elements.html">Terms and Conditions</a></li>
+            <li><a href="contact-page.html" title="">Contact Us</a></li>
+          </ul>
+        </li>
+        <li><a href="contact-page.html">Support</a></li>
+        <li><a href="#">Buy Theme!</a></li>
+      </ul>
+    </div>
+    <!-- end topnav --> 
+    <!-- topbar right -->
+    <div class="tb-right">
+      <div class="language">
+        <ul>
+          <li class="active">EN <span><img src="images/flag_en.png" width="16" height="11" alt="en" /></span></li>
+          <li><a href="#" title="">IT</a> <span><img src="images/flag_it.png" width="16" height="11" alt="en" /></span></li>
+          <li><a href="#" title="">FR</a> <span><img src="images/flag_fr.png" width="16" height="11" alt="en" /></span></li>
+        </ul>
+      </div>
+      <div class="currency">
+        <ul>
+          <li><strong>Currency:</strong></li>
+          <li>
+            <select id="default-usage-select">
+              <option value="01">USD</option>
+              <option value="02">EUR</option>
+              <option value="03">GBP</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- topbar right --> 
+  </div>
+</div>
+<!-- end topbar --> 
+<!-- start header -->
+<div id="header">
+  <div class="box"> 
+    <!-- logo -->
+    <div id="logo"> <a href="index.html" title="Linear"><img src="images/logo.png" width="166" height="30" alt="Linear" /></a> </div>
+    <!-- logo --> 
+    <!-- start header right -->
+    <div id="header-right"> 
+      <!-- cart -->
+      <div class="cart">
+        <h6><a href="cart-page.html">Shopping Cart</a></h6>
+        <div class="cart-box"><span class="item"><a>2 Item(s) - $165.98</a></span>
+          <div id="cart-container">
+            <div id="cart-content">
+              <ul>
+                <li>
+                  <div class="cont">
+                    <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-3-3.jpg" width="54" height="54" alt="offer" /></a></div>
+                    <div class="txtb gap"><span class="title"><a href="product-page.html">Donec Nunc</a></span>
+                      <div class="clear"></div>
+                      <span class="price">$87,34</span></div>
+                    <div class="quantity">Quantity: <span>x1</span></div>
+                    <div class="clear"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cont">
+                    <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-6-6.jpg" width="54" height="54" alt="offer" /></a></div>
+                    <div class="txtb gap"><span class="title"><a href="product-page.html">Urna Accumsan</a></span>
+                      <div class="clear"></div>
+                      <span class="price">$56,99</span></div>
+                    <div class="quantity">Quantity: <span>x1</span></div>
+                    <div class="clear"></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="left">
+                <div class="button-cart"><a href="cart-page.html">View Cart</a></div>
+                <div class="clear"></div>
+                <div class="button-cart dark"><a href="checkout-page.html">Checkout</a></div>
+              </div>
+              <div class="right totalbox"> <span><strong>Sub-Total:</strong> $144.33</span>
+                <div class="clear"></div>
+                <span><strong>VAT 15%:</strong> $21.65</span>
+                <div class="clear"></div>
+                <span><strong>Total:</strong> $165.98</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cart --> 
+      <!-- feature -->
+      <div class="feature"> <span class="heading"><img src="images/ico_man.png" width="15" height="15" alt="man" /><a href="account-page.html">Your Account</a></span> <span><a href="register-page.html" title="Create an Account">Create an Account</a> or <a href="login-page.html" title="Log-in">Log-in</a></span> </div>
+      <div class="feature number"> <span class="heading"><img src="images/ico_phone.png" width="15" height="15" alt="phone" /> +39 234 3567</span> <span>Call Us <em>Monday - Saturday</em>: 8:30 am - 6:00 pm</span> </div>
+      <!-- feature --> 
+    </div>
+    <!-- end header right -->
+    <div class="clear"></div>
+    <!-- start menu bar -->
+    <div id="menu-bar"> 
+      <!-- navigation -->
+      <div id="navigation">
+        <ul>
+          <li><a href="index.html" title="" class="active">Home</a></li>
+          <li><a href="category-page.html">Office</a></li>
+          <li><a href="category-page.html" title="">Kitchen</a>
+            <ul class="sub">
+              <li class="space"></li>
+              <li>
+                <h3>INSIDE KITCHEN</h3>
+                <ul>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Cabinets</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Taps &amp; Sinks</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Panels</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html"><span>Appliances</span></a>
+                    <ul class="sub2">
+                      <li class="space"></li>
+                      <li><a href="category-page.html">Fridges</a></li>
+                      <li><a href="category-page.html">Ovens</a></li>
+                      <li><a href="category-page.html">Dishwashers</a></li>
+                      <li><a href="category-page.html">Cookers</a></li>
+                    </ul>
+                  </li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Islands &amp; Trolleys</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Lighting</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Knobs</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Worktops</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>KITCHEN BRANDS</h3>
+                <ul>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Nutid</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Fintorp</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Berloni</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Bygel</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="category-page.html" title="">Children</a></li>
+          <li><a href="category-page.html" title="">Living Room</a></li>
+          <li><a href="category-page.html" title="">Outdoor</a>
+            <ul class="sub2">
+              <li class="space"></li>
+              <li><a href="category-page.html">Storage</a></li>
+              <li><a href="category-page.html">Relax</a></li>
+              <li><a href="category-page.html">Sunshields</a></li>
+              <li><a href="category-page.html">Plant pots</a></li>
+            </ul>
+          </li>
+          <li><a href="category-page.html" title="">Decoration</a></li>
+        </ul>
+      </div>
+      <!-- navigation --> 
+      <!-- search -->
+      <div class="search">
+        <form action="">
+          <div>
+            <input type="text" value="Search..." name="field" class="input" onfocus="if(this.value == 'Search...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search...'; }" />
+          </div>
+          <div>
+            <input type="submit" value="" name="button" class="button" />
+          </div>
+        </form>
+      </div>
+      <!-- search --> 
+    </div>
+    <!-- end menu bar --> 
+  </div>
+</div>
+<!-- end header --> 
+<!-- start container -->
+<div id="container"> 
+  <!-- start breadcrumb -->
+  <div class="breadcrumb"> 
+    <!-- start box -->
+    <div class="box"> <span>You are here:</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="checkout-page.html">Checkout</a></li>
+      </ul>
+    </div>
+    <!-- end box -->
+    <div class="clear"></div>
+  </div>
+  <!-- end breadcrumb --> 
+  <!-- start box -->
+  <div class="box"> 
+    <!-- start leftcol -->
+    <div id="leftcol" class="medium"> 
+      <!-- start accordinpanel -->
+      <div class="accordin-panel" id="checkout">
+        <h1>Checkout</h1>
+        <div class="accordin-div">
+          <h5><span><a href="#">Step 1: Checkout Options</a></span></h5>
+          <!-- block -->
+          <div class="accordin-block step1"> 
+            <!-- Customer -->
+            <div class="customer"> 
+              <!-- customer left -->
+              <div class="customer-left">
+                <h4>New Customers</h4>
+                <form class="register-form" action="" method="post">
+                  <div>
+                    <label>
+                      <input name="radio" value="1" type="radio" checked="checked"/>
+                      Register Account</label>
+                  </div>
+                  <div class="clear"></div>
+                  <div>
+                    <label>
+                      <input name="radio" value="2" type="radio" />
+                      Guest Checkout</label>
+                  </div>
+                  <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+                  <div class="submit-review"> <a class="sub-hover" onclick="$(this).closest('form').submit();">CONTINUE</a> <a onclick="$(this).closest('form').submit();">CONTINUE</a> </div>
+                </form>
+              </div>
+              <!-- customer left --> 
+              <!-- customer right -->
+              <div class="customer-right">
+                <h4>Returning Customer</h4>
+                <form action="" class="customer-form" method="post">
+                  <div>
+                    <label>I'm a Returning Customer.</label>
+                  </div>
+                  <div>
+                    <input type="text" value="Email Address" name="field" class="input" onfocus="if(this.value == 'Email Address') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Email Address'; }" />
+                  </div>
+                  <div>
+                    <input type="password" value="password" name="password" class="input last" onfocus="if(this.value == 'password') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'password'; }" />
+                  </div>
+                  <div class="forgot"><a href="#">Forgot your password?</a></div>
+                  <div class="submit-review"> <a class="sub-hover" onclick="$(this).closest('form').submit();">LOGIN</a> <a onclick="$(this).closest('form').submit();">LOGIN</a> </div>
+                </form>
+              </div>
+              <!-- customer right -->
+              <div class="clear"></div>
+            </div>
+            <!-- Customer --> 
+          </div>
+          <!-- block -->
+          <h5><span><a href="#" class="link">Modify &raquo;</a><a href="#">Step 2: Account &amp;  Billing Details</a></span></h5>
+          <!-- block -->
+          <div class="accordin-block step2">
+            <form  action="" method="post">
+              <div class="accordin-half">
+                <div class="row1">
+                  <label for="FirstName" class="title">First Name<strong>*</strong></label>
+                  <input type="text" name="field" id="FirstName" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="LastName" class="title">Last Name<strong>*</strong></label>
+                  <input type="text" name="field" id="LastName" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="EMail" class="title">E-Mail<strong>*</strong></label>
+                  <input type="text" name="field" id="EMail" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Telephone" class="title">Telephone<strong>*</strong></label>
+                  <input type="text" name="field" id="Telephone" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Fax" class="title">Fax</label>
+                  <input type="text" name="field" id="Fax" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Password" class="title">Password<strong>*</strong></label>
+                  <input type="text" name="field" id="Password" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="PasswordConfirm" class="title">Password Confirm<strong>*</strong></label>
+                  <input type="text" name="field" id="PasswordConfirm" value="" class="input" />
+                </div>
+              </div>
+              <div class="accordin-half">
+                <div class="row1">
+                  <label for="Company" class="title">Company</label>
+                  <input type="text" name="field" id="Company" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="CompanyId" class="title">Company Id</label>
+                  <input type="text" name="field" id="CompanyId" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Address1" class="title">Address 1<strong>*</strong></label>
+                  <input type="text" name="field" id="Address1" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Address2" class="title">Address 2</label>
+                  <input type="text" name="field" id="Address2" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="City" class="title">City<strong>*</strong></label>
+                  <input type="text" name="field" id="City" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="PostCode" class="title">Post Code<strong>*</strong></label>
+                  <input type="text" name="field" id="PostCode" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Country" class="title">Country<strong>*</strong></label>
+                  <div class="general-select">
+                    <select name="region" class="select" id="Country">
+                      <option>--- Please Select ---</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row1">
+                  <label for="RegionState" class="title">Region / State<strong>*</strong></label>
+                  <div class="general-select">
+                    <select name="region" class="select" id="RegionState">
+                      <option>--- Please Select ---</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label for="check" class="select-check">
+                  <input type="checkbox" name="field" id="check" class="check" />
+                  I have read and agree to the <a href="typography.html">Privacy Policy</a></label>
+              </div>
+              <div class="clear"></div>
+              <div class="submit-review"> <a class="sub-hover" onclick="$(this).closest('form').submit();">CONTINUE</a> <a onclick="$(this).closest('form').submit();">CONTINUE</a> </div>
+              <div class="clear"></div>
+            </form>
+          </div>
+          <!-- block -->
+          <h5><span><a href="#" class="link">Modify &raquo;</a><a href="#">Step 3: Delivery Details</a></span></h5>
+          <!-- block -->
+          <div class="accordin-block step3">
+            <form  action="" method="post">
+              <div class="accordin-half">
+                <div class="row1">
+                  <label for="FirstName2" class="title">First Name<strong>*</strong></label>
+                  <input type="text" name="field" id="FirstName2" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="LastName2" class="title">Last Name<strong>*</strong></label>
+                  <input type="text" name="field" id="LastName2" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="EMail2" class="title">E-Mail<strong>*</strong></label>
+                  <input type="text" name="field" id="EMail2" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Telephone2" class="title">Telephone<strong>*</strong></label>
+                  <input type="text" name="field" id="Telephone2" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Fax2" class="title">Fax</label>
+                  <input type="text" name="field" id="Fax2" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Password2" class="title">Password<strong>*</strong></label>
+                  <input type="text" name="field" id="Password2" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="PasswordConfirm2" class="title">Password Confirm<strong>*</strong></label>
+                  <input type="text" name="field" id="PasswordConfirm2" value="" class="input" />
+                </div>
+              </div>
+              <div class="accordin-half">
+                <div class="row1">
+                  <label for="Company2" class="title">Company</label>
+                  <input type="text" name="field" id="Company2" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="CompanyId2" class="title">Company Id</label>
+                  <input type="text" name="field" id="CompanyId2" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Address12" class="title">Address 1<strong>*</strong></label>
+                  <input type="text" name="field" id="Address12" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Address22" class="title">Address 2</label>
+                  <input type="text" name="field" id="Address22" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="City2" class="title">City<strong>*</strong></label>
+                  <input type="text" name="field" id="City2" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="PostCode2" class="title">Post Code<strong>*</strong></label>
+                  <input type="text" name="field" id="PostCode2" value="" class="input" />
+                </div>
+                <div class="row1">
+                  <label for="Country2" class="title">Country<strong>*</strong></label>
+                  <div class="general-select">
+                    <select name="region" class="select" id="Country2">
+                      <option>--- Please Select ---</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row1">
+                  <label for="RegionState2" class="title">Region / State<strong>*</strong></label>
+                  <div class="general-select">
+                    <select name="region" class="select" id="RegionState2">
+                      <option>--- Please Select ---</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label for="check2" class="select-check">
+                  <input type="checkbox" name="field2" id="check2" class="check" />
+                  I have read and agree to the <a href="typography.html">Privacy Policy</a></label>
+              </div>
+              <div class="clear"></div>
+              <div class="submit-review"> <a class="sub-hover" onclick="$(this).closest('form').submit();">CONTINUE</a> <a onclick="$(this).closest('form').submit();">CONTINUE</a> </div>
+              <div class="clear"></div>
+            </form>
+          </div>
+          <!-- block -->
+          <h5><span><a href="#" class="link">Modify &raquo;</a><a href="#">Step 4: Delivery Method</a></span></h5>
+          <!-- block -->
+          <div class="accordin-block step4">
+            <form  action="" method="post">
+              <p>Please select the preferred shipping method to use on this order.</p>
+              <div>
+                <label>
+                  <input type="radio" />
+                  UPS</label>
+              </div>
+              <div class="clear"></div>
+              <div>
+                <label>Add Comments About Your Order</label>
+              </div>
+              <div class="clear"></div>
+              <div>
+                <textarea rows="10" cols="10"></textarea>
+              </div>
+              <div class="clear"></div>
+              <div>
+                <label for="check4" class="select-check">
+                  <input type="checkbox" name="field4" id="check4" class="check" />
+                  I have read and agree to the <a href="typography.html">Privacy Policy</a></label>
+              </div>
+              <div class="clear"></div>
+              <div class="submit-review"> <a class="sub-hover" onclick="$(this).closest('form').submit();">CONTINUE</a> <a onclick="$(this).closest('form').submit();">CONTINUE</a> </div>
+              <div class="clear"></div>
+            </form>
+          </div>
+          <!-- block --> 
+          <!-- block -->
+          <h5><span><a href="#" class="link">Modify &raquo;</a><a href="#">Step 5: Payment Method</a></span></h5>
+          <!-- block -->
+          <div class="accordin-block step5">
+            <form  action="" method="post">
+              <p>Please select the preferred payment method to use on this order.</p>
+              <div>
+                <label>
+                  <input type="radio" />
+                  Cash On Delivery</label>
+              </div>
+              <div class="clear"></div>
+              <div>
+                <label>Add Commnets About Your Order</label>
+              </div>
+              <div class="clear"></div>
+              <div>
+                <textarea rows="10" cols="10"></textarea>
+              </div>
+              <div class="clear"></div>
+              <div>
+                <label for="check5" class="select-check">
+                  <input type="checkbox" name="field5" id="check5" class="check" />
+                  I have read and agree to the <a href="typography.html">Privacy Policy</a></label>
+              </div>
+              <div class="clear"></div>
+              <div class="submit-review"> <a class="sub-hover" onclick="$(this).closest('form').submit();">CONTINUE</a> <a onclick="$(this).closest('form').submit();">CONTINUE</a> </div>
+              <div class="clear"></div>
+            </form>
+          </div>
+          <!-- block -->
+          <h5><span><a href="#" class="link">Modify &raquo;</a><a href="#">Step 6: Confirm Order</a></span></h5>
+          <!-- block -->
+          <div class="accordin-block step6">
+            <form  action="" method="post">
+              <div class="shopping"> 
+                <!-- start table -->
+                <table id="checkout-tab">
+                  <thead>
+                    <tr>
+                      <th><span>Product</span></th>
+                      <th><span>Model</span></th>
+                      <th><span>Quantity</span></th>
+                      <th><span>Price</span></th>
+                      <th><span>Total</span></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="padding">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Donec Nunc</td>
+                      <td>-</td>
+                      <td>1</td>
+                      <td><div>$87.34</div></td>
+                      <td><div>$87.34</div></td>
+                    </tr>
+                    <tr class="padding bot">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr class="padding">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Urna Accumsan</td>
+                      <td>#104234 black</td>
+                      <td>1</td>
+                      <td><div>$56.99</div></td>
+                      <td><div>$56.99</div></td>
+                    </tr>
+                    <tr class="padding bot">
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- end table --> 
+                <!-- left -->
+                <div class="left"> </div>
+                <!-- left --> 
+                <!-- right -->
+                <div class="right">
+                  <div class="col1"> <span>Sub-Total</span> <span>VAT 15%</span>
+                    <div class="total">Total</div>
+                  </div>
+                  <div class="col2"> <span>$144.33</span> <span>$21.65</span>
+                    <div class="total">$165.98</div>
+                  </div>
+                  <div class="submit-review"> <a class="sub-hover">CONFIRM ORDER</a><a>CONFIRM ORDER</a> </div>
+                </div>
+                <!-- right --> 
+              </div>
+              <div class="clear"></div>
+            </form>
+          </div>
+          <!-- block -->  
+        </div>
+      </div>
+      <!-- end accordinpanel -->
+      <div class="clear"></div>
+    </div>
+    <!-- end leftcol --> 
+    <!-- start rightcol -->
+    <div id="rightcol"> 
+      <!-- widget -->
+      <div class="widget support rightcol-block">
+        <h4 class="red">Need Support?</h4>
+        <p>Donec tristique quam sit amet dolor aliquet vitae tempor <strong>libero ornare</strong>. In sit amet lorem in eros ullamcorper tincidunt. Proin vulputate mauris quis. <a href="contact-page.html"><span>more</span> →</a></p>
+      </div>
+      <!-- widget --> 
+    </div>
+    <!-- end rightcol -->
+    <div class="clear"></div>
+  </div>
+  <!-- end box --> 
+  <!-- start category -->
+  <div class="category">
+    <div class="box"> 
+      <!-- start common -->
+      <div class="common2 first">
+        <h3 class="red">Linear Theme</h3>
+        <p>Integer interdum pretium leo, venenatis commodo male uada sit amet. Suspe disse ut neque neque. <strong>Aenean tincidunt</strong> ullamcorper nibh sit amet singur lopsem egestas. Fermentum erat <strong>condimentum</strong> ac. Sed liget Morbi por ta eget ferment.</p>
+      </div>
+      <!-- end common --> 
+      <!-- start twitter -->
+      <div class="common2 twitter">
+        <h3 class="red">Twitter</h3>
+        <ul id="twitter_update_list">
+          <li></li>
+        </ul>
+        <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/WPNewsStation.json?callback=twitterCallback2&amp;count=2"></script> 
+      </div>
+      <!-- end twitter --> 
+      <!-- start facebook -->
+      <div class="common2 last facebook">
+        <h3 class="red">Facebook</h3>
+        <div class="fb-box"> 
+          <script type="text/javascript" src="js/facebook-box.js"></script> 
+        </div>
+        <!-- the css needs an absolute path to work properly --> 
+      </div>
+      <!-- end facebook -->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- end category --> 
+</div>
+<!-- end container --> 
+<!-- start footer -->
+<div id="footer" class="light"> 
+  <!-- start footer bottom -->
+  <div id="footer-bottom">
+    <div class="box"> 
+      <!-- common -->
+      <div class="common2"> <span class="copyright">&copy; 2012 - Your Linear Store.</span> <span>Powered By <a href="http://themeforest.net/user/aldema">Aldema Studio</a></span> </div>
+      <!-- common --> 
+      <!-- common -->
+      <div class="common4">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-page.html">About Us</a></li>
+          <li><a href="blog-page.html">Blog</a></li>
+          <li><a href="typography.html">Feed RSS</a></li>
+          <li><a href="typography.html">Sitemap</a></li>
+          <li><a href="contact-page.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- common -->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- end footer bottom --> 
+</div>
+<!-- end footer --> 
+<!-- back to top link -->
+<div id="top-container"> <a id="top-link"></a> </div>
+<!-- end back to top link --> 
+<script type="text/javascript" src="js/common_footer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="../js/jquery-1.7.1.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../flowslider.jquery.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $("#slider").FlowSlider();
+        });
+        
+        // Change slider's transition on the fly
+        function set_transition(settings) {
+            jQuery("#slider").prop("FlowSlider")
+                .stop()
+                .set(settings)
+                .start();
+        }
+    </script>
+    
+</head>
+<body>
+
+<div class="wrap">
+    <div class="ad"><script type="text/javascript"><!--
+    google_ad_client = "ca-pub-0387298664982705";google_ad_slot = "0928146764";google_ad_width = 728;google_ad_height = 15;
+    //--></script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div>
+    <h1>Flow Slider Example: Animation Effects</h1>
+    <div class="text">
+        <p>
+            This examples demonstrates different built-in animation effects.
+            You can further adjust animation effects by changing different timing
+            settings. Also, you can add you custom transition functions. NOTE:
+            changing animation after CSS animation will result in improper behaviour,
+            so just refresh your page.
+        </p>
+        <p>
+            Flow Slider is a jQuery plugin for creating JavaScript thumbnail sliders.
+            To learn more visit <a href="http://www.flowslider.com" title="Flow Slider JS Thumbnail Slider">Flow Slider</a>.
+        </p>
+        <br />
+    </div>
+
+    <div style="clear:both;"></div>
+    
+    
+    
+    
+
+    <!-- This is the actual slider ----------------------------------------- -->
+    <div id="slider" class="slider-horizontal">
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+        <div class="item item-4"></div>
+        <div class="item item-5"></div>
+        <div class="item item-6"></div>
+        <div class="item item-7"></div>
+        <div class="item item-8"></div>
+        <div class="item item-9"></div>
+        <div class="item item-10"></div>
+    </div>
+    <!-- Help support Flow Slider. -->
+    <noscript><p>Powered By <a href="http://www.flowslider.com" title="jQuery Thumbnail Slider">Flow Slider</a></p></noscript>
+    <!-- End of the slider ------------------------------------------------- -->
+    
+    
+    <center>
+        <select onchange="eval(this.value);">
+            <option value="set_transition({animation:'None'});">None</option>
+            <option value="set_transition({animation:'Accelerating',animationOptions:{speed:50, acceleration:10000, deceleration:10000}});">Accelerating, constant speed</option>
+            <option value="set_transition({animation:'Accelerating'});">Accelerating</option>
+            <option value="set_transition({animation:'Elastic'});">Elastic</option>
+            <option value="set_transition({animation:'CSS'});">CSS</option>
+            <option value="set_transition({animation:'jQuery'});">jQuery</option>
+            <option value="set_transition({animation:'Transition',animationOptions:{transition:FlowSlider.Transition.none}});">Transition, FlowSlider.Transition.none</option>
+            <option value="set_transition({animation:'Transition',animationOptions:{transition:FlowSlider.Transition.linear}});">Transition, FlowSlider.Transition.linear</option>
+            <option value="set_transition({animation:'Transition',animationOptions:{transition:FlowSlider.Transition.quadratic}});">Transition, FlowSlider.Transition.quadratic</option>
+            <option value="set_transition({animation:'Transition',animationOptions:{transition:FlowSlider.Transition.cubic}});">Transition, FlowSlider.Transition.cubic</option>
+            <option value="set_transition({animation:'Transition',animationOptions:{transition:FlowSlider.Transition.elastic}});">Transition, FlowSlider.Transition.elastic</option>
+            <option value="set_transition({animation:'Transition',animationOptions:{transition:new FlowSlider.Transition.CubicBezier(0.075, 0.820, 0.165, 1.000).transition}});">Transition, FlowSlider.Transition.CubicBezier(0.075, 0.820, 0.165, 1.000)</option>
+        </select>
+    </center>
+    <br />
+    
+    
+
+</div>
+
+</body>
+</html>

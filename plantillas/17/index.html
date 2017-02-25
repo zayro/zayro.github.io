@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>    <html lang="en-US" dir="ltr" class=" lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>       <html lang="en-US" dir="ltr" class="lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>       <html lang="en-US" dir="ltr" class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>       <html lang="en-US" dir="ltr" class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en-US" dir="ltr" class="no-ie"> <!--<![endif]-->
+<head>
+	<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1" />
+	<![endif]-->
+	<meta charset="UTF-8" />
+	<title>Narsis 3D &amp; Responsive Personal VCard Static Template Demo</title>
+	<meta name="viewport" content="width=600" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="format-detection" content="telephone=no" />
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png" />
+	<!-- ColorBox Theme, you can use example1 - example5 -->
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.3/example1/colorbox.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.3/example2/colorbox.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.3/example3/colorbox.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.3/example4/colorbox.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.3/example5/colorbox.css" /> -->
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+</head>
+<body class="preload impress-not-supported">
+	<!--*** Loading animated ***-->
+	<div class="loading-panel">
+		<div class="loading">
+			<div id="loading-gif"></div>
+		</div>
+	</div>
+
+	<!--*** Menu ***-->
+	<div class="container-menu">
+		<nav class="mainmenu">
+			<ul>
+				<li>
+					<a class="fg-bgc" href="#profile">
+						<span class="img-menu" id="about-ico"></span>
+						<span class="txt-menu">About Me</span>
+					</a>
+				</li>
+				<li>
+					<a class="fg-bgc" href="#resume">
+						<span class="img-menu" id="resume-ico"></span>
+						<span class="txt-menu">Resume</span>
+					</a>
+				</li>
+				<li>
+					<a class="fg-bgc" href="#portfolio">
+						<span class="img-menu" id="portfolio-ico"></span>
+						<span class="txt-menu">Portfolio</span>
+					</a>
+				</li>
+				<li>
+					<a class="fg-bgc" href="#contact">
+						<span class="img-menu" id="contact-ico"></span>
+						<span class="txt-menu">Contact Me</span>
+					</a>
+				</li>
+				<li>
+					<a class="fg-bgc" href="#other">
+						<span class="img-menu" id="other-ico"></span>
+						<span class="txt-menu">Other</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<!--*** Pages ***-->
+	<div id="impress">
+		<!--*** Profile ***-->
+		<section class="profile_container cover step" id="profile" data-x="0" data-y="0">
+			<h1 class="cover"><span class="h1-text fg-bgc">About Me</span><span class="h1-corner fg-bdc"></span></h1>
+			<figure class="me left">
+				<div id="myqr">Scan My QR Code</div>
+				<div id="myimg"></div>
+			</figure>
+			<section class="personal-info right">
+				<!-- Personal info section -->
+				<ul>
+					<li>
+						<div class="label fg-bgc">Name</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text">Narsis Askari</div>
+					</li>
+					<li>
+						<div class="label fg-bgc">Birthday</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text">October 30, 1980</div>
+					</li>
+					<li>
+						<div class="label fg-bgc">Phone</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text">412 123 4567</div>
+					</li>
+					<li>
+						<div class="label fg-bgc">Email</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text"><a href="#contact">info@1devs.com</a></div>
+					</li>
+					<li>
+						<div class="label fg-bgc">Website</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text"><a href="http://1devs.com" target="_blank">www.1Devs.com</a></div>
+					</li>
+					<li>
+						<div class="label fg-bgc">Address</div>
+						<div class="corner fg-bdc"></div>
+						<div class="text">4244 Finwood Road, Piscataway, NJ 08854</div>
+					</li>
+				</ul>
+			</section>
+			<section class="aboutme">
+				<hgroup>
+					<h2 class="f30">Narsis Askari</h2>
+					<h2 class="f20">WEB DEVELOPER</h2>
+				</hgroup>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			</section>
+			<a class="dwn-vcard fg-bgc" href="#">Download vCard</a>
+				<!-- Social Icons -->
+			<ul class="social cover">
+				<li><a class="facebook" title="Facebook" href="#"></a></li>
+				<li><a class="twitter" title="Twitter" href="#"></a></li>
+				<li><a class="cs" title="CS" href="#"></a></li>
+				<li><a class="tumblr" title="Tumblr" href="#"></a></li>
+				<li><a class="google" title="Google" href="#"></a></li>
+				<li><a class="linkedin" title="Linkedin" href="#"></a></li>
+				<li><a class="rss" title="RSS" href="#"></a></li>
+			</ul>
+		</section>
+		
+		<!--*** Resume ***-->
+		<section class="resume_container cover step" id="resume" data-x="1000" data-y="-500" data-z="-1500" data-rotate="10" >
+			<h1 class="cover"><span class="h1-text fg-bgc">Resume</span><span class="h1-corner fg-bdc"></span></h1>
+			<!-- EXPERIENCE section -->
+			<section class="edu left">
+				<h2>EXPERIENCE</h2>
+				<ul class="edu-list">
+					<li>
+						<h3>Developer</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores rerum debitis beatae.</p>
+						<span>2001-2003</span>
+					</li>
+					<li>
+						<h3>CEO</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur modi quibusdam quas.</p>
+						<span>2002-2005</span>
+					</li>
+					<li>
+						<h3>Web Teacher</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fuga necessitatibus atque.</p>
+						<span>2008-2009</span>
+					</li>
+					<li>
+						<h3>Chief Engineer</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum doloribus aperiam quod.</p>
+						<span>2012-2013</span>
+					</li>
+				</ul>
+			</section>
+			
+			<!-- EDUCATION section -->
+			<section class="job">
+				<h2>EDUCATION</h2>
+				<ul class="exp-list">
+					<li>
+						<h3>University of Cambridge</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas erat nunc.</p>
+						<span>2004-2008</span>
+					</li>
+					<li>
+						<h3>University of Cambridge</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						<span>2009-2012</span>
+					</li>
+				</ul>
+			</section>
+
+				<!-- SKILLS section -->
+			<section class="skills">
+				<div class="graph-skill">
+					<!-- Choose a number between 0 to 100 for your skills -->
+					<ul>
+						<li class="fig1"><span class="bar-title">100</span></li>
+						<li class="fig2"><span class="bar-title">50</span></li>
+						<li class="fig3"><span class="bar-title">75</span></li>
+						<li class="fig4"><span class="bar-title">35</span></li>
+						<li class="fig5"><span class="bar-title">25</span></li>
+						<li class="fig6"><span class="bar-title">40</span></li>
+					</ul>
+				</div>
+				<div class="graph-title">
+					<ul>
+						<!-- Choose a test for your skills -->
+						<li><span class="graph-lable fig1"></span>HTML5</li>
+						<li><span class="graph-lable fig2"></span>CSS3</li>
+						<li><span class="graph-lable fig3"></span>1Styls</li>
+						<li><span class="graph-lable fig4"></span>JavaScript</li>
+						<li><span class="graph-lable fig5"></span>jQuery</li>
+						<li><span class="graph-lable fig6"></span>PHP</li>
+					</ul>
+				</div>
+			</section>
+		</section>
+
+		<!--*** Portfolio 1/2 ***-->
+		<section class="portfolio_container portfolio1 cover step" id="portfolio" data-x="-300" data-y="-1200" data-z="-3000">
+			<h1 class="cover"><span class="h1-text fg-bgc">Portfolio 1/2</span><span class="h1-corner fg-bdc"></span></h1>
+			 <ul class="filter cover">
+				<li id="all1">All</li>
+				<li id="cat_01">Logo</li>
+				<li id="cat_02">Website</li>
+				<li id="cat_03">Poster</li>
+			</ul>
+
+			<!-- PORTFOLIO-LIST section -->
+			<ul id="portfolio-list" class="cover">
+				<li class="cat_01">
+					<a class="port_group" href="images/portfolio/1.jpg">
+						<img src="images/portfolio/thumb/1.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p>
+				</li>
+				<li class="cat_03">
+					<a class="port_group" href="images/portfolio/2.jpg">
+						<img src="images/portfolio/thumb/2.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_02">
+					<a class="port_group" href="images/portfolio/3.jpg">
+						<img src="images/portfolio/thumb/3.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_02">
+					<a class="port_group" href="images/portfolio/4.jpg">
+						<img src="images/portfolio/thumb/4.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_01">
+					<a class="port_group" href="images/portfolio/5.jpg">
+						<img src="images/portfolio/thumb/5.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_02">
+					<a class="port_group" href="images/portfolio/6.jpg">
+						<img src="images/portfolio/thumb/6.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_03">
+					<a class="port_group" href="images/portfolio/7.jpg">
+						<img src="images/portfolio/thumb/7.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_01">
+					<a class="port_group" href="images/portfolio/8.jpg">
+						<img src="images/portfolio/thumb/8.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+			</ul>
+		</section>
+
+		<!--*** Portfolio 2/2 ***-->
+		<section class="portfolio_container portfolio2 cover step" id="portfolio2" data-x="-300" data-y="-1200" data-z="-3200" data-rotate-y="180">
+			<h1 class="cover"><span class="h1-text fg-bgc">Portfolio 2/2</span><span class="h1-corner fg-bdc"></span></h1>
+			 <ul class="filter cover">
+				<li id="all2">All</li>
+				<li id="cat_05">Art</li>
+				<li id="cat_06">WebSite</li>
+				<li id="cat_07">Other</li>
+			</ul>
+
+			<!-- PORTFOLIO-LIST section -->
+			<ul id="portfolio-list2" class="cover">
+				<li class="cat_05">
+					<a class="port_group" href="images/portfolio/9.jpg">
+						<img src="images/portfolio/thumb/9.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p>
+				</li>
+				<li class="cat_06">
+					<a class="port_group" href="images/portfolio/10.jpg">
+						<img src="images/portfolio/thumb/10.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_05">
+					<a class="port_group" href="images/portfolio/11.jpg">
+						<img src="images/portfolio/thumb/11.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_06">
+					<a class="port_group" href="images/portfolio/12.jpg">
+						<img src="images/portfolio/thumb/12.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_07">
+					<a class="port_group" href="images/portfolio/13.jpg">
+						<img src="images/portfolio/thumb/13.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_07">
+					<a class="port_group" href="images/portfolio/14.jpg">
+						<img src="images/portfolio/thumb/14.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_05">
+					<a class="port_group" href="images/portfolio/15.jpg">
+						<img src="images/portfolio/thumb/15.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+				<li class="cat_07">
+					<a class="port_group" href="images/portfolio/16.jpg">
+						<img src="images/portfolio/thumb/16.jpg" width="200" height="140" alt="" />
+						<span></span>
+					</a>
+					<h3 class="title">title about your work</h3>
+					<p class="categorie">Categorie Name</p> 
+				</li>
+			</ul>
+		</section>
+
+		<!--*** Contact ***-->
+		<section class="contact_container cover step" id="contact" data-x="-1600" data-y="-600" data-z="-4700" data-rotate-z="10" data-rotate-y="180">
+			<h1 class="cover"><span class="h1-text fg-bgc">Contact Me</span><span class="h1-corner fg-bdc"></span></h1>
+			
+			<!-- GOOGLE MAP -->
+			<div class="map left">
+				<iframe src="map.html"></iframe>
+			</div>
+			
+			<!-- CONTACT FORM -->
+			<div class="form">
+				<form action="sendmail.php" class="right" id="contact-form" method="post" target='ifrm'>
+					<input id="name" placeholder="Name" type="text" name="name" title="Your Name" />
+					<input id="mail" placeholder="E-mail" type="text" name="mail" title="Your E-mail Address" />
+					<textarea id="msg" placeholder="Your Message" name="msg" cols="40" rows="10" title="The Text Sent to Me"></textarea>
+					<input type="submit" value="Send" name="submit" class="fg-bgc" /><span class="corner submit fg-bdc"></span>
+				</form>
+				<iframe id='ifrm' name='ifrm'></iframe>
+				
+				<!-- CONTACT INFO -->
+				<div class="contact-info right">
+					<p id="e-mail">info@1devs.com</p>
+					<p id="phone">732-465-2102</p>
+					<p id="website">www.1Devs.com</p>
+					<p id="address">4244 Finwood Road, Piscataway, NJ 08854</p>
+				</div>
+			</div>
+		</section>
+
+		<!--*** Features ***-->
+		<section class="feature_container cover step" id="other" data-x="-1600" data-y="-600" data-z="-4500" data-rotate-z="-10">
+			<h1 class="cover"><span class="h1-text fg-bgc">Template Features</span><span class="h1-corner fg-bdc"></span></h1>
+			<section class="feature left">
+				<h2>Main Features</h2>
+				<ul class="feature-list">
+					<li>
+						<h3>3D Impressive Animation</h3>
+						<p>If you are useing a modern browser like chrome<br/>Then you can see all pages have full 3d animated.</p>
+					</li>
+					<li>
+						<h3>Multi color and pattern skins</h3>
+						<p>
+							<b>26</b> Color Skins.<br/>
+							<b>50</b> Background Images and Patterns.<br/>
+							<b>620</b> Free Google Web Font<br/>
+						</p>
+					</li>
+					<li>
+						<h3>Smart &amp; Simple Design</h3>
+						<p>Great, Modern and awesome design for future web users</p>
+					</li>
+					<li>
+						<h3>Valid and Clean Codes</h3>
+						<p>All HTML5 and CSS3 codes are fully validated and cleaned.</p>
+					</li>
+					<li>
+						<h3>Crossbrowser compatible, IE7 included</h3>
+						<p>
+							Google Chrome, Mozilla Firefox, Opera, Apple Safari<br/>
+							Google Android and Aplle IOS Browser compatibile.<br/>
+							New design for Fully Support in Internet Explorer 6-10.
+						</p>
+					</li>
+				</ul>
+			</section>
+			
+			<section class="more-feature">
+				<h2>Fully Customizable</h2>
+				<ul class="feature-list">
+					<li>
+						<h3>Full Editable Content</h3>
+						<p>You can edit all contents easily, no need for any Applications or special Skills.</p>
+					</li>
+					<li>
+						<h3>Add New Page</h3>
+						<p>
+							You can simply create a new page, Wherever you want.<br/>
+							All you have to do is just, set x,y,z &amp; 3D Rotate with Depth.
+							It will be animated automaticly !
+						</p>
+					</li>
+					<li>
+						<h3>Responsive 3D Design</h3>
+						<p>
+							Dimention, Zoom and 3D Animations will change automaticly in any screen resolution and device dpi
+						</p>
+					</li>
+					<li>
+						<h3>Ajax Contact Form</h3>
+						<p>
+							Send email with Ajax technology.<br/>
+							Google Map api
+						</p>
+					</li>
+					<li>
+						<h3>1 Page Design</h3>
+						<p>
+							All data is in 1 page, so the page just load once!
+						</p>
+					</li>
+				</ul>
+			</section>
+		</section>
+
+		<!-- If you want to have a overview you can simplay remove the comment -->
+		<!-- <section id="overview" class="step" data-x="0" data-y="-600" data-rotate-x="10" data-z="1000"></section> -->
+	</div>
+
+	<!--*** SKIN SELECT ***-->
+	<div class="skin-selector">
+		<a id="toggle-panel" href="#" title="Custom your Site Now!"><img src="images/pin.png" width="26" height="26" alt="" /></a>
+		<div class="container-skins">
+			<div class="font-color">
+				<h3>Choose Color :</h3>
+				<ul class="cover">
+					<li class="color-white" title="White"></li>
+					<li class="color-light-gray" title="Light Gray"></li>
+					<li class="color-gray" title="Gray"></li>
+					<li class="color-dark-gray" title="Dark Gray"></li>
+					<li class="color-black" title="Black"></li>
+				</ul>
+			</div>
+			<div class="style-color">
+				<h3>Choose Style :</h3>
+				<ul class="cover">
+					<li class="default" title="Default"></li>
+
+					<li class="white" title="White"></li>
+					<li class="blue-aqua" title="Blue Aqua"></li>
+					<li class="blue-cold" title="Blue Cold"></li>
+					<li class="blue-soft" title="Blue Soft"></li>
+					<li class="blue-dark" title="Blue Aqua"></li>
+
+					<li class="green-dark" title="Green Dark"></li>
+					<li class="lime" title="Lime"></li>
+					<li class="orange-strong" title="Orange Strong"></li>
+					<li class="pink" title="Pink"></li>
+					<li class="purple-light" title="Purple Light"></li>
+
+					<li class="green" title="Green"></li>
+					<li class="orange-dark" title="Orange Dark"></li>
+					<li class="brown-coffee" title="Brown Coffee"></li>
+					<li class="green-soft" title="Green Soft"></li>
+					<li class="brown-soft" title="Brown Soft"></li>
+
+					<li class="red-dark" title="Red Dark"></li>
+					<li class="yellow-soft" title="Yellow Soft"></li>
+					<li class="gray-light" title="Gray Light"></li>
+					<li class="pink-dark" title="Pink Dark"></li>
+					<li class="purple" title="Purple"></li>
+				</ul>
+			</div>
+			<div class="pattern-bg">
+				<h3>Choose Pattern :</h3>
+				<ul class="cover">
+					<li class="pattern-squares" title="Default"></li>
+					<li class="pattern-card" title="Card"></li>
+					<li class="pattern-arches" title="Arches"></li>
+					<li class="pattern-squares2" title="Squares2"></li>
+					<li class="tile" title=""></li>
+
+					<li class="tile2" title="Tile2"></li>
+					<li class="tile3" title="Tile3"></li>
+					<li class="tile4" title="Tile4"></li>
+					<li class="pattern-brushed" title="Brushed"></li>
+					<li class="pattern-paper" title="Paper"></li>
+
+					<li class="pattern-old-paper" title="Old Paper"></li>
+					<li class="pattern-grid" title="Grid"></li>
+					<li class="pattern-dots" title="Dots"></li>
+					<li class="pattern-lines" title="Lines"></li>
+					<li class="pattern-birds" title="Birds"></li>
+
+					<li class="pattern-blueprint" title="Blueprint"></li>
+					<li class="pattern-dark" title="Dark"></li>
+					<li class="pattern-dark2" title="Dark2"></li>
+					<li class="pattern-dark-lines" title="Dark Lines"></li>
+					<li class="pattern-carbon" title="Carbon"></li>
+
+					<li class="pattern-carbon2" title="Carbon2"></li>
+					<li class="pattern-metal" title="Metal"></li>
+					<li class="pattern-wood" title="Wood"></li>
+
+					<li class="blur-home" title="Blur Home"></li>
+					<li class="blur-office" title="Blur Office"></li>
+					<li class="blur-road" title="Blur Road"></li>
+
+					<li class="blur-balls" title="Blur Balls"></li>
+					<li class="blur-bargs" title="Blur Bargs"></li>
+					<li class="blur-bubbles" title="Blur Bubbles"></li>
+					<li class="blur-cabbage" title="Blur Cabbage"></li>
+					<li class="blur-dooks" title="Blur Dooks"></li>
+					<li class="blur-focus" title="Blur Focus"></li>
+					<li class="blur-frosty" title="Blur frosty"></li>
+					<li class="blur-golden" title="Blur golden"></li>
+					<li class="blur-leaf" title="Blur leaf"></li>
+					<li class="blur-lights" title="Blur lights"></li>
+					<li class="blur-maple" title="Blur maple"></li>
+					<li class="blur-maple2" title="Blur maple2"></li>
+					<li class="blur-nicecolors" title="Blur nicecolors"></li>
+					<li class="blur-shoes" title="Blur shoes"></li>
+					<li class="blur-suntree" title="Blur suntree"></li>
+					<li class="blur-wood" title="Blur wood"></li>
+					<li class="greenbf" title="Greenbf"></li>
+					<li class="nicecolors" title="Nicecolors"></li>
+
+				</ul>
+			</div>
+			<div class="color-bg">
+				<h3>Choose Background :</h3>
+				<ul class="cover">
+					<li class="default" title="Default"></li>
+
+					<li class="white" title="White"></li>
+					<li class="blue-aqua" title="Blue Aqua"></li>
+					<li class="blue-cold" title="Blue Cold"></li>
+					<li class="blue-soft" title="Blue Soft"></li>
+					<li class="blue-dark" title="Blue Aqua"></li>
+
+					<li class="green-dark" title="Green Dark"></li>
+					<li class="lime" title="Lime"></li>
+					<li class="orange-strong" title="Orange Strong"></li>
+					<li class="pink" title="Pink"></li>
+					<li class="purple-light" title="Purple Light"></li>
+
+					<li class="green" title="Green"></li>
+					<li class="orange-dark" title="Orange Dark"></li>
+					<li class="brown-coffee" title="Brown Coffee"></li>
+					<li class="green-soft" title="Green Soft"></li>
+					<li class="brown-soft" title="Brown Soft"></li>
+
+					<li class="red-dark" title="Red Dark"></li>
+					<li class="yellow-soft" title="Yellow Soft"></li>
+					<li class="gray-light" title="Gray Light"></li>
+					<li class="pink-dark" title="Pink Dark"></li>
+					<li class="purple" title="Purple"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--*** Scripts ***-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<!--[if !IE]><!-->
+		<script type="text/javascript" src="script/impress.js"></script>
+	<!--<![endif]-->
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.3/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+</body>
+</html>

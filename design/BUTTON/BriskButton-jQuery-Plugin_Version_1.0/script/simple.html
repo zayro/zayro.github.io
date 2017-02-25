@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<!--
+ * BriskButton for Websites - jQuery Plugin (v1.00)
+ * Copyright 2011, SOYOS Online Solutions
+ *
+ * Project Website:
+ * http://www.soyos.net/labs/briskbutton/
+ *
+ * More Scripts:
+ * http://www.soyos.net/labs/
+ *
+ * Requires Easing Plugin for Window Animations:
+ * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+ *
+ * Latest Update 11.09.2011
+//-->
+  <head>
+    <title>BriskButton - jQuery Plugin (v1.0) | Better Buttons for Websites</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link href="css/BriskButton.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery-BriskButton.js"></script>
+    <style>
+    #site {
+      width: 894px;
+      margin: auto;
+    }
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        /*Sample Buttons - with Icons ----------------------------------------------------------------------------------------------------------*/
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<span>Hover me!</span>',
+          BriskButtonSourceID:       'BriskButton-Samplebox',
+          BriskButtonPlacementID:    'buttonplace-icons',
+          BriskButtonPositionTop:    20,
+          BriskButtonPositionLeft:   0
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="site">
+        <p>Your Website Content...	</p>
+        <div id="buttonplace-icons" style="position: relative; margin-left: 0px; height: 100px; "></div>
+        <p>Your Website Content...	</p>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!-- Demo Content -->
+        <div id="BriskButton-Samplebox" style="display: none;">
+          <div class="SampleBox2">
+            <p>
+              IHR HTML/CSS INHALT...
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Google Code -->
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-3677921-4']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>      
+  </body>
+</html>

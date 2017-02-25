@@ -1,0 +1,266 @@
+<html>
+<body>
+
+<h1>Novatorix - Business, Portfolio and Blog theme (version 1.4)<br>
+(shared on themelock.com)</h1>
+
+
+Thank you for purchasing this template. If you have any questions that are beyond the scope 
+of this help file, please feel free to contact me, go to my 
+themeforest.net profile page and send me a message from there so that I can get back to 
+you sooner. <br><br>
+
+<strong>Note:</strong> After you activate the theme please do the needful settings required for this theme 
+and then preview the theme after you set everything. Theme visualization will not be perfect 
+until you setup everything as mentioned in below documentation. <br><br>
+
+<h2>Novatorix also has 10 Fantastic skins to choose from:</h2>
+<ul>
+<li><a href="http://novatorix.atixscripts.info/?color=arsenic.css">Arsenic</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=burlywood.css">BurlyWood</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=chocolate.css">Chocolate</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=darkgreen.css">DarkGreen</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=firebrick.css">FireBrick</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=ivoryblack.css">IvoryBlack</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=purpletaupe.css">PurpleTaupe</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=seagreen.css">SeaGreen</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=steelblue.css">SteelBlue</a></li>
+<li><a href="http://novatorix.atixscripts.info/?color=teal.css">Teal</a></li></li>
+</ul>
+	
+<h2>Features:</h2>
+<ul>
+<li>Multiple CSS Styles</li>
+	<ul><li> Select from 10 Custom CSS styles from Admin Area</li></ul>
+<li>Homepage sliders</li>
+	<ul>
+		<li>Nivo Slider</li>
+		<li>The 3D image slider is editable without the use of flash. You can add and remove slides, change transitions with the help of a backend</li>
+	</ul>
+<li>jQuery Drop-down menu</li>
+<li>Portfolio Gallery Templates</li>
+	<ul><li>Create as many Portfolio Galleries as you like</li>
+		<li>Two layout options (full or gallery view)</li>
+		<li>Lightbox (prettyPhoto) Effect for Pop-up Images</li></ul>
+<li>Page Templates</li>
+	<ul><li>Contact Template</li>
+		<li>Blog Template</li>
+		<li>Full Width (no Sidebar)</li>
+		<li>Sitemap</li>
+		<li>404 Error and archives pages/li></ul>
+<li>Custom Style Shortcodes</li>
+<li>Custom admin panel with 7 different option settings: General options, Homepage, Portfolio, Footer, Get in touch and 3D Homepage slider</li>
+<li>5 custom widgets: Flickr, Header Search form, Popular Posts, Post Author Info, Related Posts</li>
+<li>15 Custom widget sidebars</li>
+<li>Ajax Contact Form</li>
+<li>Font Replacement (cufon)</li>
+<li>Breadcrumbs Navigation</li>
+<li>Multi Level Menu</li>
+<li>All PSDs files (with all 10 colors)</li>
+	<ul><li>Layered PSDs are included for easy modification</li></ul>
+<li>Detailed documentation included</li>
+</ul>
+
+<h2>Table of Contents</h2>
+<ul>
+<li>Theme Info</li>
+<li>Features</li>
+<li>Files Included</li>
+<li>Theme Installation</li>
+<li>Add Pages, Categories and Posts</li>
+<li>Logo Setup</li>
+<li>Social Bookmarks</li>
+<li>Changing Color Options</li>
+<li>Theme Widget sidebars</li>
+<li>Changing Color Options</li>
+<li>Novatorix admin panel options</li>
+</ul>
+
+
+<h2>Theme Info</h2>
+
+Novatorix is a Wordpress Theme, best suited for Business and Portfolio sites. This theme has all the popular and common features. It comes with a fantastic 3D Image slideshow that can be controlled from your backend with a custom tool. The Theme has a huge wordpress custom backend (7 different option pages) that make customization of the Theme easy for those who dont know much about coding or wordpress. For more details see features list below. 
+
+<br>
+<ul><h3>Features</h3>
+<ul>
+    <li> Multiple CSS Styles</li>
+	<ul>
+		<li> Select from 10 Custom CSS styles from Admin Area</li>
+	</ul>
+	<li> 2 Columns CSS Layout</li>
+    <li> Homepage Sliders</li>
+	<ul>
+		<li>Nivo Slider</li>
+		<li>The 3D image slider is editable without the use of flash. You can add and remove slides, change transitions with the help of a backend</li>
+	</ul>
+    <li> jQuery Drop-down menu</li>
+    <li> Portfolio Gallery Templates</li>
+	<ul>
+		<li> Create as many Portfolio Galleries as you like</li>
+		<li> Two layout options (full or gallery view)</li>
+		<li> Lightbox (prettyPhoto) Effect for Pop-up Images</li>
+	</ul>
+	<li> Page Templates</li>
+	<ul>
+		<li> Contact Template</li>
+		<li> Blog Template	</li>
+		<li> Full Width (no Sidebar)</li>
+		<li> Sitemap</li>
+		<li> 404 Error and archives pages</li>
+	</ul>
+	<li> Custom Style Shortcodes</li>
+    <li> Custom Admin Panel with 7 different option pages: General options, Homepage, Portfolio, Footer, Get in touch and Homepage sliders</li>
+	<li> Sidebar Widget ready Layout</li>
+	<ul>
+		<li> 5 custom widgets: Flickr, Header Search form, Popular Posts, Post Author Info, Related Posts</li>
+	</ul>
+	<li> 15 Custom Widget Sidebars</li>
+    <li> Ajax Contact Form</li>
+	<li> Font Replacement (font-face)</li>
+	<li> Breadcrumbs Navigation</li>
+    <li> All PSDs files (with all 10 colors)</li>
+	<ul>
+		<li> Layered PSDs also are included for easy modification</li>
+	</ul>
+    <li> Detailed documentation included</li>
+	<li> Compatibility (IE 6, IE 7, IE 8, Firefox, Opera, Safari, Chrome)</li>
+</ul>
+</ul>
+	
+
+<ul><h3>Files Included</h3>
+<ul>
+	<li> 10 PSD files (with all 10 colors) and layered PSD files easy to slice</li>
+	<li> HTML help file with instructions</li>
+	<li> Wordpress PHP files</li>
+	<li> Html files / PHP Files</li>
+	<li> CSS files</li>
+</ul>
+</ul>
+
+
+<h2>Theme Installation</h2>
+
+<h3>Update Wordpress</h3>
+To ensure a positive user experience, we highly recommend you update your wordpress to the latest stable version. (currently 2.9.2 or 2.3.0). This will help to ensure that you are able to utilize all of the latest features of wordpress.
+
+<br><br>
+<h3>Installing Novatorix theme is just like installing any other wordpress theme.</h3>
+1) Locate the [novatorix] directory inside the zip file you downloaded from ThemeForest.net<br>
+2) Upload the [novatorix] directory to your themes folder inside your wordpress [wp-content/themes/].<br>
+3) Activate the [Novatorix - Business, Portfolio and Blog theme] theme by selecting the Appearance -> Theme tab and then activate.<br>
+4) Theme do not requires plugins. <br><br>
+
+Make sure you have knowledge in wordpress before editing any code which is in php or css files.
+
+<br><br>
+<h3>Add Pages, Categories and Posts</h3>
+1. At first create all Pages, that will be displayed in header menu.<br>
+	&nbsp;&nbsp;&nbsp;a) Enter Page name<br>
+	&nbsp;&nbsp;&nbsp;b) Add content<br>
+	&nbsp;&nbsp;&nbsp;c) Select 'Template' from right sidebar. Available Novatorix templates: Blog Template, Contact Template, Full Width Template, Portfolio Full View, Portfolio Gallery View, Sitemap Template and 404 error page<br>
+	&nbsp;&nbsp;&nbsp;d) After all pages was created go to admin panel 'Novatorix => General' and find 'Blog Page' and select page that will show Blog posts. Save changes.<br><br>
+	<img src="images/create-page.jpg">
+<br><br>	
+2. Create Blog Categories
+
+<br><br>
+3. Create Posts<br>
+	&nbsp;&nbsp;&nbsp;a) Enter post Title<br>
+	&nbsp;&nbsp;&nbsp;b) Enter Content<br>
+	&nbsp;&nbsp;&nbsp;c) Select Category from right sidebar.<br>
+	&nbsp;&nbsp;&nbsp;d) Each post needs to have an image associated with it. 'Set thumbnail' in right sidebar under 'Post Thumbnail'. Upload full view image.<br>
+	&nbsp;&nbsp;&nbsp;e) Add 'Portfolio image Description' for 'Portfolio Full View' template<br>
+	&nbsp;&nbsp;&nbsp;f) Add 'Portfolio videos, flash, YouTube, Vimeo url'. Insert videos, flash, YouTube, Vimeo, iFrames full url. Note: If is empty will show image full preview from 'Post Thumbnail'.<br>
+	&nbsp;&nbsp;&nbsp;e) Don't forget to Save when you done.<br><br>
+	
+	<img src="images/set-thumbnail.jpg"><br><br>
+	<img src="images/set-thumbnail2.jpg"><br><br>
+	<img src="images/post-video-flash.jpg"><br><br>	
+	
+<br><br>
+<h3>Logo Setup</h3>
+For changing the logo you need to save the logo in transparent PNG format and setup URL in admin panel 'Novatorix => General'<br><br>
+<img src="images/logo-setup.jpg"><br><br>	
+
+<h3>Social Bookmarks</h3>
+I have added total of 4 Options which you can enable or disable by going to theme options.<br><br>
+<img src="images/get-in-touch.jpg"><br><br>	
+
+
+<h3>Changing Color Options</h3>
+Provided 10 color schemes. Go to admin panel and choose the color you want and save changes.<br><br>
+
+<img src="images/styles.jpg"><br><br>	
+
+<h3>Theme Widget sidebars</h3>
+5 custom widgets: Flickr, Header Search form, Popular Posts, Post Author Info, Related Posts. 15 Custom widget sidebars.
+<img src="images/widgets1.jpg"><br><br>
+<img src="images/widgets2.jpg"><br><br>
+
+	
+<h3>Novatorix admin panel options</h3>
+<ul><h4>'General' options</h4>
+	<ul>
+		<li>Select your preferred color scheme.</li>
+		<li>URL to your logo.</li>		
+		<li>Enter your header slogan or you can select select widget 'Homepage slogan'.</li>		
+		<li>Page that will show Blog posts.</li>				
+		<li>Exclude Pages.</li>						
+		<li>Exclude Blog Categories.</li>								
+		<li>Enable breadcrumbs</li>
+		<li>Tracking Code (e.g. Google Analytics). The code will be added to the footer of each pages.</li>
+	</ul>
+</ul>
+
+
+<ul><h4>'Homepage 3 Columns' options</h4>
+	<ul>
+		<li>Enter 3 columns title, url, image url and description or you can select select widgets 'Homepage column 1', 'Homepage column 2' and 'Homepage column 3'.</li>
+	</ul>
+</ul>
+
+<ul><h4>'Homepage 4 Columns' options</h4>
+	<ul>
+		<li>Enter 4 columns title and description.</li>
+	</ul>
+</ul>
+
+<ul><h4>'Homepage slider' options</h4>
+	<ul>
+		<li>Please enter how many images to show in homepage slider. Note: click 'Save changes' and after you will instert images and descrtption.</li>
+		<li>Select slider: Nivo slider, Piecemaker 3D slider or use static image. If you will select static image, please enter 'Static Image URL' and 'Static Go To URL' (optional).</li>
+		<li>Upload all images into your theme folder /novatorix/scripts/piecemaker/images/ and enter only image name (e.g. image1.jpg).</li>
+		<li>Enter 'Headline', 'Description' for all images. Required is only 'Image name', 'Headline' and 'Description' are optional.</li>
+		<li>Use a lot of slider options like Image Width, Image Height, Segments, Tween Type, etc.</li>
+	</ul>
+</ul>
+
+<ul><h4>'Portfolio' options</h4>
+	<ul>
+		<li>Choose the number of items you want to display on your Portfolio Gallery view Pages. In Portfolio full view will show default number from 'Reading Settings' => (http://www.yoursite.com/wp-admin/options-reading.php)</li>
+		<li>Assign Portfolio Page to a Category. Must be selected page templates for portfolio already when you will create pages.</li>
+	</ul>
+</ul>
+
+<ul><h4>'Get in touch' options</h4>
+	<ul>
+		<li>Enable RSS, Twitter, Facebook, LinkedIn and enter full url for them. You can uncheck to now show images and links. These images will be show in footer.</li>
+		<li>Enter your Address, Phone, Your fax, Your email or select widget 'Footer column 3'.</li>
+		<li>Enter Footer copyrigh info.</li>
+	</ul>
+</ul>
+
+<ul><h4>'Footer' options</h4>
+	<ul>
+		<li>Enter first and second testimonial or select widget 'Footer column 1' and 'Footer column 2'.</li>
+		<li>Enter your Address, Phone, Your fax, Your email or select widget 'Footer column 3'.</li>
+		<li>Enter Footer copyrigh info.</li>
+	</ul>
+</ul>
+
+Thank you once again for purchasing this template. Please go to www.themeforest.net downloads page where you downloaded the template and give ratings to this theme. 
+
+</body>
+</html>

@@ -1,0 +1,81 @@
++ Bonus Novatorix HTML Version
+
+
+UPDATES LOG:
+
+    Dec. 15, 2010 — version 1.4 was released. Download the UPDATED FILES NOW !!!
+        Wordpress 3.0 Menu Support
+        New slider – Nivo slider
+
+Novatorix is a Wordpress Theme, best suited for Business and Portfolio sites. 
+
+It comes with a fantastic 3D Image slideshow that can be controlled from your backend 
+with a custom tool. The Theme has a huge wordpress custom backend 
+(7 different option pages) that make customization of the Theme easy for those who 
+don’t know much about coding or wordpress.
+
+
+Novatorix also has 10 Fantastic skins to choose from:
+
+    Arsenic
+    BurlyWood
+    Chocolate
+    DarkGreen
+    FireBrick
+    IvoryBlack
+    PurpleTaupe
+    SeaGreen
+    SteelBlue
+    Teal
+
+
+Features:
+
+    WP 3 .0 Menu Support
+    Multiple CSS Styles
+        Select from 10 Custom CSS styles from Admin Area
+    2 Sliders
+        Nivo Slider
+        The 3D image slider is editable without the use of flash. You can add and remove slides, 
+        change transitions with the help of a backend
+    jQuery Drop-down menu
+    Portfolio Gallery Templates
+        Create as many Portfolio Galleries as you like
+        Two layout options (full or gallery view)
+        Lightbox (prettyPhoto) Effect for Pop-up Images
+    Page Templates
+        Contact Template
+        Blog Template
+        Full Width (no Sidebar)
+        Sitemap
+        404 Error and archives pages/li>
+    Custom Style Shortcodes
+    Custom admin panel with 7 different option settings: General options, Homepage, Portfolio, Footer, 
+    Get in touch and 3D Homepage slider
+    5 custom widgets: Flickr, Header Search form, Popular Posts, Post Author Info, Related Posts
+    15 Custom widget sidebars
+    Ajax Contact Form
+    Font Replacement (font-face)
+    Breadcrumbs Navigation
+    Multi Level menu
+    All PSD files (with all 10 colors)
+        Layered PSD are included for easy modification
+    Detailed documentation included
+
+
+External scripts and resources used:
+
+http://www.ryuneo-designs.com
+http://www.adobetutorialz.com
+http://www.komodomedia.com/download
+http://www.modularweb.net/piecemaker
+http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/
+http://www.zvr.gr/typo/mgopen/index
+
+
+
+Demo: http://novatorix.atixscripts.info/
+
+Info: http://themeforest.net/item/novatorix-10-in-1-business-portfolio-and-blog/111717
+
+Screenshots: http://themeforest.net/theme_previews/111717-novatorix-10-in-1-business-portfolio-and-blog

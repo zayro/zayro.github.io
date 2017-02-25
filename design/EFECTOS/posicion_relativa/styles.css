@@ -1,0 +1,105 @@
+*{
+	/* Page reset */
+	margin:0;
+	padding:0;
+}
+
+body{
+	/* Body Styles */
+	font-size:12px;
+	color:#666;
+	background-color:#f8f8f8;
+	font-family:Arial, Helvetica, sans-serif;
+	height:3000px
+}
+
+#iAmFixed{
+	background-color:#F6E4F5;
+	border:1px solid white;
+	bottom:15px;
+	padding:15px;
+	position:fixed;
+	right:95px;
+	width:300px;
+	z-index:10;
+}
+
+#iAmAbsoluteInsideFixed{
+	background-color:#DCF4F9;
+	border:1px solid white;
+	padding:15px;
+	position:absolute;
+	right:-50px;
+	top:-90px;
+}
+
+#iAmAbsolute{
+	background-color:#DCF9E1;
+	border:1px solid white;
+	left:0;
+	padding:15px;
+	position:absolute;
+	top:0;
+	width:150px;
+}
+
+#iAmRelative{
+	background-color:#F8F7C3;
+	border:1px solid white;
+	left:400px;
+	padding:20px;
+	position:relative;
+	width:200px;
+}
+
+#iAmAbsoluteInsideRelative{
+	background-color:#F8D9C3;
+	border:1px solid white;
+	bottom:-140px;
+	left:-180px;
+	padding:20px;
+	position:absolute;
+}
+
+pre{
+	background-color:rgba(255, 255, 255, 0.35);
+	color:#888888;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:10px;
+	margin-top:10px;
+	padding:10px;
+}
+
+pre b{
+	color:black;
+	font-weight:normal;
+}
+
+h1{
+	font-size:24px;
+	padding:30px 0 0;
+	text-align:center;
+	text-shadow:0 1px 1px white;
+}
+
+h2{
+	font-size:20px;
+	font-weight:normal;
+	padding:10px 0 50px;
+	right:40px;
+	text-align:center;
+}
+
+h1,h2{
+	font-family:"Myriad Pro",Arial,Helvetica,sans-serif;
+}
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}

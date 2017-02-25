@@ -1,0 +1,130 @@
+/*
+Theme Name: Responsive site launch 
+Theme URI: http://www.ansonika.com/responsive_site_launch/
+Description: Responsive site launch is created by <a href="http://www.ansonika.com">Ansonika</a>.
+Version: 1.0.0
+Author: Ansonika
+Author URI: http://themeforest.net/user/Ansonika/
+
+CSS STRUCTURE:
+
+1. SITE STRUCTURE
+2. MEDIA QUERIES
+
+/*============================================================================================*/
+/* 1. SITE STRUCTURE */
+/*============================================================================================*/
+#shadow_top{ background:url(../img/shadow_top.png) repeat-x;}
+#logo { text-align:center; margin-top:60px; margin-bottom:68px;}
+/* Counter style ------------------------*/
+.hasCountdown {}
+.countdown_rtl {direction: rtl;}
+.countdown_holding span {}
+.countdown_row {clear: both;width: 100%;padding: 0;text-align: center;}
+.countdown_show1 .countdown_section {width: 98%;}
+.countdown_show2 .countdown_section {width: 48%;}
+.countdown_show3 .countdown_section {width: 32.5%;}
+.countdown_show4 .countdown_section {width: 24.5%;}
+.countdown_show5 .countdown_section {width: 19.5%;}
+.countdown_show6 .countdown_section {width: 16.25%;}
+.countdown_show7 .countdown_section {width: 14%;}
+.countdown_section {display: block;padding-top:55px;text-align: center;background: url(../img/bg_number.png) no-repeat center top;height:180px;margin-bottom:0;}
+.countdown_amount {font-size:80px;color:#fff;font-weight:700;text-shadow:3px 3px 5px rgba(0,0,0,.9);letter-spacing:-1px;}
+.count_titles {margin-top:10px;display:block;font-size:18px;color:#fff;font-weight:300;}
+
+.msg {color:#fff; font-size:20px; background:url(../img/arrow_1_b.png) no-repeat 80px 45px; text-align:center; height:120px; line-height:14px;}
+
+/* Form style ------------------------*/
+#form_bg {background:url(../img/bg_form.png) no-repeat top left;width:580px;height:68px;position:relative;margin:50px 0 70px 0;}
+#form_bg input {position:absolute; top: 12px;left:15px;border:none;background:none;padding:10px;height:25px;width:395px;font-size:14px;font-weight:700;color:#707070;display:block;text-align:left;}
+
+.ie8 #form_bg input, .ie7 #form_bg input  {position:absolute; top:18px;left:15px;border:none;background:none;padding:10px;height:25px;width:395px;font-size:14px;font-weight:700;color:#707070;display:block;text-align:left;}
+
+.send_bt {background:url(../img/button.png) no-repeat top left;width:132px;height:53px;text-indent:-9999px;display:block;cursor:pointer;position:absolute; top: 8px;left:441px;border:none;}
+.success {font-weight:700;color:#acd373; height:68px;margin:50px 0 100px 0; text-align:center}
+
+/* error message */
+.error {background-color: #fff;font-size:11px;padding:2px 5px;color:#000;width:110px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin:0 0 10px 0;position:absolute;top: 50px;left:0px;text-align:center; z-index:1000;}
+
+/* Footer------------------------*/
+#footer { border-top: 1px solid #777; padding-top:20px;}
+.copy {color:#f2f2f2;font-size:11px;padding-bottom:25px;text-shadow:0 1px 1px #000;}
+ul#follow{float:right;}
+ul#follow li{float:left;margin-right:10px;}
+ul#follow li:last-child{margin-right:0;}
+ul#follow li a{display:block;height:36px;text-indent:-9999px;width:37px;}
+ul#follow li a#tw{background:url(../img/sprite_social.png) no-repeat 0 0;}
+ul#follow li a:hover#tw{background:url(../img/sprite_social.png) no-repeat 0 -42px;}
+ul#follow li a#rss{background:url(../img/sprite_social.png) no-repeat -47px 0;}
+ul#follow li a:hover#rss{background:url(../img/sprite_social.png) no-repeat -47px -42px;}
+ul#follow li a#vimeo{background:url(../img/sprite_social.png) no-repeat -94px 0;}
+ul#follow li a:hover#vimeo{background:url(../img/sprite_social.png) no-repeat -94px -42px;}
+ul#follow li a#fb{background:url(../img/sprite_social.png) no-repeat -141px 0;}
+ul#follow li a:hover#fb{background:url(../img/sprite_social.png) no-repeat -141px -42px;}
+/*============================================================================================*/
+/* 2. MEDIA QUERIES */
+/*============================================================================================*/
+	
+/* Smaller than standard 960 (devices and browsers) ========================================= */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) ================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	
+	.countdown_section {display: block;padding-top:45px;text-align: center;background: url(../img/bg_number_2.png) no-repeat center top;height:140px;margin-bottom:0;}
+	.countdown_amount {font-size:60px;color:#fff;font-weight:700;text-shadow:3px 3px 5px rgba(0,0,0,.9);letter-spacing:-1px;}
+	.count_titles {margin-top:10px;display:block;font-size:16px;color:#fff;font-weight:300;}
+	
+	.msg {color:#fff; font-size:20px; background:url(../img/arrow_1_b.png) no-repeat 40px 45px; text-align:center; height:120px; line-height:14px;}
+	
+	#form_bg {background:url(../img/bg_form_2.png) no-repeat top left;width:460px;height:68px;position:relative;margin:50px 0 70px 0;}
+	#form_bg input {position:absolute; top: 12px;left:15px;border:none;background:none;padding:10px;height:25px;width:275px;font-size:14px;font-weight:700;color:#707070;display:block;text-align:left;}
+	.send_bt {background:url(../img/button.png) no-repeat top left;width:132px;height:53px;text-indent:-9999px;display:block;cursor:pointer;position:absolute; top: 8px;left:321px;border:none;}
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	#logo { text-align:center; margin-top:30px; margin-bottom:20px;}
+	h1 { font-size:20px;}
+	
+	.msg {color:#fff; font-size:20px; background:url(../img/arrow_1.png) no-repeat center 30px; text-align:center; height:90px; line-height:14px;}
+
+	#form_bg {background:url(../img/bg_form_3.png) no-repeat top left;width:420px;height:68px;position:relative;margin:20px 0 50px 0;}
+	#form_bg input {position:absolute; top: 12px;left:15px;border:none;background:none;padding:10px;height:25px;width:247px;font-size:14px;font-weight:700;color:#707070;display:block;text-align:left;}
+	.send_bt {background:url(../img/button.png) no-repeat top left;width:132px;height:53px;text-indent:-9999px;display:block;cursor:pointer;position:absolute; top: 8px;left:281px;border:none;}
+	
+	.success {font-weight:700;color:#acd373; height:68px;margin:50px 0 50px 0; text-align:center}
+
+	.copy { text-align:center}
+	ul#follow{float: none; margin-left:115px; }
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	
+	#logo { text-align:center; margin-top:30px; margin-bottom:20px;}
+	h1 { font-size:18px;}
+	
+	.msg {color:#fff; font-size:20px; background:url(../img/arrow_1.png) no-repeat center 30px; text-align:center; height:85px; line-height:14px;}
+
+	#form_bg {background:url(../img/bg_form_4.png) no-repeat top left;width:300px;height:68px;position:relative;margin:20px 0 70px 0;}
+	#form_bg input {position:absolute; top: 12px;left:15px;border:none;background:none;padding:10px;height:25px;width:245px;font-size:14px;font-weight:700;color:#707070;display:block;text-align:left;}
+	.send_bt {background:url(../img/button_2.png) no-repeat top left;width:113px;height:47px;text-indent:-9999px;display:block;cursor:pointer;position:absolute; top: 75px;left:95px;border:none; }
+	
+	.success {font-weight:700;color:#acd373; height:68px;margin:25px 0 25px 0; text-align:center}
+	
+	.copy { text-align:center}
+	ul#follow{float: none; margin-left:65px; }
+	#footer { margin-top:30px;}
+
+
+}

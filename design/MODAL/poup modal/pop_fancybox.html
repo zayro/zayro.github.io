@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<script src="fancyBox/lib/jquery-1.10.1.min.js"></script>
+<script src="fancyBox/source/jquery.fancybox.pack.js"></script>
+<link href="fancyBox/source/jquery.fancybox.css"  rel="stylesheet" type="text/css" media="screen">
+
+
+<script>
+$(document).ready(function(){
+    $(".ifancybox").fancybox({
+         'width' : '75%',
+         'height' : '75%',
+         'autoScale' : false,
+         'transitionIn' : 'none',
+         'transitionOut' : 'none',
+         'type' : 'iframe'
+     });
+ });
+</script>
+
+</head>
+
+<body>
+<a class="ifancybox" href="http://localhost">Esto mostrará un iframe de fancybox, incluso puedes poner una imagen aqui dentro</a>
+</body>
+</html>

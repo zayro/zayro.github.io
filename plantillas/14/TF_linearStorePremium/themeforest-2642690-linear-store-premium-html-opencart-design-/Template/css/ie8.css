@@ -1,0 +1,22 @@
+.input-cp{
+	line-height:30px;
+}
+.cloud-zoom-big {
+top: -4px !important;
+left:329px !important;
+}
+.detail-block .quat-col .listmenu{
+	line-height:29px;
+}
+.info-content .review-form input[type="text"]{
+	line-height:33px;
+}
+table#cart tr td .input, .fill-form .input2{
+	line-height:30px;
+}
+.shopping .left .toggeable input[type="text"], .fill-form .col1 .input, .fill-form .input2{
+	line-height:34px;
+}
+.customer-form .input{
+	line-height:40px;
+}

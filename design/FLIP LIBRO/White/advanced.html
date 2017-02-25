@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    
+    <!-- Include CSS stylesheet. -->
+    <link rel="stylesheet" href="css/advanced.css" type="text/css" />
+   
+   <!-- Include jQuery and Flow Slider scripts. -->
+    <script src="../../js/jquery-1.7.1.min.js"></script>
+    <script src="../../flowslider.jquery.js"></script>
+    
+    <!-- Write some code to start sliding. -->    
+    <script>
+        jQuery(document).ready(function($) {
+            
+            // Select your slider element and call Flow Slider plugin.
+            var $slider = $("#slider");
+            $slider.FlowSlider({
+                
+                controllerOptions: [{
+                    mouseStart:100,
+                    mouseEnd:100
+                }],
+                marginStart:200,
+                marginEnd:200
+                
+            });
+                
+        });
+    </script>
+    
+</head>
+<body>
+
+    <!-- This DIV is just necessary for some CSS styling. -->
+    <div id="slider-wrap">
+    
+        <!-- This is your actual Flow Slider. ---------------------------------- -->
+        <div id="slider">
+        
+            <!-- Each thumbnail with its image and text -->
+            <div>
+                <div class="img"><img src="img/1.jpg" /></div>
+                <div class="text-1">Lawton, Oklahoma</div>
+                <div class="text-2"><span class="by">by</span> duggar11</div>
+            </div>
+            <div>
+                <div class="img"><img src="img/2.jpg" /></div>
+                <div class="text-1">Bradford University</div>
+                <div class="text-2"><span class="by">by</span> Tim Green aka atoach</div>
+            </div>
+            <div>
+                <div class="img img-hover"><img src="img/4.jpg" /></div>
+                <div class="text-1">Bloomintion, Illionois</div>
+                <div class="text-2"><span class="by">by</span> Todd Ryburn</div>
+            </div>
+            <div>
+                <div class="img"><img src="img/5.jpg" /></div>
+                <div class="text-1">Location Unknown</div>
+                <div class="text-2"><span class="by">by</span> Fevi Yu</div>
+            </div>
+            <div>
+                <div class="img"><img src="img/6.jpg" /></div>
+                <div class="text-1">Key West, Florida</div>
+                <div class="text-2"><span class="by">by</span> Serge Melki</div>
+            </div>
+            <div>
+                <div class="img"><img src="img/7.jpg" /></div>
+                <div class="text-1">Franconian city of W&uuml;rzburg</div>
+                <div class="text-2"><span class="by">by</span> Axel-D</div>
+            </div>
+            <div>
+                <div class="img"><img src="img/8.jpg" /></div>
+                <div class="text-1">Nile</div>
+                <div class="text-2"><span class="by">by</span> apdk</div>
+            </div>
+            <div>
+                <div class="img"><img src="img/9.jpg" /></div>
+                <div class="text-1">Chennai Beach</div>
+                <div class="text-2"><span class="by">by</span> raj_nair81</div>
+            </div>
+            <div>
+                <div class="img"><img src="img/10.jpg" /></div>
+                <div class="text-1">Edinbourgh</div>
+                <div class="text-2"><span class="by">by</span> baaker2009 </div>
+            </div>
+            <div>
+                <div class="img"><img src="img/11.jpg" /></div>
+                <div class="text-1">Havana Airport</div>
+                <div class="text-2"><span class="by">by</span> ahisgett</div>
+            </div>
+        </div>
+        <!-- Help support Flow Slider. -->
+        <noscript><p>Powered By <a href="http://www.flowslider.com" title="jQuery Thumbnail Slider">Flow Slider</a></p></noscript>
+        <!-- End of the slider. ------------------------------------------------ -->
+        
+        <!-- Here we add white blurry clouds from both sides of the slider -->
+        <div id="blur-left"></div>
+        <div id="blur-right"></div>
+
+    </div>
+    
+</body>
+</html>

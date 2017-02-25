@@ -1,0 +1,22 @@
+#submit { vertical-align: middle ; margin-top: -23px;  }
+
+div.tooltip { 
+	display: none; /* initially tooltips are hidden */
+	padding: 10px;
+	background: #3091be; 
+	border: 1px solid black; 
+	color: #fff;
+	font-size: 12px ;
+	float: left ; margin-left: -500px;  margin-top: -235px; 
+}
+
+#sliderwrap {
+	
+display: inline ; 
+
+}
+
+#twitter { position: absolute ; margin-left: 682px; margin-top: -1px; float: right ; }
+.next img{ margin-left: 5px; position: absolute ; float: left ;}
+.prev { float: left ; }
+#buttons { margin-left: 220px; }

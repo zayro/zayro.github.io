@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>mafiashare.net - Retail Only Themes & Templates</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/960.css" />
+<link rel="stylesheet" href="css/style.css" />
+
+<!-- Javascript -->
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="js/jcarousellite_1.0.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+
+<!--[if lt IE 7]>
+        <script type="text/javascript" src="http://www.gamefreaks.se/js/unitpngfix.js"></script>
+		<link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen" />
+<![endif]--> 
+ 
+<!--[if IE 7]>
+ 
+<link rel="stylesheet" href="css/ie7.css" type="text/css" media="screen" />
+ 
+<![endif]--> 
+
+<script type="text/javascript">
+
+$(function() {
+
+	$('.icon a').css({opacity:"0.2"});
+	$('.icon a').hover(function() {
+		$(this).animate({opacity:"1.0"});
+	}, function() {
+		$(this).animate({opacity:"0.2"});
+	});
+	
+	$('.icon2 a').css({opacity:"0.2"});
+	$('.icon2 a').hover(function() {
+		$(this).animate({opacity:"1.0"});
+	}, function() {
+		$(this).animate({opacity:"0.2"});
+	});
+	
+	$('.icon3 a').css({opacity:"0.2"});
+	$('.icon3 a').hover(function() {
+		$(this).animate({opacity:"1.0"});
+	}, function() {
+		$(this).animate({opacity:"0.2"});
+	});
+	
+});
+
+
+</script>
+
+<!-- jquery slider -->
+<script type="text/javascript">
+
+$(function() {
+    $("#slidertext").jCarouselLite({
+        btnNext: ".next",
+        btnPrev: ".prev"
+    });
+});
+
+</script>
+	
+<!-- jquery countdown -->
+<script type="text/javascript">
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 15);
+	$('.time').countdown({until: austDay, 
+    layout: '{dn} {dl}, {hn} {hl}, {mn} {ml}, and {sn} {sl}'});
+	$('#year').text(austDay.getFullYear());
+	
+	
+});
+</script>
+
+<!-- jquery tooltip -->
+<script type="text/javascript">
+		$(function() { 
+				
+			/* Initialize Tooltip */
+			$(".trigger").tooltip();
+				});
+	</script>
+
+
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+<body>
+
+<div class="container_12">
+
+<div class="container_12" id="logo"><a href="index.html"><img src="images/logo.jpg"></a></div>
+
+<div class="grid_12"><!-- The grid starts here -->
+
+<!-- Social icons -->
+
+ <div id="socialicons">
+
+   <div class="icon"><a href="#"><img src="images/Facebook.png"></a></div>
+   <div class="icon2"><a href="#"><img src="images/Flickr.png"></a></div>
+   <div class="icon3"><a href="#"><img src="images/RSS.png"></a></div>
+
+ </div><!-- End of socialicons -->
+
+<div id="twitter" class="trigger">
+
+   <a href="http://www.twitter.com/mrjasmin" ><img src="images/twitter.png"></a>
+   
+</div>
+
+
+<div class="tooltip">Follow me on twitter</div>
+
+<div id="main"><!-- The main content box -->
+
+  <div class="text"><h3>this website is under construction</h3></div>
+  <p class="subtext">We are estimating to be back in</p>
+  <h3 class="time"></h3>
+  <h3 class="news">Latest update news</h3>
+
+  
+<div id="sliderwrap">
+
+  <div id="slidertext"><!-- The slider -->
+
+    <ul>
+
+     <li><span>2009.09.15 -</span> <b>The mockup is ready for coding</b></li><!-- Slider item -->
+     <li><span>2009.08.01 -</span> <b>Updated the blog section</b></li><!-- Slider item -->
+     <li><span>2009.09.20 -</span> <b>Frontpage coded</b></li><!-- Slider item -->
+
+    </ul>
+
+</div><!-- End of slider -->
+
+<!-- jquery jcarousel next/previous buttons -->
+
+<div id="buttons">
+
+   <a class="prev" href="#"><img src="images/prev.png"></a>
+   <a class="next" href="#"><img src="images/next.png"></a>
+
+</div>
+
+<!-- End of #buttons-->
+
+</div><!-- End of sliderwrap -->
+</div><!-- End of main -->
+</div>
+</div><!-- end of grid -->
+
+
+</body>
+</html>

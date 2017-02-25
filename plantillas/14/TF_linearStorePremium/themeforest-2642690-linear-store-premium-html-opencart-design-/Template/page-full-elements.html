@@ -1,0 +1,560 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Linear Html - OpenCart Store Design</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--[if IE]>
+<link href="css/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<link href="css/ie8.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/cufon/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon/open-sans-latin.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+
+<body class="hideall">
+
+<!-- Facebook code -->
+<div id="fb-root"></div>
+<script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
+
+<!-- end Facebook code --> 
+<!-- start topbar -->
+<div class="topbar">
+  <div class="box"> 
+    <!-- start topnav -->
+    <div class="topnav">
+      <ul class="lava">
+        <li><a href="account-page.html" class="active">My Account</a></li>
+        <li><a href="wishlist-page.html">Wish List ( <strong>0</strong> )</a></li>
+        <li class="info"><a><span>Information</span></a>
+          <ul>
+            <li><a href="about-page.html">About Us</a></li>
+            <li><a href="page-full-elements.html">Delivery Information</a></li>
+            <li><a href="page-full-elements.html">Privacy Policy</a></li>
+            <li><a href="page-full-elements.html">Terms and Conditions</a></li>
+            <li><a href="contact-page.html" title="">Contact Us</a></li>
+          </ul>
+        </li>
+        <li><a href="contact-page.html">Support</a></li>
+        <li><a href="#">Buy Theme!</a></li>
+      </ul>
+    </div>
+    <!-- end topnav --> 
+    <!-- topbar right -->
+    <div class="tb-right">
+      <div class="language">
+        <ul>
+          <li class="active">EN <span><img src="images/flag_en.png" width="16" height="11" alt="en" /></span></li>
+          <li><a href="#" title="">IT</a> <span><img src="images/flag_it.png" width="16" height="11" alt="en" /></span></li>
+          <li><a href="#" title="">FR</a> <span><img src="images/flag_fr.png" width="16" height="11" alt="en" /></span></li>
+        </ul>
+      </div>
+      <div class="currency">
+        <ul>
+          <li><strong>Currency:</strong></li>
+          <li>
+            <select id="default-usage-select">
+              <option value="01">USD</option>
+              <option value="02">EUR</option>
+              <option value="03">GBP</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- topbar right --> 
+  </div>
+</div>
+<!-- end topbar --> 
+<!-- start header -->
+<div id="header">
+  <div class="box"> 
+    <!-- logo -->
+    <div id="logo"> <a href="index.html" title="Linear"><img src="images/logo.png" width="166" height="30" alt="Linear" /></a> </div>
+    <!-- logo --> 
+    <!-- start header right -->
+    <div id="header-right"> 
+      <!-- cart -->
+      <div class="cart">
+        <h6><a href="cart-page.html">Shopping Cart</a></h6>
+        <div class="cart-box"><span class="item"><a>2 Item(s) - $165.98</a></span>
+          <div id="cart-container">
+            <div id="cart-content">
+              <ul>
+                <li>
+                  <div class="cont">
+                    <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-3-3.jpg" width="54" height="54" alt="offer" /></a></div>
+                    <div class="txtb gap"><span class="title"><a href="product-page.html">Donec Nunc</a></span>
+                      <div class="clear"></div>
+                      <span class="price">$87,34</span></div>
+                    <div class="quantity">Quantity: <span>x1</span></div>
+                    <div class="clear"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cont">
+                    <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-6-6.jpg" width="54" height="54" alt="offer" /></a></div>
+                    <div class="txtb gap"><span class="title"><a href="product-page.html">Urna Accumsan</a></span>
+                      <div class="clear"></div>
+                      <span class="price">$56,99</span></div>
+                    <div class="quantity">Quantity: <span>x1</span></div>
+                    <div class="clear"></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="left">
+                <div class="button-cart"><a href="cart-page.html">View Cart</a></div>
+                <div class="clear"></div>
+                <div class="button-cart dark"><a href="checkout-page.html">Checkout</a></div>
+              </div>
+              <div class="right totalbox"> <span><strong>Sub-Total:</strong> $144.33</span>
+                <div class="clear"></div>
+                <span><strong>VAT 15%:</strong> $21.65</span>
+                <div class="clear"></div>
+                <span><strong>Total:</strong> $165.98</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cart --> 
+      <!-- feature -->
+      <div class="feature"> <span class="heading"><img src="images/ico_man.png" width="15" height="15" alt="man" /><a href="account-page.html">Your Account</a></span> <span><a href="register-page.html" title="Create an Account">Create an Account</a> or <a href="login-page.html" title="Log-in">Log-in</a></span> </div>
+      <div class="feature number"> <span class="heading"><img src="images/ico_phone.png" width="15" height="15" alt="phone" /> +39 234 3567</span> <span>Call Us <em>Monday - Saturday</em>: 8:30 am - 6:00 pm</span> </div>
+      <!-- feature --> 
+    </div>
+    <!-- end header right -->
+    <div class="clear"></div>
+    <!-- start menu bar -->
+    <div id="menu-bar"> 
+      <!-- navigation -->
+      <div id="navigation">
+        <ul>
+          <li><a href="index.html" title="" class="active">Home</a></li>
+          <li><a href="category-page.html">Office</a></li>
+          <li><a href="category-page.html" title="">Kitchen</a>
+            <ul class="sub">
+              <li class="space"></li>
+              <li>
+                <h3>INSIDE KITCHEN</h3>
+                <ul>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Cabinets</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Taps &amp; Sinks</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Panels</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html"><span>Appliances</span></a>
+                    <ul class="sub2">
+                      <li class="space"></li>
+                      <li><a href="category-page.html">Fridges</a></li>
+                      <li><a href="category-page.html">Ovens</a></li>
+                      <li><a href="category-page.html">Dishwashers</a></li>
+                      <li><a href="category-page.html">Cookers</a></li>
+                    </ul>
+                  </li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Islands &amp; Trolleys</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Lighting</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Knobs</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Worktops</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>KITCHEN BRANDS</h3>
+                <ul>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Nutid</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Fintorp</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Berloni</a></li>
+                  <li><span class="bullet">&#8226;</span><a href="category-page.html">Bygel</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="category-page.html" title="">Children</a></li>
+          <li><a href="category-page.html" title="">Living Room</a></li>
+          <li><a href="category-page.html" title="">Outdoor</a>
+            <ul class="sub2">
+              <li class="space"></li>
+              <li><a href="category-page.html">Storage</a></li>
+              <li><a href="category-page.html">Relax</a></li>
+              <li><a href="category-page.html">Sunshields</a></li>
+              <li><a href="category-page.html">Plant pots</a></li>
+            </ul>
+          </li>
+          <li><a href="category-page.html" title="">Decoration</a></li>
+        </ul>
+      </div>
+      <!-- navigation --> 
+      <!-- search -->
+      <div class="search">
+        <form action="">
+          <div>
+            <input type="text" value="Search..." name="field" class="input" onfocus="if(this.value == 'Search...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search...'; }" />
+          </div>
+          <div>
+            <input type="submit" value="" name="button" class="button" />
+          </div>
+        </form>
+      </div>
+      <!-- search --> 
+    </div>
+    <!-- end menu bar --> 
+  </div>
+</div>
+<!-- end header --> 
+<!-- start container -->
+<div id="container"> 
+  <!-- start breadcrumb -->
+  <div class="breadcrumb"> 
+    <!-- start box -->
+    <div class="box"> <span>You are here:</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="typography.html">Full Elements</a></li>
+      </ul>
+    </div>
+    <!-- end box -->
+    <div class="clear"></div>
+  </div>
+  <!-- end breadcrumb --> 
+  <!-- start box -->
+  <div class="box"> 
+    <!-- start leftcol -->
+    
+    <div id="leftcol" class="medium">
+      <div class="full-elements">
+        <h1>Full Elements</h1>
+        <h2>Buttons</h2>
+        <div class="buttons-block"> <a href="#" class="button-default cart dark"><span class="hover">BUTTON 1</span><span>BUTTON 1</span></a> <a href="#" class="button-default cart"><span class="hover">BUTTON 2</span><span>BUTTON 2</span></a> <a href="#" class="button-default cart dark light"><span class="hover">BUTTON 3</span><span>BUTTON 3</span></a> <a href="#" class="button-default cart light"><span class="hover">BUTTON 4</span><span>BUTTON 4</span></a>
+          <div class="button-cart general dark"><a href="#">BUTTON 5</a></div>
+          <div class="button-cart general"><a href="#">BUTTON 6</a></div>
+        </div>
+        <div class="divisory"></div>
+        <!-- start tabs -->
+        <h2>Tabs</h2>
+        <div id="tabs">
+          <ul>
+            <li><span><a href="#tabs-1">Tab 1</a></span></li>
+            <li><span><a href="#tabs-2">Tab 2</a></span></li>
+          </ul>
+          <div class="info-content">
+            <div id="tabs-1">
+              <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus <strong>gravida ante, ut pharetra massa </strong>metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. <strong>Ut posuere viverra nulla. Aliquam erat volutpat</strong>. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+            </div>
+            <div id="tabs-2">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate, <strong>enim eget aliquam adipiscing</strong>, arcu nibh posuere lorem, eget viverra odio felis at eros. Maecenas at nibh erat. Phasellus mauris augue, ullamcorper et faucibus eget, vehicula nec tellus. Nullam ornare, ante sodales feugiat euismod, eros odio luctus diam, eget commodo eros ante ac purus. Quisque ornare convallis ipsum, venenatis aliquet ligula ultrices nec. <strong>Cras feugiat </strong>convallis nunc, eget adipiscing elit adipiscing eget. Nam ornare, odio eget sollicitudin vestibulum,</p>
+            </div>
+          </div>
+        </div>
+        <!-- end tabs -->
+        <div class="divisory"></div>
+        <!-- start accordinpanel -->
+        <div class="accordin-panel">
+          <h2>Accordion Menu</h2>
+          <div class="accordin-div">
+            <h5><span><a href="#">Toggle Me</a></span></h5>
+            <!-- block -->
+            <div class="accordin-block step1">
+              <p>Ut nulla orci, consequat sed dictum sed, scelerisque sed mauris. Pellentesque aliquet, ligula nec sagittis molestie, <strong>felis sem ornare sapien</strong>, sit amet suscipit quam odio eget erat. Quisque et elit id dui gravida rutrum vitae a massa. Aenean lorem enim, bibendum faucibus ornare vel, viverra ac velit. Pellentesque eu mauris metus. Donec in sem magna</p>
+            </div>
+            <!-- block -->
+            <h5><span><a href="#">Toggle Me</a></span></h5>
+            <!-- block -->
+            <div class="accordin-block step2">
+              <p>Nam rutrum urna ac risus hendrerit id molestie lectus feugiat. <strong>In lorem odio, imperdiet nec placerat at</strong>, ultrices in libero. Nulla facilisi. Suspendisse auctor turpis ac leo eleifend molestie. Integer id elit libero, eu feugiat mauris. Mauris mauris augue, dapibus at mattis et, semper eget sapien. Sed vulputate porta mauris non dapibus</p>
+            </div>
+            <!-- block --> 
+            <!-- block -->
+            <h5><span><a href="#">Toggle Me</a></span></h5>
+            <!-- block -->
+            <div class="accordin-block step3">
+              <p>Nullam tempus ullamcorper viverra. Integer ullamcorper odio id felis posuere quis venenatis lacus lacinia. Pellentesque a elit nec purus semper pretium. <strong>Ut id diam vulputate</strong> erat aliquet faucibus. Nunc lobortis enim eu leo commodo id ultricies magna tincidunt.</p>
+            </div>
+            <!-- block --> 
+            
+          </div>
+        </div>
+        <!-- end accordinpanel -->
+        <div class="divisory"></div>
+        <!-- start table -->
+        <h2>Table</h2>
+        <table id="cart" class="wish">
+          <thead>
+            <tr>
+              <th colspan="2"><span>Product</span></th>
+              <th><span>Data 1</span></th>
+              <th><span>Data 2</span></th>
+              <th><span>Data 3</span></th>
+              <th colspan="2"><span>Action</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="padding">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><div class="imgb"><a class="fadeable" href="product-page.html"><img src="images/prodotto-1-1.jpg" alt="blank" width="78" /></a></div></td>
+              <td class="prod-col"><div>
+                  <p><a href="product-page.html">Auctor Lapsum</a></p>
+                </div></td>
+              <td><div>Lectus purus</div></td>
+              <td><div>Felis quis</div></td>
+              <td><div>Augue erat </div></td>
+              <td><div><a href="cart-page.html"><img src="images/ico_cart_hover.png" alt="Add to Cart" title="Add to Cart" /></a></div></td>
+              <td><div><a href="index.html"><img src="images/remove.png" alt="Remove" title="Remove" /></a></div></td>
+            </tr>
+            <tr class="padding bot">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr class="padding">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><div class="imgb"><a class="fadeable" href="product-page.html"><img src="images/prodotto-2-2.jpg" alt="blank" width="78" /></a></div></td>
+              <td class="prod-col"><div>
+                  <p><a href="product-page.html">Phsellus Euismod</a></p>
+                </div></td>
+              <td><div>Id pharetra</div></td>
+              <td><div>Quis metus</div></td>
+              <td><div>Nulla in</div></td>
+              <td><div><a href="cart-page.html"><img src="images/ico_cart_hover.png" alt="Add to Cart" title="Add to Cart" /></a></div></td>
+              <td><div><a href="index.html"><img src="images/remove.png" alt="Remove" title="Remove" /></a></div></td>
+            </tr>
+            <tr class="padding bot">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- end table -->
+        <div class="divisory"></div>
+        <!-- start info boxes -->
+        <h2>Info Boxes</h2>
+        <div class="info-box-content">
+          <div class="info-box warning">
+            <p>Warning!  Donec porta sapien id augue accumsan elementum. Integer blandit ultrices placerat aenean lobortis. </p>
+          </div>
+          <br />
+          <div class="info-box error">
+            <p>ERROR!  Donec porta sapien id augue accumsan elementum. Integer blandit ultrices placerat aenean lobortis. </p>
+          </div>
+          <br />
+          <div class="info-box success">
+            <p>Success!  Donec porta sapien id augue accumsan elementum. Integer blandit ultrices placerat aenean lobortis. </p>
+          </div>
+          <br />
+          <div class="info-box info">
+            <p>INFO:  Donec porta sapien id augue accumsan elementum. Integer blandit ultrices placerat aenean lobortis. </p>
+          </div>
+        </div>
+        <!-- end info boxes -->
+        <div class="divisory"></div>
+        <!-- start related -->
+        <div class="pro-col full">
+          <h2>Related Products</h2>
+          <ul>
+            <li><span class="imgb"><a class="fadeable" href="product-page.html"><span class="light-background"> <span class="thumb-arrow">&#8594;</span> </span><img src="images/prodotto-17.jpg" alt="related1" width="218" height="120" /></a></span> <a href="product-page.html">Class Aptent</a> <span class="price">$412,98</span></li>
+            <li><span class="imgb"><a class="fadeable" href="product-page.html"><span class="light-background"> <span class="thumb-arrow">&#8594;</span> </span><img src="images/prodotto-15.jpg" alt="related2" width="218" height="120" /></a></span> <a href="product-page.html">Lacinia Sem </a> <span class="price">$7,63</span></li>
+            <li><span class="imgb"><a class="fadeable" href="product-page.html"><span class="light-background"> <span class="thumb-arrow">&#8594;</span> </span><img src="images/prodotto-16.jpg" alt="related3" width="218" height="120" /></a></span> <a href="product-page.html">Fermentum Imperdiet</a> <span class="price">$25,31</span></li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <!-- end related -->
+        <div class="divisory"></div>
+        <!-- start text -->
+        <h2>Text</h2>
+        <div class="column_grid full">
+          <div class="clear"></div>
+          <div class="one">
+            <p>Donec euismod fringilla neque nec tempus. Quisque ante nisi, lobortis eget ornare id, dapibus in eros. Sed dictum augue id et lectus convallis venenatis. Praesent vel velit eros. Sed scelerisque arcu at diam ultricies id blandit quam tincidunt. Praesent tortor odio, pharetra a sodales ut, ultricies non leo. Nullam gravida dignissim tempus.</p>
+          </div>
+        </div>
+        <!-- end text --> 
+      </div>
+    </div>
+    <!-- end leftcol --> 
+    <!-- start rightcol -->
+    <div id="rightcol"> 
+      <!-- start subnav -->
+      <div class="subnav rightcol-block">
+        <h4 class="red">Categories</h4>
+        <ul class="sf-menu sf-vertical">
+          <li><a class="subnav-link" href="category-page.html" title=""><strong>Kitchen &amp; Eating </strong> (13)</a></li>
+          <li><a class="subnav-link" href="category-page.html" title=""><strong>Wall decoration</strong> (5)</a></li>
+          <li><a class="subnav-link" href="category-page.html" title=""><strong>Children Room</strong> (2)</a></li>
+          <li><a href="category-page.html" title="" class="subnav-link"><span><strong>Outdoor &amp; Garden</strong> (11)</span></a>
+            <ul class="hoverable">
+              <li><a href="category-page.html" title="">Relax</a></li>
+              <li><a href="category-page.html" title="">Storage</a></li>
+              <li><a href="category-page.html" title="">Plant pots</a></li>
+            </ul>
+          </li>
+          <li><a class="subnav-link" href="category-page.html" title=""><strong>Living Room</strong> (0)</a></li>
+          <li><a class="subnav-link" href="category-page.html" title=""><strong>Laundry &amp; Cleaning</strong> (3)</a></li>
+          <li><a class="subnav-link" href="category-page.html" title=""><strong>Baby Textiles</strong> (2)</a></li>
+          <li><a class="subnav-link" href="category-page.html" title=""><strong>Home Office</strong> (4)</a></li>
+        </ul>
+      </div>
+      <!-- end subnav --> 
+      <!-- start offer block -->
+      <div class="offer common rightcol-block">
+        <h4 class="red">Special Offers</h4>
+        <ul>
+          <li class="first">
+            <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-4-4.jpg" width="54" height="54" alt="offer" /></a></div>
+            <div class="txtb"><span class="title"><a href="product-page.html">Ullamcorper Ultrices</a></span>
+              <div class="clear"></div>
+              <span class="price">$98,00</span></div>
+            <div class="clear"></div>
+          </li>
+          <li>
+            <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-1-1.jpg" width="54" height="54" alt="offer" /></a></div>
+            <div class="txtb"><span class="title"><a href="product-page.html">Auctor Lapsum</a></span>
+              <div class="clear"></div>
+              <span class="price">$246,45</span></div>
+            <div class="clear"></div>
+          </li>
+          <li class="last">
+            <div class="imgb"><a href="product-page.html" class="fadeable"><img src="images/prodotto-7-7.jpg" width="54" height="54" alt="offer" /></a></div>
+            <div class="txtb"><span class="title"><a href="product-page.html">Proin Ultricies</a></span>
+              <div class="clear"></div>
+              <span class="price"><span>$321,12</span> $280,01</span></div>
+            <div class="clear"></div>
+          </li>
+        </ul>
+      </div>
+      <!-- end offer block --> 
+      <!-- banner -->
+      <div class="banner common rightcol-block">
+        <div class="imgb"><a href="http://themeforest.net/user/aldema"><img src="images/img_banner.jpg" width="142" height="134" alt="banner" /></a></div>
+      </div>
+      <!-- banner --> 
+      <!-- widget -->
+      <div class="widget rightcol-block">
+        <h4 class="red">Widget Text</h4>
+        <p>Pellentesque lacus urna, pellentesque <strong> vehicula adipiscing</strong> scelerisque a eros. Mauris id tortor et vitae velit auctor convallis nec non metus.</p>
+      </div>
+      <!-- widget --> 
+      <!-- start subnav -->
+      <div class="subnav rightcol-block">
+        <h4 class="red">Account</h4>
+        <ul class="sf-menu sf-vertical">
+          <li><a class="subnav-link" href="register-page.html" title=""><strong>Login / Register</strong></a></li>
+          <li><a class="subnav-link" href="register-page.html" title=""><strong>Forgotten Password</strong></a></li>
+          <li><a class="subnav-link" href="account-page.html" title=""><strong>My Account</strong></a></li>
+          <li><a class="subnav-link" href="wishlist-page.html" title=""><strong>Wish List</strong></a></li>
+          <li><a class="subnav-link" href="account-page.html" title=""><strong>Order History</strong></a></li>
+          <li><a class="subnav-link" href="account-page.html" title=""><strong>Downloads</strong></a></li>
+          <li><a class="subnav-link" href="account-page.html" title=""><strong>Returns</strong></a></li>
+          <li><a class="subnav-link" href="account-page.html" title=""><strong>Transactions</strong></a></li>
+          <li><a class="subnav-link" href="account-page.html" title=""><strong>Newsletter</strong></a></li>
+        </ul>
+      </div>
+      <!-- end subnav --> 
+      <!-- widget -->
+      <div class="widget support rightcol-block">
+        <h4 class="red">Need Support?</h4>
+        <p>Donec tristique quam sit amet dolor aliquet vitae tempor <strong>libero ornare</strong>. In sit amet lorem in eros ullamcorper tincidunt. Proin vulputate mauris quis. <a href="contact-page.html"><span>more</span> →</a></p>
+      </div>
+      <!-- widget --> 
+    </div>
+    <!-- end rightcol -->
+    <div class="clear"></div>
+  </div>
+  <!-- end box --> 
+  <!-- start category -->
+  <div class="category">
+    <div class="box"> 
+      <!-- start common -->
+      <div class="common2 first">
+        <h3 class="red">Linear Theme</h3>
+        <p>Integer interdum pretium leo, venenatis commodo male uada sit amet. Suspe disse ut neque neque. <strong>Aenean tincidunt</strong> ullamcorper nibh sit amet singur lopsem egestas. Fermentum erat <strong>condimentum</strong> ac. Sed liget Morbi por ta eget ferment.</p>
+      </div>
+      <!-- end common --> 
+      <!-- start twitter -->
+      <div class="common2 twitter">
+        <h3 class="red">Twitter</h3>
+        <ul id="twitter_update_list">
+          <li></li>
+        </ul>
+        <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/WPNewsStation.json?callback=twitterCallback2&amp;count=2"></script> 
+      </div>
+      <!-- end twitter --> 
+      <!-- start facebook -->
+      <div class="common2 last facebook">
+        <h3 class="red">Facebook</h3>
+        <div class="fb-box"> 
+          <script type="text/javascript" src="js/facebook-box.js"></script> 
+        </div>
+        <!-- the css needs an absolute path to work properly --> 
+      </div>
+      <!-- end facebook -->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- end category --> 
+</div>
+<!-- end container --> 
+<!-- start footer -->
+<div id="footer" class="light"> 
+  <!-- start footer bottom -->
+  <div id="footer-bottom">
+    <div class="box"> 
+      <!-- common -->
+      <div class="common2"> <span class="copyright">&copy; 2012 - Your Linear Store.</span> <span>Powered By <a href="http://themeforest.net/user/aldema">Aldema Studio</a></span> </div>
+      <!-- common --> 
+      <!-- common -->
+      <div class="common4">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-page.html">About Us</a></li>
+          <li><a href="blog-page.html">Blog</a></li>
+          <li><a href="typography.html">Feed RSS</a></li>
+          <li><a href="typography.html">Sitemap</a></li>
+          <li><a href="contact-page.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- common -->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <!-- end footer bottom --> 
+</div>
+<!-- end footer --> 
+<!-- back to top link -->
+<div id="top-container"> <a id="top-link"></a> </div>
+<!-- end back to top link --> 
+<script type="text/javascript" src="js/common_footer.js"></script>
+</body>
+</html>

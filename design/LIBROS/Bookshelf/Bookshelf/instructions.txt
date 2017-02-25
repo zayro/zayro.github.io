@@ -1,0 +1,11 @@
+
+ 1. To see this skin in action you have to download Flow Slider
+    plugin at http://www.flowslider.com
+
+ 2. Unzip the Flow Slider plugin
+ 
+ 3. Put this folder in to the /skins/ folders of the Flow Slider plugin
+ 
+ 4. Enjoy!
+ 
+ 

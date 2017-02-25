@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */ 
+
+.connect_top clearfix {
+	background:none;
+	background-color:#fff;
+}
+.fan_box .full_widget {
+	background: none repeat scroll 0 0 white;
+	border: none;
+}
+.fan_box .full_widget .connect_top {
+	background: none repeat scroll 0 0 #fff;
+}
+.fan_box .connect_action .name {
+	display:none;
+}
+.fan_box .connect_action .name_block {
+	display:none;
+}
+.fan_box .profileimage {
+	display:none;
+}
+.fan_box .connections_grid .grid_item .name {
+	color: #666666; /* EDIT THIS VALUE TO CHANGE THE COLOR OF THE NAMES */
+}
+.fan_box .connections_grid .grid_item:hover .name {
+	color: #D94A38; /* EDIT THIS VALUE TO CHANGE THE COLOR OF THE NAMES ON HOVER */
+}
+.fan_box .connections {
+	border-top: none;
+	min-height: 150px;
+	padding: 0px 0 4px 10px;
+	margin-right: -20px;
+}
+.fan_box .connect_action {
+	padding: 0 0 0 0px;
+}
+.fan_box .connect_top {
+	padding: 0px;
+}
+.fan_box .connect_widget .connect_widget_interactive_area {
+	margin: 0;
+}
+.connect_widget .like_button_no_like .piece, .connect_widget .like_button_no_like {
+	border-color: #D2D2D2;
+	background-color: #F2F2F2;
+}
+.connect_widget a.like_button_no_like:hover .piece, .connect_widget a.like_button_no_like:hover {
+	border-color: #D2D2D2;
+	background-color: #F2F2F2;
+}
+.fan_box .connections {
+	border-top: medium none #FFFFFF;
+	min-height: 150px;
+	padding: 0 0 0px 0px;
+}
+.fan_box .connections_grid .grid_item {
+	float: left;
+	overflow: hidden;
+	padding: 0 5px 8px 0;
+	width: 53px;
+	margin: 0 0px 13px 34px;
+}
+.grid_item a {
+	display: block;
+	color: #333;
+	text-decoration:none;
+}
+.grid_item a:hover {
+	color: #f12b63;
+	text-decoration:none;
+}
+.grid_item img {
+	margin-bottom: 3px;
+	padding: 5px;
+	background: #fff;
+	border-bottom: 1px solid #e5e5e5; /* EDIT THE COLOR OF THE IMAGES BORDER */
+	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.grid_item a:hover img {
+	border-bottom: 1px solid #c5c5c5; /* EDIT THE COLOR OF THE IMAGES BORDER ON HOVER*/
+}
+.fan_box .connections_grid .grid_item .name {
+	margin: -2px 0 0 0;
+	padding-top: 0;
+}
+
+.total {
+	display: block;
+	margin-bottom: 6px;
+	margin-top:11px;
+	color: #666666;   /* EDIT THIS VALUE TO CHANGE THE COLOR OF THE TOTAL LIKES COUNT */
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.fan_box .connections .connections_grid {
+	margin-left: -34px;
+	padding-top: 5px;
+}
+.connect_widget .connect_widget_text {
+	display:none;
+}
+.connect_widget_like_button .liketext {
+	background-position: -1px -3px;
+	color: #959595;
+	line-height:12px;
+	text-align:center;
+	margin: 0 0 0 2px;
+	font-weight:bold;
+	font:10px Arial, Helvetica, sans-serif;
+}

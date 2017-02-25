@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<!--
+ * BriskButton for Websites - jQuery Plugin (v1.00)
+ * Copyright 2011, SOYOS Online Solutions
+ *
+ * Project Website:
+ * http://www.soyos.net/labs/briskbutton/
+ *
+ * More Scripts:
+ * http://www.soyos.net/labs/
+ *
+ * Requires Easing Plugin for Window Animations:
+ * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+ *
+ * Latest Update 11.09.2011
+//-->
+  <head>
+    <title>BriskButton - jQuery Plugin (v1.0) | Better Buttons for Websites</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <link href="css/BriskButton.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery-BriskButton.js"></script>
+    <style>
+      body {
+      overflow-y:scroll;
+    }
+    #site {
+      width: 894px;
+      margin: auto;
+    }
+    </style>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        /*Sample Buttons - with Icons ----------------------------------------------------------------------------------------------------------*/
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<img src="images/icons/icon-download.png"><span>Download</span>',
+          BriskButtonCaptionStyle:   'IconText',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-icons',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   0,
+          BriskButtonWidth:          200,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-aero'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<img src="images/icons/icon-buy.png"><span>Jetzt kaufen</span>',
+          BriskButtonCaptionStyle:   'IconText',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-icons',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   200,
+          BriskButtonWidth:          200,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-green'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<img src="images/icons/icon-information.png"><span>Informationen</span>',
+          BriskButtonCaptionStyle:   'IconText',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-icons',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   400,
+          BriskButtonWidth:          200,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-blue'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<img src="images/icons/icon-more.png"><span>Weiter</span>',
+          BriskButtonCaptionStyle:   'IconText',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-icons',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   600,
+          BriskButtonWidth:          200,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-green'
+        });
+        /*Sample Buttons - with Text ----------------------------------------------------------------------------------------------------------*/
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<span>Button mit einer Zeile</span>',
+          BriskButtonCaptionStyle:   '',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-text',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   0,
+          BriskButtonWidth:          200,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-blue'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<p>Button mit <strong>2</strong> Zeilen<br>mit <strong>weisser</strong> Schrift</p>',
+          BriskButtonCaptionStyle:   'TwoLines',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-text',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   200,
+          BriskButtonWidth:          200,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-blue'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<p>Button mit <strong>2</strong> Zeilen<br>mit <strong>schwarzer</strong> Schrift</p>',
+          BriskButtonCaptionStyle:   'TwoLines ColorBlack',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-text',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   400,
+          BriskButtonWidth:          200,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-orange'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<span>Button mit einer Zeilen</span>',
+          BriskButtonCaptionStyle:   'ColorBlack',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-text',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   600,
+          BriskButtonWidth:          200,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-orange'
+        });
+        /*Sample Buttons - Styles ----------------------------------------------------------------------------------------------------------*/
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<span>Orange</span>',
+          BriskButtonCaptionStyle:   'ColorBlack',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-styles',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   0,
+          BriskButtonWidth:          100,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-orange'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<span>Green</span>',
+          BriskButtonCaptionStyle:   '',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-styles',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   100,
+          BriskButtonWidth:          100,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-green'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<span>Blue</span>',
+          BriskButtonCaptionStyle:   '',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-styles',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   200,
+          BriskButtonWidth:          100,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-blue'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<span>Aero</span>',
+          BriskButtonCaptionStyle:   '',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-styles',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   300,
+          BriskButtonWidth:          100,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-aero'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<p>Erstelle <strong>deinen</strong> eigenen Button <strong>Style</strong><br>mit Hilfe unserer <strong>Photoshop Vorlagen</strong></p>',
+          BriskButtonCaptionStyle:   'TwoLines',
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonPlacementID:    'buttonplace-styles',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   400,
+          BriskButtonWidth:          400,
+          BriskButtonHeight:         60,
+          BriskButtonStyle:          'BriskButton-blue'
+        });
+        /*Sample Buttons - Sizes -----------------------------------------------------------------------------------------------------------*/
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<p>Minimiert: 100x100<br>Maximiert: 200x200</p>',
+          BriskButtonCaptionStyle:   'TwoLines',
+          BriskButtonSourceID:       'BriskButton-Samplebox-2',
+          BriskButtonPlacementID:    'buttonplace-sizes',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   0,
+          BriskButtonWidth:          100,
+          BriskButtonHeight:         100,
+          BriskButtonMaxWidth:       200,
+          BriskButtonMaxHeight:      200,
+          BriskButtonStyle:          'BriskButton-green'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<p>Minimiert: 100x300<br>Maximiert: 500x100</p>',
+          BriskButtonCaptionStyle:   'TwoLines h150',
+          BriskButtonSourceID:       'BriskButton-Samplebox-2',
+          BriskButtonPlacementID:    'buttonplace-sizes',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   100,
+          BriskButtonWidth:          300,
+          BriskButtonHeight:         150,
+          BriskButtonMaxWidth:       500,
+          BriskButtonMaxHeight:      300,
+          BriskButtonStyle:          'BriskButton-blue'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<span><small>Minimiert: 50x300, Maximiert: 300x600</small></span>',
+          BriskButtonCaptionStyle:   '',
+          BriskButtonSourceID:       'BriskButton-Samplebox-2',
+          BriskButtonPlacementID:    'buttonplace-sizes',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   400,
+          BriskButtonWidth:          300,
+          BriskButtonHeight:         50,
+          BriskButtonMaxWidth:       800,
+          BriskButtonMaxHeight:      200,
+          BriskButtonStyle:          'BriskButton-aero'
+        });
+        $.fn.BriskButton({
+          BriskButtonCaption:        '<span><small>Mini</small></span>',
+          BriskButtonCaptionStyle:   '',
+          BriskButtonSourceID:       'BriskButton-Samplebox-2',
+          BriskButtonPlacementID:    'buttonplace-sizes',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   700,
+          BriskButtonWidth:          100,
+          BriskButtonHeight:         35,
+          BriskButtonMaxWidth:       300,
+          BriskButtonMaxHeight:      200,
+          BriskButtonStyle:          'BriskButton-green'
+        });
+        /*Sample Buttons - Styles ----------------------------------------------------------------------------------------------------------*/
+
+
+        $.fn.BriskButton({
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonCaption:        '<span><small>Animation: easeOutBounce</span></small>',
+          BriskButtonPlacementID:    'buttonplace-animations',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   0,
+          BriskButtonStyle:          'BriskButton-blue',
+          BriskButtonAnimation:      'easeOutBounce'
+        });
+
+        $.fn.BriskButton({
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonCaption:        '<span><small>Animation: easeOutCirc</span></small>',
+          BriskButtonPlacementID:    'buttonplace-animations',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   200,
+          BriskButtonStyle:          'BriskButton-green',
+          BriskButtonAnimation:      'easeOutCirc'
+        });
+
+        $.fn.BriskButton({
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonCaptionStyle:   'ColorBlack',		
+          BriskButtonAnimationSpeed: 300,
+          BriskButtonCaption:        '<span><small>Animation: easeOutElastic</span></small>',
+          BriskButtonPlacementID:    'buttonplace-animations',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   400,
+           BriskButtonAnimationSpeed: 1000,
+          BriskButtonStyle:          'BriskButton-orange',
+          BriskButtonAnimation:      'easeOutElastic'
+        });
+
+        $.fn.BriskButton({
+          BriskButtonSourceID:       'BriskButton-Samplebox-1',
+          BriskButtonCaption:        '<span><small>Animation: easeOutBack</span></small>',
+          BriskButtonPlacementID:    'buttonplace-animations',
+          BriskButtonPositionTop:    0,
+          BriskButtonPositionLeft:   600,
+          BriskButtonAnimation:      'easeOutBack'
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+    <div id="site">
+        <h1>BriskButton - jQuery Plugin</h1>
+        <h2>Der benutzerfreundliche Button mit reichlich Platzangebot</h2>
+        <h3>BriskButton für Websites - was ist das?</h3>
+        <p>Ein BriskButton für Websites unterscheidet sich auf den  ersten Blick nicht von einem regulären Button. Fährt man über den Button mit  der Maus, bläht sich der Button auf die gewünschte Größe auf und blendet Ihren  individuellen HTML/CSS -Inhalt ein. Die Übergänge sind animiert und bieten ein  angenehmes Look&amp;Feel.<br />
+          Sinnvoll eingesetzt, kann man mittels BriskButtons die  Benutzerfreundlichkeit von Websites erheblich erhöhen. BriskButton ist ein  innovatives UI-Element für Websites und wurde von SOYOS Online Solutions entwickelt. </p>
+        <h3>Welche Vorteile und Möglichkeiten bietet der BriskButton für Websites?</h3>
+        <p>Einsatzmöglichkeiten für BriskButtons gibt es viele. Anbei  ein paar Beispiele, wie man mittels BriskButtons die Benutzerfreundlichkeit  erhöhen  oder auch die Conversion-Rate  steigern kann mittels z.B. besonderer Angebote, die dem Interessenten direkt  ins Auge fallen. </p>
+        <ul>
+          <li><strong>Download-Button</strong><br />
+            Bieten Sie mehrere Versionen zum Herunterladen Ihres Produkts an, so können Sie  diese alle innerhalb des BriskButtons darstellen, denn Sie selbst definieren  die Maximalgröße des Buttons und können den Inhalt selbst bestimmen. So können  Sie z.B. mehrere Versionen oder Versionen für unterschiedliche Betriebssysteme  innerhalb eines einzigen BriskButtons anbieten ohne auf der Website selbst eine  Fülle von Download-Buttons darzustellen. So bleibt der Platz auf Ihrer Website primär  für Ihre Produktbeschreibung. Der Download-Button wird direkt erkannt und  bietet dann die entsprechenden Informationen und Links an, die an dieser Stelle  erst benötigt werden.  </li>
+          <li><strong>Download-Button  in Verbindung mit einem attraktiven Angebot</strong> <br />
+            Eine weitere Möglichkeit ist innerhalb des BriskButtons den Download z.B. einer  Testversion anzubieten und gleichzeitig auf ein besonderes günstiges Angebot mit  direkter Kaufmöglichkeit hinzuweisen.  Der Interessent, der primär an einem Download  interessiert ist, richtet seine volle Aufmerksamkeit auf den Download Button und  nimmt so das besondere Angebot bewusst wahr. </li>
+          <li><strong>Individuelle  Einsatzmöglichkeiten<br />
+          </strong>BriskButton eignet sich auch überall, wo mehrere Buttons oder Links mit  wichtigen Hinweisen das Design einer Website unnötig stören würden.  Informationen werden durch Verwendung eines BriskButtons erst bei Bedarf für  den Websitebesucher eingeblendet. Der Inhalt kann vollständig per HTML/CSS  definiert werden. Somit sind die Einsatzmöglichkeiten sehr vielfältig und bieten,  sinnvoll eingesetzt, erhöhte Benutzerfreundlichkeit.<strong></strong></li>
+        </ul>
+        <h2>Online Demo</h2>
+        <h3>Individuelle Beschriftung der BriskButtons </h3>
+        <p>BriskButtons (jQuery Plugin) können alle individuell  konfiguriert werden. Egal ob Sie die Beschriftung einzeilig, zweizeilig, mit  oder ohne Icon, mit oder ohne Bild oder speziell formatiert wünschen. </p>
+        <div id="buttonplace-icons" style="position: relative; margin-left: 0px; height: 100px; "></div>
+        <div id="buttonplace-text" style="position: relative; margin-left: 0px; height: 100px"></div>
+        <h3>Unterschiedliche Styles</h3>
+        <p>BriskButton jQuery Plugin bietet vordefinierte Styles wie  Classic Blue, Classic Green, Classic Orange oder den Aero Style an. Darüber  hinaus kann man mittels der mitgelieferten Photoshop-Vorlage ganz eigene individuelle  Styles kreieren. </p>
+        <div id="buttonplace-styles" style="position: relative; margin-left: 0px; height: 100px"></div>
+        <h3>Individuelle Größen der BriskButtons (minimiert und maximiert)</h3>
+        <p>Definieren Sie selbst, welche Größe jeder BriskButton  minimiert und maximiert hat. Die Grafiken werden dabei so skaliert, dass kein  Qualitätsverlust entsteht und selbst feinste Effekte erhalten bleiben. </p>
+        <div id="buttonplace-sizes" style="position: relative; margin-left: 0px; height: 200px"></div>
+        <h3>30 unterschiedliche Animationseffekte</h3>
+        <p>Wählen Sie einen von 30 unterschiedlichen Animationseffekten aus und definieren Sie selbst die Dauer der Animation. Soll Ihr BriskButton schnell aufgehen, langsam aufgehen, mit oder ohne besonderem Effekt? Testen Sie doch einmal die hier hinterlegten unterschiedlichen Animationseffekte:</p>        
+        <div id="buttonplace-animations" style="position: relative; margin-left: 0px; height: 100px"></div>
+        <h3>Individueller Inhalt der maximierten BriskButtons</h3>
+        <p>Wie oben im Beschreibungstext erklärt, gibt es zahlreiche  Anwendungsmöglichkeiten für den BriskButton. Inhalte für den Status des  maximierten BriskButtons können Sie selbst per HTML/CSS völlig frei definieren.</p>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!-- Demo Content BriskButton  1 -->
+        <!-- Demo Content 1 -->
+        <div id="BriskButton-Samplebox-1" style="display: none">
+          <div class="SampleBox1">
+            <h4>BEISPIEL INHALT</h4>
+            <div class="leftBox">
+              <h6>Testversion downloaden</h6>
+              <ul>
+                <li><a href="#">Version 1.0 für Windows</a></li>
+                <li><a href="#">Version 2.0 für Windows</a></li>
+                <li><a href="#">Version 3.0 für Windows (Beta)</a></li>
+              </ul>
+            </div>
+            <div class="rightBox">
+              <h6>Jetzt kaufen und sparen!</h6>
+              <p>Wenn Sie sich bis zum xx.xx. zum Kauf entscheiden, sparen Sie satte 30%! <br><a href="#">Jetzt online kaufen</a></p>
+            </div>
+            <div style="clear: both"></div>
+            <p><br>Bitte weiterempfehlen: <a href="http://www.soyos.net/labs/briskbutton/" title="BriskButton für Websites - jQuery Plugin"><span style="color: black">BriskButton jQuery Plugin</span></a></p>
+          </div>
+        </div>
+        <!-- Demo Content 2 -->
+        <div id="BriskButton-Samplebox-2" style="display: none;">
+          <div class="SampleBox2">
+            <p>
+              IHR HTML/CSS INHALT...
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Google Code -->
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-3677921-4']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>      
+  </body>
+</html>

@@ -1,0 +1,86 @@
+#bg { background: url(images/bg.jpg) ;}
+body { background: url(images/bg2.jpg) repeat ; font-family: "Myriad Pro", Arial, Verdana ;}
+#logo { margin-top: 100px; text-align: center ; }
+
+.text {  margin-top: 40px; float: left ; text-align: center ;width: 709px;  }
+
+.text h3 { background: url(images/tool.png) no-repeat ; font-size: 24px; font-weight: normal ; color: #2d2d2d ; margin: 0px auto ; width: 410px; text-align: center ;}
+
+#main { text-align: center ; background: url(images/content.png) no-repeat;  width: 709px ; height: 324px; margin: 0px auto ; }
+.subtext { color: #2d2d2d ; font-size: 14px; font-weight: bold; margin-top: 15px; float: left ; text-align: center ;width: 709px; }
+.subtext2 { color: #2d2d2d ; font-size: 13px; font-weight: bold; margin-top: 50px; float: left ; text-align: center ;width: 709px; }
+.time {  color: #626161 ; font-size: 26px; font-weight: normal; margin-top: 15px; float: left ; text-align: center ;width: 709px; }
+.news  {  color: #626161 ; font-size: 26px; font-weight: normal; margin-top: 45px; float: left ; text-align: center ;width: 709px; }
+
+.countdown_section {
+	
+	float: left;
+	width: 150px;
+	margin-right: 50px;
+	
+}
+
+
+
+#sliderwrap {  
+
+
+float: left ; 
+text-align: center; 
+width: 500px; 
+overflow: hidden ;
+margin-left: 100px; 
+position: relative ; 
+
+}
+
+#socialicons { float: left ; margin-left: 116px; display: inline ;}
+
+
+#slidertext { 
+margin-top: 15px; 
+float: left ; 
+width: 500px; 
+overflow: hidden ;
+position: relative ; 
+
+ }
+
+#slidertext li {
+overflow: hidden ;
+position: relative ; 
+width: 500px; 
+margin-bottom: 10px;
+}
+
+#slidertext ul{
+
+width: 500px; }
+
+#emailform { color: silver ;  margin-top: 30px ; float: left ; text-align: center ;width: 670px; }
+#email { -moz-border-radius-bottomleft:3px;
+-moz-border-radius-bottomright:3px;
+-moz-border-radius-topleft:3px;
+-moz-border-radius-topright:3px;padding: 9px 9px 11px 9px; background: #FFFFFF ; border: 1px solid #b6b4b4 ; }
+#submit { vertical-align: middle ; padding: 2px; }
+#twitter { position: absolute ; margin-left: 798px; margin-top: -1px; float: right ; }
+
+.icon { position: absolute ; margin-top: 175px; margin-left: -41px;  }
+.icon2 { position: absolute ; margin-top: 203px; margin-left: -41px;  }
+.icon3 { position: absolute ; margin-top: 231px; margin-left: -41px;  }
+
+div.tooltip { 
+	display: none; /* initially tooltips are hidden */
+	padding: 10px;
+	background: #3091be; 
+	border: 1px solid silver; 
+	color: #fff;
+	font-size: 12px ;
+	margin-left: 700px;
+	margin-top: 0px; 
+	position: absolute ; 
+	 -moz-border-radius-bottomleft:3px;
+     -moz-border-radius-bottomright:3px;
+     -moz-border-radius-topleft:3px;
+     -moz-border-radius-topright:3px;
+}

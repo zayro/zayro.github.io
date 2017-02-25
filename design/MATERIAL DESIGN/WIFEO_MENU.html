@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+* {
+  &, &:before, &:after {
+    box-sizing : border-box;
+  }
+}
+
+body {
+  font-family : sans-serif;
+  
+  color : #fff;
+}
+
+.container {
+  position : relative;
+  
+  margin  : 1px auto;
+  
+  width : 100%;
+  
+  background : #fff;
+  
+  overflow : hidden;
+
+  header {
+    margin  : 0 0 1em 0;
+    padding : 1em;
+    
+    text-align : left;
+    background : #00b8d4;
+  }
+  
+  input {
+    display : none;
+    
+    &:checked {
+      ~ header {
+        label {
+          @include rotate( 180deg );
+          
+          &:before, &:after {
+            width : 66.6%;
+          }
+          
+          &:before {
+            @include simple-transform(
+              1,
+              45deg,
+              0.6em, 
+              -0.8em,
+              0,
+              0,
+              0,
+              0.125em
+            );
+          }
+          
+          &:after {
+            @include simple-transform(
+              1,
+              -45deg,
+              0.6em, 
+              0.8em,
+              0,
+              0,
+              0,
+              0.125em
+            );
+			 }
+        }
+      }
+      
+      ~ main {
+        @include translateX( calc( 200px + 1em ) );
+      }
+      
+      ~ nav {
+        @include translateX( 0 );
+      }
+    }
+  }
+  
+  main, nav {
+    width : 100%;
+    
+    padding : 1em;
+    
+    @include transition(
+      transform 0.33s cubic-bezier(.25,1.05,.75,1.05)
+    );
+  }
+  
+  nav {
+    position : absolute;
+    
+    height : 100%;
+    width  : 200PX;
+    
+    color : #888;
+    background : #eee;
+    
+    @include translateX( -200px );
+  }
+  
+  main {
+    background : #00b8d4;
+  }
+}
+
+.container--menu {
+  list-style : none;
+  
+  margin  : 0;
+  padding : 0;
+}
+
+.container--menu--item {
+  position : relative;
+
+  border-bottom : 1px solid #aaa;
+  
+  padding : 0.5em;
+
+  overflow : hidden;
+  
+  &:hover {
+    background : #f7f7f7;
+    
+    &:before {
+      @include translateX( 95% );
+    }
+  }
+  
+  &:last-child {
+    border : none;
+  }
+  
+  &:before {
+    position : absolute;
+    
+    content : '';
+    
+    top    : 0;
+    right  : 0;
+    left   : 0;
+    bottom : 0;
+    
+    background : #00b8d4;
+    
+    @include translateX( 100% );
+    @include transition(  transform 0.25s  );
+  }
+}
+
+.container--switch {
+  position : relative;
+  
+  display : inline-block;
+  
+  height : 1.5em;
+  width  : 1.5em;
+  
+  padding : 0;
+  
+  border-top    : 0.625em solid #00b8d4;
+  border-bottom : 0.625em solid #00b8d4;
+  
+  background : #fff;
+  
+  cursor : pointer;
+  
+  @include transition( transform 0.25s );
+  
+  &:before, &:after  {
+    position : absolute;
+  
+    z-index : 1;
+    
+    width  : 100%;
+    height : 0.25em;
+    
+    left : 0;
+    
+    content : '';
+    
+    background : #fff;
+    
+    @include transition( transform 0.25s );
+  }
+  
+  &:before {
+	 top : -0.5em;
+  }
+  
+  &:after {
+    bottom : -0.5em;
+  }
+}
+</style>
+</head>
+
+<body>
+<section class="container">
+  <input type="checkbox" name="switch" id="switch">
+  <header>
+	  <label class="container--switch" for="switch"></label>
+  </header>
+  <nav>
+    <ul class="container--menu">
+      <li class="container--menu--item">Menu 1
+      <li class="container--menu--item">Menu 2
+      <li class="container--menu--item">Menu 3
+    </ul>
+  </nav>
+  
+  <main>
+    <p>Bacon ipsum dolor sit amet beef ribs jowl short ribs salami, tongue tenderloin pork loin doner drumstick andouille flank kevin. Bresaola boudin andouille doner shoulder sirloin. Porchetta doner strip steak shank chicken pork belly leberkas rump shankle pork turkey capicola. Ground round hamburger ribeye, brisket beef ribs meatball biltong jowl beef pork belly ham salami landjaeger turducken kielbasa.</p>
+    <p>Tri-tip kielbasa rump shoulder, pork chop pork loin shankle turducken shank short loin prosciutto ribeye landjaeger beef ribs salami. Tongue andouille filet mignon turkey biltong ribeye.</p>
+  </main>
+  
+</section>
+</body>
+</html>

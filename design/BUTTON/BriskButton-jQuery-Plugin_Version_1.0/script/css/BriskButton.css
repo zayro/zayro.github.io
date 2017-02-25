@@ -1,0 +1,418 @@
+/*
+ * BriskButton for Websites - jQuery Plugin (v1.00)
+ * Copyright 2011, SOYOS Online Solutions
+ *
+ * Project Website:
+ * http://www.soyos.net/labs/briskbutton/
+ *
+ * More Scripts:
+ * http://www.soyos.net/labs/
+ *
+ * Requires Easing Plugin for Window Animations:
+ * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+ *
+ * Latest Update 11.09.2011
+ */
+
+
+
+/*-----------------------------------------------------------------------------
+Caption Style IconText
+-----------------------------------------------------------------------------*/
+.IconText.caption {
+  text-align: left;
+  font-size: 18px;
+}
+.IconText.caption span {
+  margin-left: 70px;
+}
+.IconText.caption img {
+  top: 10px;
+  left: 15px;
+  position: absolute;
+}
+/*-----------------------------------------------------------------------------
+Caption Style - two lines
+-----------------------------------------------------------------------------*/
+.TwoLines.caption {
+}
+.TwoLines.caption p {
+  font-size: 16px;
+  line-height: 20px!important;
+  padding-top: 8px;
+}
+/*-----------------------------------------------------------------------------
+Caption Style - BlackText
+-----------------------------------------------------------------------------*/
+.ColorBlack.caption {
+  color: black;
+}
+/*-----------------------------------------------------------------------------
+Caption Demo Styles
+-----------------------------------------------------------------------------*/
+.h150.caption p {
+  font-size: 16px;
+  line-height: 20px!important;
+  padding-top: 55px;
+}
+
+
+/*-----------------------------------------------------------------------------
+BriskButton Style - Green Button - Regular
+-----------------------------------------------------------------------------*/
+
+.BriskButton.BriskButton-green .table-tl {
+  background: url(../images/BriskButton-green/tl.png);
+}
+.BriskButton.BriskButton-green .table-tm {
+  background: url(../images/BriskButton-green/tm.png);
+}
+.BriskButton.BriskButton-green .table-tr {
+  background: url(../images/BriskButton-green/tr.png);
+}
+.BriskButton.BriskButton-green .table-rm {
+  background: url(../images/BriskButton-green/mr.png);
+}
+.BriskButton.BriskButton-green .table-bl {
+  background: url(../images/BriskButton-green/bl.png);
+}
+.BriskButton.BriskButton-green .table-bm {
+  background: url(../images/BriskButton-green/bm.png);
+}
+.BriskButton.BriskButton-green .table-br {
+  background: url(../images/BriskButton-green/br.png);
+}
+.BriskButton.BriskButton-green .table-lm {
+  background: url(../images/BriskButton-green/ml.png);
+}
+.BriskButton.BriskButton-green .table-mm {
+  background: url(../images/BriskButton-green/mm.png);
+}
+/*BriskButton Style - Active*/
+.BriskButton.BriskButton-green.active .table-tl {
+  background: url(../images/BriskButton-green/active_tl.png);
+}
+.BriskButton.BriskButton-green.active .table-tm {
+  background: url(../images/BriskButton-green/active_tm.png);
+}
+.BriskButton.BriskButton-green.active .table-tr {
+  background: url(../images/BriskButton-green/active_tr.png);
+}
+.BriskButton.BriskButton-green.active .table-rm {
+  background: url(../images/BriskButton-green/active_mr.png);
+}
+.BriskButton.BriskButton-green.active .table-bl {
+  background: url(../images/BriskButton-green/active_bl.png);
+}
+.BriskButton.BriskButton-green.active .table-bm {
+  background: url(../images/BriskButton-green/active_bm.png);
+}
+.BriskButton.BriskButton-green.active .table-br {
+  background: url(../images/BriskButton-green/active_br.png);
+}
+.BriskButton.BriskButton-green.active .table-lm {
+  background: url(../images/BriskButton-green/active_ml.png);
+  background: none;
+}
+.BriskButton.BriskButton-green.active .table-mm {
+  background: url(../images/BriskButton-green/active_mm.png);
+}
+
+/*-----------------------------------------------------------------------------
+BriskButton Style - Orange Button - Regular
+-----------------------------------------------------------------------------*/
+
+.BriskButton.BriskButton-orange .table-tl {
+  background: url(../images/BriskButton-orange/tl.png);
+}
+.BriskButton.BriskButton-orange .table-tm {
+  background: url(../images/BriskButton-orange/tm.png);
+}
+.BriskButton.BriskButton-orange .table-tr {
+  background: url(../images/BriskButton-orange/tr.png);
+}
+.BriskButton.BriskButton-orange .table-rm {
+  background: url(../images/BriskButton-orange/mr.png);
+}
+.BriskButton.BriskButton-orange .table-bl {
+  background: url(../images/BriskButton-orange/bl.png);
+}
+.BriskButton.BriskButton-orange .table-bm {
+  background: url(../images/BriskButton-orange/bm.png);
+}
+.BriskButton.BriskButton-orange .table-br {
+  background: url(../images/BriskButton-orange/br.png);
+}
+.BriskButton.BriskButton-orange .table-lm {
+  background: url(../images/BriskButton-orange/ml.png);
+}
+.BriskButton.BriskButton-orange .table-mm {
+  background: url(../images/BriskButton-orange/mm.png);
+}
+/*BriskButton Style - Active*/
+.BriskButton.BriskButton-orange.active .table-tl {
+  background: url(../images/BriskButton-orange/active_tl.png);
+}
+.BriskButton.BriskButton-orange.active .table-tm {
+  background: url(../images/BriskButton-orange/active_tm.png);
+}
+.BriskButton.BriskButton-orange.active .table-tr {
+  background: url(../images/BriskButton-orange/active_tr.png);
+}
+.BriskButton.BriskButton-orange.active .table-rm {
+  background: url(../images/BriskButton-orange/active_mr.png);
+
+}
+.BriskButton.BriskButton-orange.active .table-bl {
+  background: url(../images/BriskButton-orange/active_bl.png);
+}
+.BriskButton.BriskButton-orange.active .table-bm {
+  background: url(../images/BriskButton-orange/active_bm.png);
+}
+.BriskButton.BriskButton-orange.active .table-br {
+  background: url(../images/BriskButton-orange/active_br.png);
+}
+.BriskButton.BriskButton-orange.active .table-lm {
+  background: url(../images/BriskButton-orange/active_ml.png);
+}
+.BriskButton.BriskButton-orange.active .table-mm {
+  background: url(../images/BriskButton-orange/active_mm.png);
+}
+
+
+/*-----------------------------------------------------------------------------
+BriskButton Style - Blue Button - Regular
+-----------------------------------------------------------------------------*/
+.BriskButton.BriskButton-blue .table-tl {
+  background: url(../images/BriskButton-blue/tl.png);
+}
+.BriskButton.BriskButton-blue .table-tm {
+  background: url(../images/BriskButton-blue/tm.png);
+}
+.BriskButton.BriskButton-blue .table-tr {
+  background: url(../images/BriskButton-blue/tr.png);
+}
+.BriskButton.BriskButton-blue .table-rm {
+  background: url(../images/BriskButton-blue/mr.png);
+}
+.BriskButton.BriskButton-blue .table-bl {
+  background: url(../images/BriskButton-blue/bl.png);
+}
+.BriskButton.BriskButton-blue .table-bm {
+  background: url(../images/BriskButton-blue/bm.png);
+}
+.BriskButton.BriskButton-blue .table-br {
+  background: url(../images/BriskButton-blue/br.png);
+}
+.BriskButton.BriskButton-blue .table-lm {
+  background: url(../images/BriskButton-blue/ml.png);
+}
+.BriskButton.BriskButton-blue .table-mm {
+  background: url(../images/BriskButton-blue/mm.png);
+
+}
+/*BriskButton Style - Active*/
+.BriskButton.BriskButton-blue.active .table-tl {
+  background: url(../images/BriskButton-blue/active_tl.png);
+}
+.BriskButton.BriskButton-blue.active .table-tm {
+  background: url(../images/BriskButton-blue/active_tm.png);
+}
+.BriskButton.BriskButton-blue.active .table-tr {
+  background: url(../images/BriskButton-blue/active_tr.png);
+}
+.BriskButton.BriskButton-blue.active .table-rm {
+  background: url(../images/BriskButton-blue/active_mr.png);}
+.BriskButton.BriskButton-blue.active .table-bl {
+  background: url(../images/BriskButton-blue/active_bl.png);
+}
+.BriskButton.BriskButton-blue.active .table-bm {
+  background: url(../images/BriskButton-blue/active_bm.png);
+}
+.BriskButton.BriskButton-blue.active .table-br {
+  background: url(../images/BriskButton-blue/active_br.png);
+}
+.BriskButton.BriskButton-blue.active .table-lm {
+  background: url(../images/BriskButton-blue/active_ml.png);
+}
+.BriskButton.BriskButton-blue.active .table-mm {
+  background: url(../images/BriskButton-blue/active_mm.png);
+}
+
+
+/*-----------------------------------------------------------------------------
+BriskButton Style - aero Button - Regular
+-----------------------------------------------------------------------------*/
+.BriskButton.BriskButton-aero .table-tl {
+  background: url(../images/BriskButton-aero/tl.png);
+}
+.BriskButton.BriskButton-aero .table-tm {
+  background: url(../images/BriskButton-aero/tm.png);
+}
+.BriskButton.BriskButton-aero .table-tr {
+  background: url(../images/BriskButton-aero/tr.png);
+}
+.BriskButton.BriskButton-aero .table-rm {
+  background: url(../images/BriskButton-aero/mr.png);
+}
+.BriskButton.BriskButton-aero .table-bl {
+  background: url(../images/BriskButton-aero/bl.png);
+}
+.BriskButton.BriskButton-aero .table-bm {
+  background: url(../images/BriskButton-aero/bm.png);
+}
+.BriskButton.BriskButton-aero .table-br {
+  background: url(../images/BriskButton-aero/br.png);
+}
+.BriskButton.BriskButton-aero .table-lm {
+  background: url(../images/BriskButton-aero/ml.png);
+}
+.BriskButton.BriskButton-aero .table-mm {
+  background: url(../images/BriskButton-aero/mm.png);
+}
+/*BriskButton Style - Active*/
+.BriskButton.BriskButton-aero.active .table-tl {
+  background: url(../images/BriskButton-aero/active_tl.png);
+}
+.BriskButton.BriskButton-aero.active .table-tm {
+  background: url(../images/BriskButton-aero/active_tm.png);
+}
+.BriskButton.BriskButton-aero.active .table-tr {
+  background: url(../images/BriskButton-aero/active_tr.png);
+}
+.BriskButton.BriskButton-aero.active .table-rm {
+  background: none;
+}
+.BriskButton.BriskButton-aero.active .table-bl {
+  background: url(../images/BriskButton-aero/active_bl.png);
+}
+.BriskButton.BriskButton-aero.active .table-bm {
+  background: url(../images/BriskButton-aero/active_bm.png);
+}
+.BriskButton.BriskButton-aero.active .table-br {
+  background: url(../images/BriskButton-aero/active_br.png);
+}
+.BriskButton.BriskButton-aero.active .table-lm {
+  background: none;
+}
+.BriskButton.BriskButton-aero.active .table-mm {
+  background: none;
+}
+
+
+
+/*-----------------------------------------------------------------------------
+BriskButton Basic Style - Regular
+-----------------------------------------------------------------------------*/
+.BriskButton  {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+  line-height: 0px;
+  font-size: 1px;
+}
+.caption *  {
+  margin: 0px;
+  padding: 0px:
+}
+.caption {
+  color: white;
+  font-family: arial;
+  text-align: center;
+}
+
+
+.BriskButton .table-tl {
+  min-width: 12px;
+  height: 12px;
+}
+.BriskButton .table-tr {
+  min-width: 12px;
+  height: 12px;
+}
+.BriskButton .table-bl {
+  width: 12px;
+  height: 12px;
+}
+.BriskButton .table-br {
+  width: 12px;
+  height: 12px;
+}
+/*-----------------------------------------------------------------------------
+BriskButton Basic Style - Active
+-----------------------------------------------------------------------------*/
+.BriskButton.active {
+  position: absolute;
+  z-index: 100;
+}
+
+.BriskButton .table-mm-content {
+  font-family: arial;
+  overflow: auto!important;
+  font-size: 16px;
+}
+/*-----------------------------------------------------------------------------
+SampleBox for BriskButton Content
+-----------------------------------------------------------------------------*/
+
+.SampleBox1 * {    		
+  padding: 0px;
+  margin: 0px;		
+}
+.SampleBox1 {    	
+  overflow: hidden;	
+  border: 1px solid black; 
+  background: url(../images/sample-content-screen.png) repeat-x;
+  padding: 10px;    
+  color: black;
+  font-family: arial;
+  font-size: 12px;
+  height: 137px;
+  overflow: auto;
+}
+.SampleBox2 {      
+  color: white;
+  background: black;
+}
+.SampleBox1 ul {      
+  list-style: none;
+}
+.SampleBox1 a:link, .SampleBox1 a:visited {      
+  color: blue;
+  text-decoration: none;
+}
+.SampleBox1 a:hover {      
+  text-decoration: underline;
+}
+.SampleBox1 h1 {
+  font-weight: normal;
+  font-size: 25px;
+}
+.SampleBox1 h3 {
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.SampleBox1 .leftBox {
+  float: left;
+  margin-right: 35px;
+}
+
+.SampleBox1   h4, .SampleBox1  h5, .SampleBox1 h6  {    		
+  color: #000!important;
+}
+.SampleBox1   h4{    		
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  
+}
+.SampleBox1   h5{    		
+  font-size: 20px;
+}
+.SampleBox1   h6{    		
+  font-weight: normal;
+  font-size: 17px;
+}

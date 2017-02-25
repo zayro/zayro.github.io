@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+.fond{position:absolute;padding-top:85px;top:0;left:0; right:0;bottom:0;
+  background-color:#f8b334;}
+
+.google_volet{
+    width:200px;
+    height:40px;
+    padding:10px;
+    background-color:#dd4b39;
+    position: absolute;
+    z-index: 2;
+}
+.txt_google
+{
+    width:200px;
+    height:40px;
+    padding:10px;
+    position: absolute;
+    z-index: 1;
+    background-color:#ffffff;
+    line-height:40px;
+    font-family:'Roboto';
+    font-weight:300;
+    font-size:26px;
+}
+.bouton_google:hover .google_volet{
+    -webkit-animation: anim 1.2s;-webkit-animation-iteration-count:1;-webkit-animation-fill-mode:forwards;
+    -ms-animation: anim 1.2s;-ms-animation-iteration-count:1;-ms-animation-fill-mode:forwards;
+    -moz-animation: anim 1.2s;-moz-animation-iteration-count:1;-moz-animation-fill-mode:forwards;
+    animation: anim 1.2s;animation-iteration-count:1;animation-fill-mode:forwards;
+}
+
+@-webkit-keyframes anim {
+    0% {-webkit-transform: perspective( 600px ) rotateX( 0deg );-webkit-transform-origin:100% 100%;}
+    40% {-webkit-transform: perspective( 600px ) rotateX( -220deg );-webkit-transform-origin:100% 100%;}
+    50% {-webkit-transform: perspective( 600px ) rotateX( -160deg );-webkit-transform-origin:100% 100%;}
+    60% {-webkit-transform: perspective( 600px ) rotateX( -210deg );-webkit-transform-origin:100% 100%;}
+    70% {-webkit-transform: perspective( 600px ) rotateX( -190deg );-webkit-transform-origin:100% 100%;}
+    80% {-webkit-transform: perspective( 600px ) rotateX( -200deg );-webkit-transform-origin:100% 100%;}
+    100% {-webkit-transform: perspective( 600px ) rotateX( -180deg );-webkit-transform-origin:100% 100%;}
+}
+@-ms-keyframes anim {
+    0% {-ms-transform: perspective( 600px ) rotateX( 0deg );-ms-transform-origin:100% 100%;}
+    40% {-ms-transform: perspective( 600px ) rotateX( -220deg );-ms-transform-origin:100% 100%;}
+    50% {-ms-transform: perspective( 600px ) rotateX( -160deg );-ms-transform-origin:100% 100%;}
+    60% {-ms-transform: perspective( 600px ) rotateX( -210deg );-ms-transform-origin:100% 100%;}
+    70% {-ms-transform: perspective( 600px ) rotateX( -190deg );-ms-transform-origin:100% 100%;}
+    80% {-ms-transform: perspective( 600px ) rotateX( -200deg );-ms-transform-origin:100% 100%;}
+    100% {-ms-transform: perspective( 600px ) rotateX( -180deg );-ms-transform-origin:100% 100%;}
+}
+@-moz-keyframes anim {
+    0% {-moz-transform: perspective( 600px ) rotateX( 0deg );-moz-transform-origin:100% 100%;}
+    40% {-moz-transform: perspective( 600px ) rotateX( -220deg );-moz-transform-origin:100% 100%;}
+    50% {-moz-transform: perspective( 600px ) rotateX( -160deg );-moz-transform-origin:100% 100%;}
+    60% {-moz-transform: perspective( 600px ) rotateX( -210deg );-moz-transform-origin:100% 100%;}
+    70% {-moz-transform: perspective( 600px ) rotateX( -190deg );-moz-transform-origin:100% 100%;}
+    80% {-moz-transform: perspective( 600px ) rotateX( -200deg );-moz-transform-origin:100% 100%;}
+    100% {-moz-transform: perspective( 600px ) rotateX( -180deg );-moz-transform-origin:100% 100%;}
+}
+@keyframes anim {
+    0% {transform: perspective( 600px ) rotateX( 0deg );transform-origin:100% 100%;}
+    40% {transform: perspective( 600px ) rotateX( -220deg );transform-origin:100% 100%;}
+    50% {transform: perspective( 600px ) rotateX( -160deg );transform-origin:100% 100%;}
+    60% {transform: perspective( 600px ) rotateX( -210deg );transform-origin:100% 100%;}
+    70% {transform: perspective( 600px ) rotateX( -190deg );transform-origin:100% 100%;}
+    80% {transform: perspective( 600px ) rotateX( -200deg );transform-origin:100% 100%;}
+    100% {transform: perspective( 600px ) rotateX( -180deg );transform-origin:100% 100%;}
+}
+</style>
+</head>
+
+<body>
+<div align="center" class="fond">
+  <div class="bouton_google" style="width:200px;">
+    <div class="google_volet"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/173024/google_btn.png"/></div>
+    <a href="#123" style="text-decoration:none; color:#dd4b39;">
+      <div class="txt_google">Google+</div>
+    </a>
+  </div>
+</div>
+</body>
+</html>

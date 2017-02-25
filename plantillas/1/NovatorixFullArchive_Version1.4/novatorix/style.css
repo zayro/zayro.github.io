@@ -1,0 +1,193 @@
+/*
+Theme Name: Novatorix (shared on mafiashare.net)
+Theme URI: http://www.mafiashare.net
+Description: Theme with two columns, right-sidebar, fixed-width and widget-ready. Compatible with Wordpress 3.0.x valid XHTML & CSS.
+Version: 1.4
+Author: MafiaShare.net
+Author URI: http://www.mafiashare.net
+*/
+
+#front-caption{
+	font-size: 28px;
+	font-family: 'MgRegular', Arial;	
+	text-align:center;
+	letter-spacing:1.5px;
+	margin-top:10px;
+}
+
+.front img {
+	border: 1px solid #e5e5e5;
+	padding: 3px;
+	margin-bottom: 10px;
+}
+
+.front p{
+	text-align: justify; 
+}
+
+.front h2{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.testimonials div{
+	float: left;
+}
+
+.sf-menu ul.children {
+	margin-left:0px;
+	margin-top:7px;
+} 
+
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	color:#999;
+	outline: 0;
+}
+.sf-menu li li:hover, .sf-menu li li.sfHover, .sf-menu li li a:focus, .sf-menu li li a:hover, .sf-menu li li a:active {
+	color:#999;
+	outline:		0;
+}
+
+.dropcap1{
+	display:block;
+	float:left;
+	font-size:40px;
+	margin: 0 5px 0 0;
+}
+
+.dropcap2 {
+	float:left;
+	background:url(css/dropcap2.png) center no-repeat;
+	color:#666;
+	font-size:22px;
+		
+	height:46px;
+	line-height:39px;
+	margin-bottom:0px;
+	margin-right:10px;
+	text-align:center;
+	width:45px;
+	padding-top:7px;
+	padding-left:4px;
+}
+
+#front .front2{ margin-left:30px; }
+
+.front2{
+	float: left;
+	width: 202px;
+	margin-right: 0px;
+	margin-top: 20px;
+}
+.front2-last{
+	float: left;
+	width: 202px;
+	margin-left: 30px;
+	margin-right: 0px;
+	margin-top: 20px;
+	padding-bottom:15px;
+}
+.front2 span, .front2-last span{
+	float:left;padding-right:5px;
+}
+.front2 p#imageid, .front2-last p#imageid{
+	margin-top:0px; 
+	padding-left:0px; 
+	text-align:center;
+}
+
+.front2 p, .front2-last p{
+	text-align: left; 
+}
+
+.front2 h2, .front2-last h2{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.front a { color: #666; }
+
+
+/* StyleSwitcher styles */
+	#advanced {
+		position:fixed;
+		z-index:999;
+		right:-162px;
+		top:70px;
+		background: #070707;
+		padding:20px 16px 20px 18px;
+		width:125px;
+		font-size:12px;
+		font-weight:bold;
+		border-right:3px solid #3a3a3a;
+		font-family:Tahoma, Geneva, sans-serif;
+		color:#dfdfdf;
+		-webkit-border-bottom-left-radius: 6px;
+		-moz-border-radius-bottomleft: 6px;
+		border-bottom-left-radius: 6px;
+	}
+	#advanced span.trigger {
+		display:block;
+		position:absolute;
+		left:-38px;
+		top:0px;
+		margin-top:-19px;
+		width:91px;
+		height:50px;
+		background:#fff;
+		cursor:pointer;
+		text-align:center;
+		background:url(styleswitcher2.png) no-repeat 0 0;
+
+	}
+	#advanced span.trigger strong {display:block; padding:4px 0 0 0;}
+	#advanced ul li {
+	text-align:left;
+	padding:0 0 0 13px;
+	font-size:12px;
+	}
+	#advanced ul li.trigger_adv {
+	padding:0 0 0 0;
+	font-size:11px;
+	}
+	#advanced ul li.trigger_adv > span {
+		border-radius:3px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		padding:0 20px 0 12px;
+		color:#dfdfdf;
+		font-weight:bold;
+		display:inline-block;
+	}
+	#advanced ul li.trigger_adv > a:hover {text-decoration:none;}
+
+	#advanced ul li a {
+	color:#4393d0;
+	text-decoration:none;
+	}
+	#advanced ul li a:hover {
+	text-decoration:underline;
+	}
+	#advanced ul ul {
+	margin-left:0px;
+	font-weight:none;
+	}
+	#advanced ul ul li {
+		text-align:left;
+		font-weight:none;
+		font-size:11px;
+		line-height:20px;
+	}
+	#advanced ul ul a {
+		text-transform:capitalize;
+		color:#dfdfdf;
+	}
+	#advanced ul ul ul {
+		margin-left:8px;
+	}
+	#advanced ul ul ul li {
+		background:none;
+		}
+	#advanced ul ul ul li a {
+		color:#939393;
+	}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+<style>
+.conteneur
+{
+  background: -webkit-radial-gradient(center, rgb(50, 50, 50) 0%, rgb(14, 14, 14) 100%);
+  background: -moz-radial-gradient(center, rgb(50, 50, 50) 0%, rgb(14, 14, 14) 90%);
+  background: -ms-radial-gradient(center, rgb(50, 50, 50) 0%, rgb(14, 14, 14) 100%);
+  background: -o-radial-gradient(center, rgb(50, 50, 50) 0%, rgb(14, 14, 14) 100%);
+  background: radial-gradient(circle at 50% 50%, rgb(50, 50, 50) 0%, rgb(14, 14, 14) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; bottom: 0;
+  left:0; right: 0;
+  overflow: hidden;
+}
+
+.top{
+  width:200px;
+  height:120px;
+  position:absolute;
+  margin-left:-100px;
+  left: 50%;
+  bottom: 51%;
+  overflow: hidden;
+  -webkit-animation:spin 0.8s linear;
+  -webkit-animation-fill-mode: both;
+  -moz-animation:spin 0.8s linear;
+  -moz-animation-fill-mode: both;
+  -ms-animation:spin 0.8s linear;
+  -ms-animation-fill-mode: both;
+  animation:spin 0.8s linear;
+  animation-fill-mode: both;
+}
+.pure{
+
+  height:25px;
+  position:absolute;
+  margin-left:-200px;
+  left: 50%;
+  top: 51%;
+  overflow: hidden;
+   font-family:'Electrolize'; font-size:25px; color:#0e0e0e;
+   border-right:2px solid #7CDD26;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: spin1;
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: both;
+  -moz-animation-name: spin1;
+  -ms-animation-delay: 1s;
+  -ms-animation-duration: 1s;
+  -ms-animation-fill-mode: both;
+  -ms-animation-name: spin1;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: spin1;
+}
+.link{
+
+  height:20px;
+  position:absolute;
+  margin-top:30px;
+  margin-left:-200px;
+  left: 50%;
+  top: 51%;
+  overflow: hidden;
+   font-family:'Electrolize'; font-size:16px; color:#7CDD26;
+   border-right:2px solid #7CDD26;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: spin2;
+  -moz-animation-delay: 2s;
+  -moz-animation-duration: 1s;
+  -moz-animation-fill-mode: both;
+  -moz-animation-name: spin2;
+  -ms-animation-delay: 2s;
+  -ms-animation-duration: 1s;
+  -ms-animation-fill-mode: both;
+  -ms-animation-name: spin2;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: spin2;
+}
+.contener
+{
+  padding-top:400px;
+}
+@-webkit-keyframes spin 
+{0% {height:0px;}100% {height:170px;}}
+@-webkit-keyframes spin1 
+{0% {width:0px;border-right:0px;}
+  1% {width:0px;border-right:2px solid #7CDD26;}
+  99% {width:400px;border-right:2px solid #7CDD26;}
+  100% {width:400px;border-right:0px;}}
+@-webkit-keyframes spin2
+{0% {width:0px;border-right:0px;}
+  1% {width:0px;border-right:2px solid #7CDD26;}
+  99% {width:200px;border-right:2px solid #7CDD26;}
+  100% {width:200px;border-right:0px;}}
+@-moz-keyframes spin 
+{0% {height:0px;}100% {height:170px;}}
+@-moz-keyframes spin1 
+{0% {width:0px;border-right:0px;}
+  1% {width:0px;border-right:2px solid #7CDD26;}
+  99% {width:400px;border-right:2px solid #7CDD26;}
+  100% {width:400px;border-right:0px;}}
+@-moz-keyframes spin2
+{0% {width:0px;border-right:0px;}
+  1% {width:0px;border-right:2px solid #7CDD26;}
+  99% {width:200px;border-right:2px solid #7CDD26;}
+  100% {width:200px;border-right:0px;}}
+@-ms-keyframes spin 
+{0% {height:0px;}100% {height:170px;}}
+@-ms-keyframes spin1 
+{0% {width:0px;border-right:0px;}
+  1% {width:0px;border-right:2px solid #7CDD26;}
+  99% {width:400px;border-right:2px solid #7CDD26;}
+  100% {width:400px;border-right:0px;}}
+@-ms-keyframes spin2
+{0% {width:0px;border-right:0px;}
+  1% {width:0px;border-right:2px solid #7CDD26;}
+  99% {width:200px;border-right:2px solid #7CDD26;}
+  100% {width:200px;border-right:0px;}}
+@keyframes spin 
+{0% {height:0px;}100% {height:170px;}}
+@keyframes spin1 
+{0% {width:0px;border-right:0px;}
+  1% {width:0px;border-right:2px solid #7CDD26;}
+  99% {width:400px;border-right:2px solid #7CDD26;}
+  100% {width:400px;border-right:0px;}}
+@keyframes spin2
+{0% {width:0px;border-right:0px;}
+  1% {width:0px;border-right:2px solid #7CDD26;}
+  99% {width:200px;border-right:2px solid #7CDD26;}
+  100% {width:200px;border-right:0px;}}
+</style>
+</head>
+
+<body>
+
+
+<div align="center" class="conteneur">
+  <div class="contener" align="left">
+    <div class="top"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/173024/img_welcome_100x100.png"></div>
+    <div class="pure">PURE CSS3 INTRO ANIMATION</div>
+    <div class="link">WWW.WIFEO.COM /CODE</div>
+  </div>
+</div>
+</body>
+</html>

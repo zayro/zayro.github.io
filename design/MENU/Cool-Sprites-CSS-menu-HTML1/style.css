@@ -1,0 +1,296 @@
+/*
+
+Cool Sprites - Copyright © 2010 Deepu Balan, All rights reserved 
+http://www.deepubalan.com/
+
+*/
+
+/* --------------------Menu style #1-------------------- */
+.navi1 {
+  width: 525px;
+  position: relative;
+  display: block;
+  margin:0 auto;
+  height: 72px;
+}
+.navi1 ul {
+  float: none;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 3px 0;
+}
+.navi1 ul li {
+  height: 72px;
+  background-image: url(tab-1.png);
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0px;
+  position: absolute;
+  padding-top: 5px;
+}
+.navi1 ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.navi1 ul li.sm1 {
+  background-position: 0px 0px;
+  width: 125px;
+  left: 0px;
+}
+.navi1 ul li.sm2 {
+  background-position: -125px 0px;
+  width: 124px;
+  left: 100px;
+}
+.navi1 ul li.sm3 {
+  background-position: -249px 0px;
+  width: 124px;
+  left: 200px;
+}
+.navi1 ul li.sm4 {
+  background-position: -373px 0px;
+  width: 125px;
+  left: 300px;
+}
+.navi1 ul li.sm5 {
+  background-position: -498px 0px;
+  width: 126px;
+  left: 400px;
+}
+.navi1 ul li:hover{
+  z-index: 1000;
+}
+.navi1 ul li.sm1:hover {
+  background-position: 0px -75px; 
+}
+.navi1 ul li.sm2:hover {
+  background-position: -125px -75px; 
+}
+.navi1 ul li.sm3:hover {
+  background-position: -249px -75px; 
+}
+.navi1 ul li.sm4:hover {
+  background-position: -373px -75px; 
+}
+.navi1 ul li.sm5:hover {
+  background-position: -498px -75px; 
+}
+
+
+/* --------------------Menu style #2-------------------- */
+.navi2 {
+  width: 525px;
+  position: relative;
+  display: block;
+  margin:0 auto;
+  height: 72px;
+}
+.navi2 ul {
+  float: none;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 3px 0;
+}
+.navi2 ul li {
+  height: 72px;
+  background-image: url(tab-2.png);
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0px;
+  position: absolute;
+  padding-top: 5px;
+}
+.navi2 ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.navi2 ul li.sm1 {
+  background-position: 0px 0px;
+  width: 125px;
+  left: 0px;
+}
+.navi2 ul li.sm2 {
+  background-position: -125px 0px;
+  width: 124px;
+  left: 100px;
+}
+.navi2 ul li.sm3 {
+  background-position: -249px 0px;
+  width: 124px;
+  left: 200px;
+}
+.navi2 ul li.sm4 {
+  background-position: -373px 0px;
+  width: 125px;
+  left: 300px;
+}
+.navi2 ul li.sm5 {
+  background-position: -498px 0px;
+  width: 126px;
+  left: 400px;
+}
+.navi2 ul li:hover{
+  z-index: 1000;
+}
+.navi2 ul li.sm1:hover {
+  background-position: 0px -75px; 
+}
+.navi2 ul li.sm2:hover {
+  background-position: -125px -75px; 
+}
+.navi2 ul li.sm3:hover {
+  background-position: -249px -75px; 
+}
+.navi2 ul li.sm4:hover {
+  background-position: -373px -75px; 
+}
+.navi2 ul li.sm5:hover {
+  background-position: -498px -75px; 
+}
+
+/* --------------------Menu style #3-------------------- */
+.navi3 {
+  width: 525px;
+  position: relative;
+  display: block;
+  margin:0 auto;
+  height: 72px;
+}
+.navi3 ul {
+  float: none;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 3px 0;
+}
+.navi3 ul li {
+  height: 72px;
+  background-image: url(tab-3.png);
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0px;
+  position: absolute;
+  padding-top: 5px;
+}
+.navi3 ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.navi3 ul li.sm1 {
+  background-position: 0px 0px;
+  width: 125px;
+  left: 0px;
+}
+.navi3 ul li.sm2 {
+  background-position: -125px 0px;
+  width: 124px;
+  left: 100px;
+}
+.navi3 ul li.sm3 {
+  background-position: -249px 0px;
+  width: 124px;
+  left: 200px;
+}
+.navi3 ul li.sm4 {
+  background-position: -373px 0px;
+  width: 125px;
+  left: 300px;
+}
+.navi3 ul li.sm5 {
+  background-position: -498px 0px;
+  width: 126px;
+  left: 400px;
+}
+.navi3 ul li:hover{
+  z-index: 1000;
+}
+.navi3 ul li.sm1:hover {
+  background-position: 0px -72px; 
+}
+.navi3 ul li.sm2:hover {
+  background-position: -125px -72px; 
+}
+.navi3 ul li.sm3:hover {
+  background-position: -249px -72px; 
+}
+.navi3 ul li.sm4:hover {
+  background-position: -373px -72px; 
+}
+.navi3 ul li.sm5:hover {
+  background-position: -498px -72px; 
+}
+
+/* --------------------Menu style #4-------------------- */
+.navi4 {
+  width: 525px;
+  position: relative;
+  display: block;
+  margin:0 auto;
+  height: 72px;
+}
+.navi4 ul {
+  float: none;
+  list-style-image: none;
+  list-style-type: none;
+  margin: 3px 0;
+}
+.navi4 ul li {
+  height: 72px;
+  background-image: url(tab-4.png);
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0px;
+  position: absolute;
+  padding-top: 5px;
+}
+.navi4 ul li a{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.navi4 ul li.sm1 {
+  background-position: 0px 0px;
+  width: 125px;
+  left: 0px;
+}
+.navi4 ul li.sm2 {
+  background-position: -125px 0px;
+  width: 124px;
+  left: 100px;
+}
+.navi4 ul li.sm3 {
+  background-position: -249px 0px;
+  width: 124px;
+  left: 200px;
+}
+.navi4 ul li.sm4 {
+  background-position: -373px 0px;
+  width: 125px;
+  left: 300px;
+}
+.navi4 ul li.sm5 {
+  background-position: -498px 0px;
+  width: 126px;
+  left: 400px;
+}
+.navi4 ul li:hover{
+  z-index: 1000;
+}
+.navi4 ul li.sm1:hover {
+  background-position: 0px -5px; 
+}
+.navi4 ul li.sm2:hover {
+  background-position: -125px -5px; 
+}
+.navi4 ul li.sm3:hover {
+  background-position: -249px -5px; 
+}
+.navi4 ul li.sm4:hover {
+  background-position: -373px -5px; 
+}
+.navi4 ul li.sm5:hover {
+  background-position: -498px -5px; 
+}
+

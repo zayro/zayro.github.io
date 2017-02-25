@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+    <head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Linear HTML Documentation by Aldema Studio</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <style type="text/css" media="screen">
+p, table, hr, .box {
+	margin-bottom:25px;
+}
+.box p {
+	margin-bottom:10px;
+}
+</style>
+    <!-- Shared on MafiaShare.net  --><!-- Shared on MafiaShare.net  --></head>
+
+    <body>
+    <div class="container">
+      <h3 class="center alt">&ldquo;Linear&rdquo; Documentation by &ldquo;Aldema&rdquo; v1.0</h3>
+      <hr>
+      <h1 class="center">&ldquo;Linear&rdquo; HTML template<br>
+        <br>
+        <span class="error">MafiaShare.net</span></h1>
+      <div class="borderTop">
+        <div class="span-6 colborder info prepend-1">
+          <p class="prepend-top"> <strong> Created: 21/06/2012<br>
+            By: Aldema Studio<br>
+            Email: <a href="mailto:youremail@yourdomain.com">info@aldemastudio.com</a> </strong> </p>
+        </div>
+        <!-- end div .span-6 -->
+        
+        <div class="span-12 last">
+          <p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/aldema">here</a>. Thanks so much!</p>
+        </div>
+      </div>
+      <!-- end div .borderTop -->
+      
+      <hr>
+      <h2 id="toc" class="alt">Table of Contents</h2>
+      <ol class="alpha">
+        <li><a href="#htmlStructure">HTML Structure</a></li>
+        <li><a href="#cssFiles">CSS Files and Structure</a></li>
+        <li><a href="#javascript">JavaScript</a></li>
+        <li><a href="#psdFiles">PSD Files</a></li>
+        <li><a href="#how">How To and FAQ</a>
+          <ul>
+            <li><a href="#how1">How can I change text or link colors?</a></li>
+            <li><a href="#how2">How can I change patterns and backgrounds?</a></li>
+            <li><a href="#how3">Why is the dotted line still gray after changing border colors?</a></li>
+            <li><a href="#how4">Help! A character (or the entire alphabet of my language) is not displayed!</a></li>
+            <li><a href="#how5">Can category submenus in sidebar stay open?</a></li>
+            <li><a href="#how6">How can I	customize	the Facebook Box in the footer?</a></li>
+            <li><a href="#how7">How can I use my Twitter account with the Twitter Box in the footer?</a></li>
+            <li><a href="#how8">How can I customize the hover effect on products?</a></li>
+            <li><a href="#how9">How can I customize the slider effect in index and index-2?</a></li>
+            <li><a href="#how10">How can I customize the fancybox plugin in product-page-2?</a></li>
+            <li><a href="#how11">How can I use the buttons?</a></li>
+            <li><a href="#how12">How can I change the email address for the contact form?</a></li>
+          </ul>
+        </li>
+        <li><a href="#credits">Sources and Credits</a></li>
+      </ol>
+      <hr>
+      <h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+      <p>This theme is a fixed layout with two colums. All of the information within the main content area (the left column) is nested within a div with an id of  &quot;container&quot;. The main site area is the"#leftcol", whereas the sidebar's (the right column) content is within a div with an id of "rightcol". At the top of the template there is the #topbar, the thin dark bar with the currency and language switchers and a small menu. The #header div contains the header, including the logo, the cart box and the horizontal top menu. The #footer contains the lower dark part of the site: and extended version of the footer includes also a #category div in the #container. The template structure is the same throughout the template. Here is the general structure.</p>
+      <img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+      <p>In Linear there are 19 different pages:</p>
+      <ol>
+        <li><strong><a href="../index.html">Index 1</a>:</strong> main index, with the jCarousel Lite slider</li>
+        <li><strong><a href="../index-2.html">Index 2</a>:</strong> second index, with Nivo Slider</li>
+        <li><strong><a href="../category-page.html">Category 1</a>:</strong> first category page, products in list view</li>
+        <li><strong><a href="../category-page-2.html">Category 2</a>:</strong> second category page, products grid view</li>
+        <li><strong><a href="../product-page.html">Product</a>:</strong> main product page, images are displayed with the Cloud Zoom plugin</li>
+        <li><strong><a href="../product-page-2.html">Product 2</a>:</strong> second product page with Fancybox plugin for images</li>
+        <li><strong><a href="../cart-page.html">Cart</a></strong></li>
+        <li><strong><a href="../checkout-page.html">Checkout</a>:</strong> the checkout is divided in 6 different steps</li>
+        <li><strong><a href="../blog-page.html">Blog</a>:</strong> a basic layout for a blog page</li>
+        <li><strong><a href="../contact-page.html">Contact</a></strong>: with a simple working form</li>
+        <li><strong><a href="../contact-page-2.html">Contact 2</a></strong></li>
+        <li><strong><a href="../login-page.html">Login</a></strong></li>
+        <li><strong><a href="../register-page.html">Register</a></strong></li>
+        <li><strong><a href="../account-page.html">Account</a></strong></li>
+        <li><strong><a href="../wishlist-page.html">Wishlist</a></strong></li>
+        <li><strong><a href="../about-page.html">About</a></strong></li>
+        <li><strong><a href="../typography.html">Typography</a>:</strong> the list of main styles used in the template (headings, lists, blockquote, columns)</li>
+        <li><strong><a href="../typography.html">Full Elements</a>:</strong> a list of the main elements (buttons, tabs, accordion menu, table, info boxes)</li>
+        <li><a href="../404.html"><strong>404</strong></a>: the error page</li>
+      </ol>
+      <hr>
+      <h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+      <p>I'm using two CSS files in this theme: style.css and fb.css, both located in the css/ directory. The generic reset file is included at the beginning of <strong>style.css</strong>. This file also contains some general styling, especially in the first part of the style sheet.. If you would like to edit the main styles of the template find the following line:</p>
+      <p>/* ----------------------------------- START MAIN STYLES, BACKGROUNDS AND BORDERS  -----------------------------------*/</p>
+      <p>Many css classes are grouped togheter, so that you can change text colors, borders, and backgrounds by editing just few lines:</p>
+      <ul>
+        <li><strong>Header Color and Borders</strong>: the background color of the dark upper bar (#2E2E2E) with the language and currency switchers.</li>
+        <li><strong>Footer Color And Border</strong>: the background of the dark footer part (#2E2E2E) and the full width line above the payment icons that splits the footer.</li>
+        <li><strong>Borders color and shadows style:</strong> the color of borders ( #DDD - eg: table borders, buttons border, etc) and the color of the shadows (eg: product shadows on hover in index.html, selectbox shadows, etc)</li>
+        <li><strong>Title:</strong> the color of  main titles (#333), such as top menu links, product names, page titles, etc</li>
+        <li><strong>Title2</strong>: the color of other important text lines (#999), such as the old price of a discounted product, the currency and the language switchers</li>
+        <li><strong>Text:</strong> the main text color (#666) used in product descriptions, textboxes in sidebar and footer, etc</li>
+        <li><strong>Text2</strong>: another text color (#FFF), mainly used as hover of colored elements (eg: hover of the top menu, buttons, etc)</li>
+        <li><strong>Link:</strong> the color of links and some other lines (#D94A38)</li>
+      </ul>
+      <p>If you find that your new style is not overriding, it is most likely because of a specific problem. Scroll down in your CSS file and make sure that there isn't a similar style that you added and that has more weight. Or just add the &quot;!important&quot; attribute to the property that do not seem to work properly.</p>
+      <p>I.E.</p>
+      <pre>	#somediv .someclass a {
+		color: #someColor !important;
+	}
+        </pre>
+      <p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours. </p>
+      <p>If you're looking the style for a particular elements or page, find the proper comment. eg:</p>
+      <pre>		/* NIVO SLIDER */		
+	
+		&lt;---- nivo classes here ----&gt;
+
+		/* END NIVO SLIDER */</pre>
+      or:
+      <pre>		/* ---------------- START PRODUCT PAGE  ---------------- */<br>
+		&lt;---- product page classes here ----&gt;
+
+		/* ---------------- START ANOTHERE PAGE  ---------------- */</pre>
+      <p>That should make the editing of the template easier, but you still need some CSS basic skills to achieve radical changes to Linear.</p>
+      <p>The second file (fb.css) contains the Facebook style, but we'll talk about it later, in <a href="#how6">the Facebook part</a>.</p>
+      <p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited. If you're going to edit  the template heavily, we suggest you to use <a href="http://getfirebug.com/">Firebug</a>: this useful tool allows you to find out the class of an element and the style being applied to it (including its line number in the CSS code) with just a right click while browsing the template page.</p>
+      <hr>
+      <h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+      <p>This theme imports few local Javascript files.</p>
+      <ol>
+        <li>jquery-1.7.2.min.js</li>
+        <li>cufon-yui.js</li>
+        <li>open-sans-latin.js</li>
+        <li>common.js</li>
+        <li>facebook-box.js</li>
+        <li>common_footer.js</li>
+      </ol>
+      <ol>
+        <li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+        <li>the cufon library is used in some text lines, like titles, to make them look better</li>
+        <li>the cufonized font file, obtained with the <a href="http://cufon.shoqolate.com/generate/">official cufon site</a>. We'll talk about it later in <a href="#how4">this section</a>.</li>
+        <li>it's the main js file, contains almost every jquery plugin and custom javascript code. If you need to edit a piace of js code, this is probably the file you're looking for.</li>
+        <li>contains the javascript code for the Facebook box in the footer. For more info about it <a href="#how6">read here</a>.</li>
+        <li>some javascript code, mainly the select box replacement code, needed to be put after the main content. You can find it here. </li>
+      </ol>
+      <p>Linear uses many jquery plugin. Here is a complete list of them:</p>
+      <ol>
+        <li><a href="http://nivo.dev7studios.com">NivoSlider</a>: the second index slider</li>
+        <li><a href="http://www.bitstorm.org/jquery/color-animation/">Color Animation Plugin</a>: allows a faded color change</li>
+        <li><a href="https://github.com/jquery/jquery-ui">jQuery Tabs</a>: used for tabs in product page</li>
+        <li><a href="http://users.tpg.com.au/j_birch/plugins/superfish/">Superfish</a>: used for the category menu in sidebar</li>
+        <li><a href="http://nixboxdesigns.com/projects/jquery-lavalamp/">Lavalamp</a>: the sliding line above the upper bar menu</li>
+        <li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery Easing</a>: more effects for jQuery</li>
+        <li><a href="http://sorgalla.com/jcarousel/">jCarousel</a>: the advertising slider on click in index</li>
+        <li><a href="http://www.gmarwaha.com/jquery/jcarousellite/">jCarousel Lite</a>: used in the main index, due to a bug of the original jCarousel plugin. It's not a &quot;lite&quot; version as the name suggests, but a completely different plugin</li>
+        <li><a href="http://www.professorcloud.com">CloudZoom</a>: the image zoom in product page</li>
+        <li><a href="http://fancybox.net">FancyBox</a>: used in the second product page</li>
+        <li><a href="http://docs.jquery.com/UI/Accordion">jQuery Accordion</a>: for checkout steps</li>
+        <li><a href="http://www.fyneworks.com/jquery/star-rating/">jQuery Star Rating Plugin</a>: used in product's reviews</li>
+        <li><a href="http://info.wsisiz.edu.pl/~suszynsk/jQuery/demos/jquery-selectbox/">jQuery custom selectboxes</a>: select box replacement</li>
+      </ol>
+      <p>As usual, the code is properly commented so you should be able to spot easily the lines or the plugins you need. All jquery calls to plugin or functions are whitin the following comments:</p>
+      <pre>		/* -------------- START CUSTOM JAVASCRIPT BLOCK -------------- /*
+		
+		&lt;---- code here ----&gt;
+		
+		/* -------------- END CUSTOM JAVASCRIPT BLOCK -------------- /*</pre>
+      <p><strong>If you need to add some custom js code</strong> (eg: few lines of a jquery function), put it inside those comments, at the end.</p>
+      <hr>
+      <h3 id="psdFiles"><strong>D) PSD Files</strong> - <a href="#toc">top</a></h3>
+      <p>I've included four psds in this file::</p>
+      <ol>
+        <li>logo.psd</li>
+        <li>banner-shipping.psd</li>
+        <li>banner.psd</li>
+        <li>banner2.psd</li>
+      </ol>
+      <p>Also I've included three png Fireworks files:</p>
+      <ol>
+        <li>logo.png</li>
+        <li>banner-shipping.png</li>
+        <li>banner.png</li>
+      </ol>
+      <p>If you'd like to change the logo image in the header, open "logo.png", make the necessary adjustments, and then save the file as "logo.png" in the &quot;images&quot; directory. </p>
+      <hr>
+      <h3 id="how"><strong>E) How To and FAQ </strong>- <a href="#toc">top</a></h3>
+      <p>After developing our latest template, <a href="http://themeforest.net/item/basico-premium-opencart-theme/985070">Basico</a>, we decided to write a brief &quot;How To&quot; guide. Hopefully this will you save you (and us) lots of time by explaing how to make a basic customization of the template. So please, before asking for help on Themeforest or via email, make sure you have read the following chapter.</p>
+      <p id="how1"><strong><u>1) HOW CAN I CHANGE TEXT OR LINK COLORS?</u></strong></p>
+      <p>As explained <a href="#cssFiles">here</a>, we grouped the css classes to make the colors editing easier. For example, if you need to change links color find the proper comment at the beginning of the css file:</p>
+      <pre>		/* LINK STYLE */<br>
+	    someclasses {
+			color<strong>: #putyournewcolorhere</strong>
+		}<br>
+		/* backgrounds and borders */<br>
+		someclasses{
+			background: <strong> #putyournewcolorhere</strong><br>		}<br>
+		/* END LINK */</pre>
+      <p>We added also some comments next to the color value you need to edit. Eg:</p>
+      <pre>		someclasses {
+			color:blue; <strong>/* edit the color here */</strong>
+		}</pre>
+      <p>Do the same for the borders etc. </p>
+      <p id="how2"><strong><u>2) HOW CAN I CHANGE PATTERNS AND BACKGROUNDS?</u></strong> </p>
+      <p>To change the background color, edit these css lines:</p>
+      <pre>		/* HEADER COLOR AND BORDERS */<br>		.topbar, #showcase.jcarousel .nivo-controlNav a:first-child:hover { /* upper menu/language bar */<br>		background-color:#2E2E2E; /* edit the color here */<br>		}<br>		.jquery-selectbox {<br>		border-style:solid;<br>		border-color:#2E2E2E; /* edit the color here - must be the same of the .topbar color */<br>		}<br>		/* END HEADER AND BORDERS */</pre>
+      <p>Patterns are backgrounds applied to the header bar and the footer. They are disabled by default, but you can apply them by editing these lines:</p>
+      <pre>		/* PATTERNS */
+		.topbar, #footer{
+		background-image:none; /* edit the pattern here */
+		background-repeat:repeat;
+		}</pre>
+      <p>Put one of the following values instead of &quot;none&quot; to apply a pattern:</p>
+      <ul>
+        <li>url(../images/p1.png)</li>
+        <li>url(../images/p2.png)</li>
+        <li>url(../images/p3.png)</li>
+        <li>url(../images/p4.png)</li>
+        <li>url(../images/p5.png)</li>
+        <li>url(../images/p6.png)</li>
+        <li>url(../images/p7.png)</li>
+      </ul>
+      <p id="how3"><u><strong>3) WHY IS THE DOTTED LINE STILL GRAY AFTER CHANGING BORDER COLORS?</strong></u></p>
+      <p>We're talking about this:</p>
+      <p align="center"><img src="assets/images/dotted-line.png" /></p>
+      <p>It happens because that's an image, so if you want to change it, edit the file called <strong>dottedbg.jpg </strong>in the images/ folder with a proper image editing software.</p>
+      <p id="how4"><strong><u>4) HELP! A CHARACTER (OR THE ENTIRE ALPHABET OF MY LANGUAGE) IS NOT DISPLAYED!</u></strong></p>
+      <p>This was absolutely the most common problem of our previous release. Unfortunately, a chosen font by the developer could not support every language and character. If you don't see your alphabet properly or it's not displayed at all (as it may happen to chinese, russian, turkish, vietnamese, etc, users) you need to replace our font with your language's one. First, find a cool font that supports your language, than load it <a href="http://cufon.shoqolate.com/generate/">here</a>. Make sure you type &quot;Open Sans&quot; in this input-box:</p>
+      <p><img src="assets/images/input-box-cufon.png" /> </p>
+      <p>Even if it's not the correct name of your font, this will prevent you from editing more files, since that line pretends that the OpenSans font is still used by the template. Download the new font, rename it &quot;open-sans-latin.js&quot; and replace the file with the same name in in js/cufon.</p>
+      <p id="how5"><u><strong>5)  CAN CATEGORY SUBMENUS IN SIDEBAR STAY OPEN?</strong></u></p>
+      <p>Yes, you can obtain the same menu used in category page, but with all the submenus open. DO NOT ADD the &quot;hoverable&quot; class to the submenu &lt;ul&gt; tag. IE:</p>
+      <pre>		&lt;!-- start subnav --&gt;<br>       &lt;div class=&quot;subnav rightcol-block&quot;&gt;<br>        &lt;h4 class=&quot;red&quot;&gt;Categories&lt;/h4&gt;<br>        &lt;ul class=&quot;sf-menu sf-vertical&quot;&gt;<br>           &lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Kitchen &amp;amp; Eating &lt;/strong&gt; (13)&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Wall decoration&lt;/strong&gt; (5)&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Children Room&lt;/strong&gt; (2)&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;category-page.html&quot; title=&quot;&quot; class=&quot;subnav-link&quot;&gt;&lt;span&gt;&lt;strong&gt;
+			Outdoor &amp;amp; Garden&lt;/strong&gt; (11)&lt;/span&gt;&lt;/a&gt;
+				<strong>&lt;ul class=&quot;hoverable&quot;&gt;</strong><br>              	&lt;li&gt;&lt;a href=&quot;category-page.html&quot; title=&quot;&quot;&gt;Relax&lt;/a&gt;&lt;/li&gt;<br>              	&lt;li&gt;&lt;a href=&quot;category-page.html&quot; title=&quot;&quot;&gt;Storage&lt;/a&gt;&lt;/li&gt;<br>              	&lt;li&gt;&lt;a href=&quot;category-page.html&quot; title=&quot;&quot;&gt;Plant pots&lt;/a&gt;&lt;/li&gt;<br>             &lt;/ul&gt;<br>          &lt;/li&gt;<br>          &lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Living Room&lt;/strong&gt; (0)&lt;/a&gt;&lt;/li&gt;
+		   &lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Laundry &amp;amp; Cleaning&lt;/strong&gt;&lt;/li&gt;
+		   &lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Baby Textiles&lt;/strong&gt; (2)&lt;/a&gt;&lt;/li&gt;
+		   &lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Home Office&lt;/strong&gt; (4)&lt;/a&gt;&lt;/li&gt;
+		 &lt;/ul&gt;<br>      &lt;/div&gt;<br>      &lt;!-- end subnav --&gt; </pre>
+      That was the normal category menu, with the submenus displayed only on hover. And this one is the category menu with submenu always open:
+      <pre>		&lt;!-- start subnav --&gt;<br>       &lt;div class=&quot;subnav rightcol-block&quot;&gt;<br>        &lt;h4 class=&quot;red&quot;&gt;Categories&lt;/h4&gt;<br>        &lt;ul class=&quot;sf-menu sf-vertical&quot;&gt;<br>           &lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Kitchen &amp;amp; Eating &lt;/strong&gt; (13)&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Wall decoration&lt;/strong&gt; (5)&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Children Room&lt;/strong&gt; (2)&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;category-page.html&quot; title=&quot;&quot; class=&quot;subnav-link&quot;&gt;&lt;span&gt;&lt;strong&gt;
+			Outdoor &amp;amp; Garden&lt;/strong&gt; (11)&lt;/span&gt;&lt;/a&gt;
+				<strong>&lt;ul&gt;</strong> <strong>NO &quot;HOVERABLE&quot; CLASS ADDED</strong><br>              	&lt;li&gt;&lt;a href=&quot;category-page.html&quot; title=&quot;&quot;&gt;Relax&lt;/a&gt;&lt;/li&gt;<br>              	&lt;li&gt;&lt;a href=&quot;category-page.html&quot; title=&quot;&quot;&gt;Storage&lt;/a&gt;&lt;/li&gt;<br>              	&lt;li&gt;&lt;a href=&quot;category-page.html&quot; title=&quot;&quot;&gt;Plant pots&lt;/a&gt;&lt;/li&gt;<br>             &lt;/ul&gt;<br>          &lt;/li&gt;<br>          &lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Living Room&lt;/strong&gt; (0)&lt;/a&gt;&lt;/li&gt;
+		   &lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Laundry &amp;amp; Cleaning&lt;/strong&gt;&lt;/li&gt;
+		   &lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Baby Textiles&lt;/strong&gt; (2)&lt;/a&gt;&lt;/li&gt;
+		   &lt;li&gt;&lt;a class=&quot;subnav-link&quot; href=&quot;category-page.html&quot; title=&quot;&quot;&gt;&lt;strong&gt;
+			Home Office&lt;/strong&gt; (4)&lt;/a&gt;&lt;/li&gt;
+		 &lt;/ul&gt;<br>      &lt;/div&gt;<br>      &lt;!-- end subnav --&gt;</pre>
+      <p id="how6"><strong><u>6) HOW CAN I CUSTOMIZE THE FACEBOOK BOX IN THE FOOTER?</u></strong></p>
+      <p>If you want to edit the Facebook account displayed there, edit <strong>js/facebook-box.js</strong> and replace this:</p>
+      <pre>		profileid=&quot;109822959866&quot;</pre>
+      <p>with:</p>
+      <pre>		profileid=&quot;YOURID&quot;</pre>
+      <p>If you don't know how to get your page ID, read <a href="http://rieglerova.net/how-to-get-a-facebook-fan-page-id/">this</a>.
+        Also, do not forget that the Facebook box works ONLY
+        with Facebook PAGES and not with a common USER account. For example, if you  have created a normal USER account for your shop, as if it was a real person, don't expect that it will work in the Facebook Box. Instead, create a fan page from that account and put its ID in the box. </p>
+      <p>If you need to change colors of the elements in the box, open <strong>css/fb.css</strong> and edit the following classes:</p>
+      <pre><strong>		.total</strong> {<br>		display: block;<br>		margin-bottom: 6px;<br>		margin-top:11px;<br>		color: #666666;   /* EDIT THIS VALUE TO CHANGE THE COLOR OF THE TOTAL LIKES COUNT */<br>		font-size: 12px;<br>		font-family:Arial, Helvetica, sans-serif;<br>		}
+
+<strong>		.fan_box .connections_grid .grid_item .name</strong> {<br>		color: #666666; /* EDIT THIS VALUE TO CHANGE THE COLOR OF THE NAMES */<br>		}<br>
+<strong>		.fan_box .connections_grid .grid_item:hover .name</strong> {<br>		color: #D94A38; /* EDIT THIS VALUE TO CHANGE THE COLOR OF THE NAMES ON HOVER */<br>		}
+<strong>
+		.grid_item img</strong> {<br>		margin-bottom: 3px;<br>		padding: 5px;<br>		background: #fff;<br>		border-bottom: 1px solid #e5e5e5; /* EDIT THE COLOR OF THE IMAGES BORDER */<br>		-moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);<br>		-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);<br>		}<br><strong>
+		.grid_item a:hover img </strong>{<br>		border-bottom: 1px solid #c5c5c5; /* EDIT THE COLOR OF THE IMAGES BORDER ON HOVER*/
+		}</pre>
+      <p>After saving this file, DO NOT FORGET to edit also <strong>js/facebook-box.js</strong>:</p>
+      <pre>		document.write('&lt;fb:fan profileid=&quot;109822959866&quot; stream=&quot;0&quot; connections=&quot;4&quot; logobar=&quot;0&quot; 
+		width=&quot;355&quot; height=&quot;140&quot; css=&quot;http://www.aldemastudio.com/template/Linear/HTML/css/fb.css?12&quot;&gt;&lt;/fb:fan&gt;') </pre>
+      <p> The path of the css file (in this case: &quot;http://www.aldemastudio.com/template/Linear/HTML/&quot;) must be absolute. So edit it and replace &quot;http://www.aldemastudio.com/template/Linear/HTML/&quot; with &quot;http://www.yoursitename.com/yourlineardirectory&quot;. Change "12" with a bigger random   number, since that one is stored in the cache already. If you won't   type a new number, the previous changes to the css file won't take   effect and the custom Facebook Box will not be displayed.</p>
+      <p id="how7"><strong><u>7) HOW CAN I USE MY TWITTER ACCOUNT WITH THE TWITTER BOX IN THE FOOTER?</u></strong></p>
+      <p>The content shown in the Twitter box can be changed by editing the following line in each template page:</p>
+      <pre>&lt;script type="text/javascript" src="http://twitter.com/statuses/
+user_timeline/<strong>WPNewsStation</strong>.json?callback=twitterCallback2&amp;amp;count=2"&gt;&lt;/script&gt;</pre>
+      <p>Insert the Twitter account name you want to display instead of "WPNewsStation" and save the file.</p>
+      <p id="how8"><strong><u>8) HOW CAN I CHANGE THE HOVER EFFECT ON PRODUCTS?</u></strong></p>
+      <p>Edit these lines in js/common.js:</p>
+      <pre>		<strong>// START GENERAL IMAGES THUMBNAIL FADE IN </strong><br>		$('.fadeable').mouseenter(function(e) { <br>		$(this).children('img').fadeTo(300, 0.5); //for standard images - 0.5 = OPACITY LEVEL; 
+													300 = time in ms
+		$(this).children('span.light-background').fadeIn(300);  //for the small arrow with the light
+																  background - 300 = time in ms
+		}).mouseleave(function(e) {<br>		$(this).children('img').fadeTo(300, 1);  //for standard images - 300 = time in ms<br>		$(this).children('span.light-background').fadeOut(300); //for the small arrow with the 
+																  light background - 300 = time in ms<br>		});<br>		// END GENERAL IMAGES THUMBNAIL FADE IN <br>
+		<strong>// START SLIDER2 THUMBNAIL FADE IN </strong><br>		$('.fadeable2').mouseenter(function(e) { <br>		$(this).children('img').fadeTo(300, 0.5); //for standard images - 0.5 = OPACITY LEVEL; 
+													300 = time in ms<br>		}).mouseleave(function(e) {<br>		$(this).children('img').fadeTo(300, 1);  //for standard images - 300 = time in ms
+		});<br>		// END SLIDER2 IMAGES THUMBNAIL FADE IN <br>
+		<strong>// START GENERAL IMAGES THUMBNAIL FADE IN INVERSE. IE: index</strong><br>		$('.fadeable-inverse').mouseenter(function(e) { <br>		$(this).children('img').fadeTo(300, 1); //300 = time in ms<br>		}).mouseleave(function(e) {<br>		$(this).children('img').fadeTo(300, 0.50); //0.5 = OPACITY LEVEL; 300 = time in ms<br>		});
+		// END GENERAL IMAGES THUMBNAIL FADE IN INVERSE</pre>
+      <p id="how9"><u><strong>9) HOW CAN I CUSTOMIZE THE SLIDER EFFECT IN INDEX AND INDEX-2? </strong></u></p>
+      <p>Edit these lines in js/common.js:</p>
+      <pre><strong>		// NIVO SLIDER</strong><br>		$('#slider').nivoSlider({<br>		effect: 'random', // Specify sets like: 'fold,fade,sliceDown'<br>		slices: 15, // For slice animations<br>		boxCols: 8, // For box animations<br>		boxRows: 4, // For box animations<br>		animSpeed: 500, // Slide transition speed<br>		pauseTime: 8000, // How long each slide will show<br>		startSlide: 0, // Set starting Slide (0 index)<br>		directionNav: false, // Next &amp; Prev navigation<br>		directionNavHide: false, // Only show on hover <br>		keyboardNav: true, // Use left &amp; right arrowss<br>		pauseOnHover: true, // Stop animation while hovering<br>		manualAdvance: false, // Force manual transitions<br>		});<br>		// END NIVO SLIDER<br>
+<strong>		// JCAROUSEL SLIDER</strong><br>		$(&quot;.slider-wrapper-cycle&quot;).jCarouselLite({<br>		wrap:&quot;circular&quot;,<br>		speed:1000, // Slide transition speed<br>		auto:8000, // How long each slide will show<br>		btnNext: &quot;.navbuttons a.last-child&quot;,<br>		btnPrev: &quot;.navbuttons a:first-child&quot;<br>		});<br>		// END JCAROUSEL SLIDER</pre>
+      <p id="how10"><strong><u>10) HOW CAN I CUSTOMIZE THE FANCYBOX PLUGIN IN PRODUCT-PAGE-2?</u></strong></p>
+      <p> Edit these lines in js/common.js:</p>
+      <pre>		//FANCYBOX<br>		$(&quot;.fancy-img&quot;).fancybox({<br>		'transitionIn'	:	'elastic',<br>		'transitionOut'	:	'elastic',<br>		'speedIn'		:	600, <br>		'speedOut'		:	200, <br>		'overlayShow'	:	false<br>		});<br>		//END FANCYBOX </pre>
+      <p id="how11"><strong><u>11) HOW CAN I USE THE BUTTONS?</u></strong></p>
+      <p>There is a complete list of available buttons in the <a href="../typography.html">full elements page</a>. To use them use the following code:</p>
+      <pre>		1) &lt;a href=&quot;#&quot; class=&quot;button-default cart dark&quot;&gt;&lt;span class=&quot;hover&quot;&gt;BUTTON 1&lt;/span&gt;
+		&lt;span&gt;BUTTON 1&lt;/span&gt;&lt;/a&gt; 
+
+		2) &lt;a href=&quot;#&quot; class=&quot;button-default cart&quot;&gt;&lt;span class=&quot;hover&quot;&gt;BUTTON 2&lt;/span&gt;
+		&lt;span&gt;BUTTON 2&lt;/span&gt;&lt;/a&gt;      
+
+		3) &lt;a href=&quot;#&quot; class=&quot;button-default cart dark light&quot;&gt;&lt;span class=&quot;hover&quot;&gt;BUTTON 3&lt;/span&gt;
+		&lt;span&gt;BUTTON 3&lt;/span&gt;&lt;/a&gt;
+
+		4) &lt;a href=&quot;#&quot; class=&quot;button-default cart light&quot;&gt;&lt;span class=&quot;hover&quot;&gt;BUTTON 4&lt;/span&gt;
+		&lt;span&gt;BUTTON 4&lt;/span&gt;&lt;/a&gt;
+
+		5) &lt;div class=&quot;button-cart general dark&quot;&gt;&lt;a href=&quot;#&quot;&gt;BUTTON 5&lt;/a&gt;&lt;/div&gt;
+
+		6) &lt;div class=&quot;button-cart general&quot;&gt;&lt;a href=&quot;#&quot;&gt;BUTTON 6&lt;/a&gt;&lt;/div&gt;</pre>
+      <p>Many buttons are simple &lt;a&gt; tags: if you want to use them as input buttons, add this to the button's code:</p>
+      <pre>		onclick=&quot;$(this).closest('form').submit();&quot;</pre>
+      <p>For example:</p>
+      <pre>		&lt;div class=&quot;button-cart general dark&quot;&gt;&lt;a href=&quot;#&quot;&gt;BUTTON 5&lt;/a&gt;&lt;/div&gt;</pre>
+      <p>Becomes:</p>
+      <pre>		&lt;div class=&quot;button-cart general dark&quot;&gt;&lt;a href=&quot;#&quot; 
+		onclick=&quot;$(this).closest('form').submit();&quot;&gt;BUTTON 5&lt;/a&gt;&lt;/div&gt;</pre>
+     
+      <p id="how12"><strong><u>12) HOW CAN I CHANGE THE EMAIL ADDRESS FOR THE CONTACT FORM?</u></strong></p>
+      <p> Simply edit the file &quot;send.php&quot; and replace this:</p>
+      <pre>		myemail@gmail.com</pre>
+      
+      With your email address.
+      <hr>
+      <h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+      <p>We have used some third part images and files, so we'd like to thank:
+      <ul>
+        <li><a href="http://www.ikea.com/">IKEA</a>: for product images in the official demo</li>
+        <li><a href="http://www.credit-card-logos.com/">Credit-card-logos</a>: payment icons (ie: paypal, visa, etc)</li>
+        <li><a href="https://www.google.com/webfonts#UsePlace:use/Collection:Open+Sans">Google WebFonts</a>: OpenSans font</li>
+        <li><a href="http://www.iconsweets2.com/">Iconsweets</a>: icons</li>
+      </ul>
+      <p>A special thanks also to the creatorS of  used plugins. The link to their sites are in <a href="#javascript">this chapter</a>.</p>
+      <hr>
+      <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+      <p class="append-bottom alt large"><strong>Aldema</strong></p>
+      <p><a href="#toc">Go To Table of Contents</a></p>
+      <hr class="space">
+    </div>
+    <!-- end div .container -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+#twitter img { margin-left: -40px; margin-top: -2px;  float: left ; }
+#submit { vertical-align: middle ; margin-top: -23px;  }
+
+div.tooltip { 
+	display: none; /* initially tooltips are hidden */
+	padding: 10px;
+	background: #3091be; 
+	border: 1px solid black; 
+	color: #fff;
+	font-size: 12px ;
+	float: left ; margin-left: -500px;  margin-top: -235px; 
+}
+
+#twitter { margin-left: 725px; margin-top: 1px;}
+#buttons { margin-top: 40px; }

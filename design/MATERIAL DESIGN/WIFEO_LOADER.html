@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+
+<style>
+.fond{position:absolute;padding-top:85px;top:0;left:0; right:0;bottom:0;}
+
+.contener_general
+{
+  -webkit-animation:animball_two 1s infinite;
+  -moz-animation:animball_two 1s infinite;
+  -ms-animation:animball_two 1s infinite;
+  animation:animball_two 1s infinite;
+  width:44px; height:44px;
+}
+.contener_mixte
+{
+  width:44px; height:44px; position:absolute;
+}
+.ballcolor
+{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.ball_1, .ball_2, .ball_3, .ball_4
+{
+  position: absolute;
+  -webkit-animation:animball_one 1s infinite ease;
+  -moz-animation:animball_one 1s infinite ease;
+  -ms-animation:animball_one 1s infinite ease;
+  animation:animball_one 1s infinite ease;
+}
+.ball_1
+{
+  background-color:#cb2025;
+  top:0; left:0;
+}
+.ball_2
+{
+  background-color:#f8b334;
+  top:0; left:24px;
+}
+.ball_3
+{
+  background-color:#00a096;
+  top:24px; left:0;
+}
+.ball_4
+{
+  background-color:#97bf0d;
+  top:24px; left:24px;
+}
+
+@-webkit-keyframes animball_one
+{
+  0%{ position: absolute;}
+  50%{top:12px; left:12px; position: absolute;opacity:0.5;}
+  100%{ position: absolute;}
+}
+@-moz-keyframes animball_one
+{
+  0%{ position: absolute;}
+  50%{top:12px; left:12px; position: absolute;opacity:0.5;}
+  100%{ position: absolute;}
+}
+@-ms-keyframes animball_one
+{
+  0%{ position: absolute;}
+  50%{top:12px; left:12px; position: absolute;opacity:0.5;}
+  100%{ position: absolute;}
+}
+@keyframes animball_one
+{
+  0%{ position: absolute;}
+  50%{top:12px; left:12px; position: absolute;opacity:0.5;}
+  100%{ position: absolute;}
+}
+
+@-webkit-keyframes animball_two
+{
+  0%{-webkit-transform:rotate(0deg) scale(1);}
+  50%{-webkit-transform:rotate(360deg) scale(1.3);}
+  100%{-webkit-transform:rotate(720deg) scale(1);}
+}
+@-moz-keyframes animball_two
+{
+  0%{-moz-transform:rotate(0deg) scale(1);}
+  50%{-moz-transform:rotate(360deg) scale(1.3);}
+  100%{-moz-transform:rotate(720deg) scale(1);}
+}
+@-ms-keyframes animball_two
+{
+  0%{-ms-transform:rotate(0deg) scale(1);}
+  50%{-ms-transform:rotate(360deg) scale(1.3);}
+  100%{-ms-transform:rotate(720deg) scale(1);}
+}
+@keyframes animball_two
+{
+  0%{transform:rotate(0deg) scale(1);}
+  50%{transform:rotate(360deg) scale(1.3);}
+  100%{transform:rotate(720deg) scale(1);}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div align="center" class="fond">
+  <div class="contener_general">
+      <div class="contener_mixte"><div class="ballcolor ball_1">&nbsp;</div></div>
+      <div class="contener_mixte"><div class="ballcolor ball_2">&nbsp;</div></div>
+      <div class="contener_mixte"><div class="ballcolor ball_3">&nbsp;</div></div>
+      <div class="contener_mixte"><div class="ballcolor ball_4">&nbsp;</div></div>
+  </div>
+  
+  <div style="padding-top:35px;">
+  <div style=" color:#999999; font-weight:300; font-size:30px; font-family:'Roboto';padding-top:20px;">PURE CSS <font style="font-weight:400;">LOADER</font></div>
+        <a href="http://www.wifeo.com/code" style="text-decoration:none;" target="parent"><div style="  color:#999999; font-weight:300; font-size:20px; font-family:'Roboto';">www.wifeo.com/code</div>
+          </div>
+</div>
+
+</body>
+</html>

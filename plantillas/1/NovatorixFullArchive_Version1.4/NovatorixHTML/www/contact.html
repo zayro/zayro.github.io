@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Contact - Novatorix</title>
+<meta name="description" content="Novatorix HTML template">
+<meta name="keywords" content="novatorix, html, css, template">
+
+<link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="styles.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" media="screen" />
+
+<!-- start:jquery scripts -->
+<script type="text/javascript" src="scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.easing.min.js"></script>
+<!-- end:jquery scripts -->
+
+<!--Superfish -->
+<!--link rel="stylesheet" type="text/css" href="scripts/superfish.css" media="screen" /-->
+<script type="text/javascript" src="scripts/hoverIntent.js"></script>
+<script type="text/javascript" src="scripts/superfish.js"></script>
+<meta name="temp_url" content="" />
+<script type="text/javascript">
+		// initialise plugins
+		jQuery(function(){
+			jQuery('ul.sf-menu').superfish();
+		});
+</script>
+	
+	<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="ie.css" />
+	<![endif]-->
+	
+<link rel="stylesheet" href="scripts/prettyPhoto/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+<script type="text/javascript" src="scripts/prettyPhoto/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#submit").click(function(){					   				   
+		$(".error").hide();
+		var hasError = false;
+		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		var msg;
+		msg = '';
+		var msg_success;
+		msg_success = '';
+		
+		var author_string = $("#authorname").val();
+		if(author_string == '') {
+			hasError = true;
+			msg = msg+'<li><strong>Name</strong> is a required field.</li>';
+		}
+		
+		var email_string = $("#email").val();
+		if(email_string == '') {
+			hasError = true;
+			msg = msg+'<li><strong>Email</strong> is a required field.</li>';
+		} else if(!emailReg.test(email_string)) {	
+			hasError = true;
+			msg = msg+'<li>Invalid <strong>Email Address</strong></li>';
+		}
+		
+		var subject_string = $("#subject").val();
+		if(subject_string == '') {
+			hasError = true;
+			msg = msg+'<li><strong>Subject</strong> is a required field.</li>';
+		}
+		
+		var message_string = $("#message").val();
+		if(message_string == '') {
+			hasError = true;
+			msg = msg+'<li><strong>Message</strong> is a required field.</li>';
+		}
+		
+		if(hasError == true) {
+			document.getElementById('msg_error').innerHTML = '<div class="error_required"><h3>Validation errors occurred. Please confirm the fields and submit it again.</h3><ul>' + msg + '</ul></div>';	
+		}
+		
+		if(hasError == false) {
+			$(this).hide();
+			$("#contact-form li.buttons").append('Sending');
+			
+			$.post("contactform.php",
+   				{ authorname: author_string, email: email_string, subject: subject_string, message: message_string },
+   					function(data){
+						$("#contact-form").slideUp("normal", function() {				   
+							msg_success = '<div class="error_items"><h3>Thank You for Contacting Us!</h3><p>Thank you for contacting us! Your information has been sent and we should be in touch with you soon.</p></div>';
+							document.getElementById('msg_error').innerHTML = '';	
+							document.getElementById('msg_success').innerHTML = msg_success;
+						});
+   					}
+				 );
+		}		
+		return false;	
+	});						   
+});
+</script>
+
+</head>
+
+<body class="inner">
+<div id="shim"></div>
+<div id="wrap">
+	<div id="head">
+		<a href="index.html" id="logo">Novatorix</a>
+	
+		
+		<div class="navigation-wrap">
+			<div class="nav-right-corner"></div>
+			<ul class="sf-menu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="portfolio.html" title="Portfolio">Portfolio</a>
+				<ul>
+					<li><a href="gallery_view.html" title="Gallery view">Gallery view</a></li>
+					<li><a href="full_view.html" title="Full view">Full view</a></li>
+					<li><a href="video_content.html" title="Video content">Video content</a></li>
+					<li><a href="flash_content.html" title="Flash content">Flash content</a></li>
+				</ul>
+			</li>
+			<li><a href="blog.html" title="Blog">Blog</a></li>
+			<li><a href="pages.html" title="Pages">Pages</a>
+				<ul>
+					<li><a href="full-page-width.html" title="Full width">Full width</a></li>
+					<li><a href="pages.html" title="Default page">Default page</a></li>
+					<li><a href="404.html" title="404 error page">404 error page</a></li>
+				</ul>
+			</li>
+			<li><a href="styles.html" title="Styles">Styles</a>
+				<ul>
+					<li><a href="10_color_schemes.html" title="10 Color schemes">10 Color schemes</a></li>
+					<li><a href="typography.html" title="Typography">Typography</a></li>
+				</ul>
+			</li>
+			<li class="current_page_item"><a href="contact.html" title="Contact">Contact</a></li>
+		</ul>
+		</div>
+
+		<form method="get" id="search" action="">
+			<p><input type="text" class="text" id="s" name="s"  value="Search" onclick="this.value=''" /><input type="submit" class="submit" value="" /></p>
+		</form>
+
+	</div><!-- e: head -->
+	
+	<div id="section-title">
+		<h1>Contact</h1>
+	</div>
+
+	<div id="outer-page">
+		<div id="page">
+				<script type="text/javascript">
+$(document).ready(function(){
+	$("#submit").click(function(){					   				   
+		$(".error").hide();
+		var hasError = false;
+		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		var msg;
+		msg = '';
+		var msg_success;
+		msg_success = '';
+		
+		var author_string = $("#authorname").val();
+		if(author_string == '') {
+			hasError = true;
+			msg = msg+'<li><strong>Name</strong> is a required field.</li>';
+		}
+		
+		var email_string = $("#email").val();
+		if(email_string == '') {
+			hasError = true;
+			msg = msg+'<li><strong>Email</strong> is a required field.</li>';
+		} else if(!emailReg.test(email_string)) {	
+			hasError = true;
+			msg = msg+'<li>Invalid <strong>Email Address</strong></li>';
+		}
+		
+		var subject_string = $("#subject").val();
+		if(subject_string == '') {
+			hasError = true;
+			msg = msg+'<li><strong>Subject</strong> is a required field.</li>';
+		}
+		
+		var message_string = $("#message").val();
+		if(message_string == '') {
+			hasError = true;
+			msg = msg+'<li><strong>Message</strong> is a required field.</li>';
+		}
+		
+		if(hasError == true) {
+			document.getElementById('msg_error').innerHTML = '<div class="error_required"><h3>Validation errors occurred. Please confirm the fields and submit it again.</h3><ul>' + msg + '</ul></div>';	
+		}
+		
+		if(hasError == false) {
+			$(this).hide();
+			$("#contact-form li.buttons").append('Sending');
+			
+			$.post("http://novatorix.atixscripts.info/wp-content/themes/novatorix/lib/functions/contactform.php",
+   				{ authorname: author_string, email: email_string, subject: subject_string, message: message_string },
+   					function(data){
+						$("#contact-form").slideUp("normal", function() {				   
+							msg_success = '<div class="error_items"><h3>Thank You for Contacting Us!</h3><p>Thank you for contacting us! Your information has been sent and we should be in touch with you soon.</p></div>';
+							document.getElementById('msg_error').innerHTML = '';	
+							document.getElementById('msg_success').innerHTML = msg_success;
+						});
+   					}
+				 );
+		}		
+		return false;	
+	});						   
+});
+</script>
+    
+    	<div id="content">
+			<div class="entry">
+				<h2>Feel free to contact us</h2>
+				<p></p>
+				<p>Proin at tortor elit. Fusce facilisis, enim quis suscipit commodo, odio arcu vehicula metus, eu fermentum velit odio ornare turpis. Maecenas in purus lectus, vitae auctor turpis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum facilisis viverra pharetra. Fusce eu massa diam, vel faucibus elit. Sed vitae risus at sem venenatis sodales et ut dolor. Fusce blandit imperdiet ornare. Duis at congue neque. Sed purus nisi, tincidunt non bibendum eu, congue sed justo. Aliquam nec sem non leo congue egestas in eget diam. </p>
+				
+					<div id="msg_error"></div>
+					<div id="msg_success"></div>
+						<form action="/" method="post" id="contact-form">
+							<p>
+								<label for="name">Name:</label><input type="text" name="authorname" id="authorname" value="" />
+							</p>
+							<p>
+								<label for="email">Email:</label><input type="text" name="email" id="email" value=""  />
+							</p>
+							<p>
+								<label for="subject">Subject:</label><input type="text" name="subject" id="subject" value=""  />
+							</p>
+							<p>
+								<label for="message">Message:</label><textarea name="message" id="message" rows="5" cols="20"></textarea>
+							</p>
+							<p>		
+								<button class="send_btn" type="submit" id="submit">Submit Form</button><input type="hidden" name="submitted" id="submitted" value="true"/>
+							</p>
+						</form>
+			</div>
+       </div>        
+    
+
+	
+	<div id="sidebar">
+		<div class="widget">
+			<ul>
+				<h3>Contact Details</h3>
+					<div class="textwidget">12345678 Street Name, City Name, Country
+						Telephone: (0800) 123 456 789
+						Fax: (0800) 123 456 789
+						Email: info@companyname.com 
+					</div>
+			</ul>
+			<ul>
+				<h3>Location</h3>
+					<div class="textwidget">
+						<p>
+							<table cellspacing="0" cellpadding="0" border="0">
+								<tr>
+									<td>
+										<iframe src="http://www.map-generator.net/extmap.php?name=Spot&amp;address=10%20market%20st%2C%20san%20francisco&amp;width=240&amp;height=240&amp;maptype=map&amp;zoom=14&amp;hl=en&amp;t=1277881571" width="240" height="240" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>
+									</td>
+								</tr>
+							</table>
+						</p>
+					</div>
+			</ul>
+		</div>
+	</div>
+		
+
+
+		</div><!-- e: page -->		
+	</div><!-- e: outer-page -->	
+</div><!-- e: wrap -->
+
+<div id="foot">
+	<div id="footer">
+		<div class="testimonials">	
+				<h5>What clients are saying:</h5>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at risus mi. Curabitur posuere eros a felis condimentum porta semper nisl pellentesque.</p>									
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at risus mi. Curabitur posuere eros a felis condimentum porta semper nisl pellentesque.</p>
+		</div>
+		
+		<div id="social">
+			<h6>Get in touch!</h6>
+			<ul>
+				<li><a href="#" class="social1"></a></li>
+				<li><a href="#" class="social2"></a></li>
+				<li><a href="#" class="social3"></a></li>
+				<li><a href="#" class="social4"></a></li>				
+			</ul>							
+			<p>
+				12345678 Street Name, City Name, Country<br/>
+				Telephone: (0800) 123 456 789<br/>
+				Fax: (0800) 123 456 789<br/>				
+				Email: info@companyname.com
+			</p>
+		</div>
+		
+	</div>
+		<div id="bottom">		
+				&copy; 2010 Novatorix. All Rights Reserved.					
+		</div>
+</div><!-- e: foot -->
+
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function(){
+	$(".gallery a[rel^='prettyPhoto']").prettyPhoto({theme:'facebook'});
+});
+</script>
+
+
+</body>
+<!--[if lt IE 7]><script type="text/javascript" src="scripts/unitpngfix.js"></script><![endif]-->
+</html>

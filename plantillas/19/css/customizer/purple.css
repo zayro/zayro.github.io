@@ -1,0 +1,36 @@
+a, a:visited { color:#a400c2; }
+a:hover { color:#4a4a4a; }
+
+.btn {
+	background-color:#a400c2;
+	border:4px double #c711e8;
+}
+.btn:hover { background-color:#7c0292; }
+
+#main .howto { background-color:#a400c2; }
+
+#main .howto .steps .item .top-border { background-color:#9800b4; }
+#main .howto .steps .item .top-border span {
+	background-color:#f5bcff;
+	border:8px solid #a400c2;
+}
+#main .howto .steps .item:hover .top-border span { border:8px solid #db45f7; }
+#main .howto .steps .item .base {
+	background-color:#9800b4;
+	border-left:10px solid #a400c2;
+	border-right:10px solid #a400c2;
+}
+
+#main .pricing .item .tbl-top {
+	background-color:#a400c2;
+	border:5px solid #ca13ec;
+}
+#main .pricing .item .tbl-top .price { color:#f4bbfe; }
+#main .pricing .item.recommended .tbl-top {
+	background-color:#85009d;
+	border:5px solid #ba0eda;
+}
+
+#bottom .subscribe { background-color:#a400c2; }
+#bottom .subscribe .container { background-color:#9800b4; }
+#bottom .subscribe .container .form { background-color:#9000aa;  }
