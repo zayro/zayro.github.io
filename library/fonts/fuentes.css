@@ -1,0 +1,356 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*
+##############################
+LIBRERIA Aclonica
+##############################
+*/
+@font-face {
+font-family: 'Aclonica-regular';
+src:url(Aclonica%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Calligraffitti
+##############################
+*/
+@font-face {
+font-family: 'Calligraffitti regular';
+src:url(Calligraffitti%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Codystar
+##############################
+*/
+@font-face {
+font-family: 'Codystar regular';
+src:url(Codystar%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Combo
+##############################
+*/
+@font-face {
+font-family: 'Combo regular';
+src:url(Combo%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Creepster
+##############################
+*/
+@font-face {
+font-family: 'Creepster regular';
+src:url(Creepster%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Eagle
+##############################
+*/
+@font-face {
+font-family: 'Eagle regular';
+src:url(Eagle%20Lake%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Eater
+##############################
+*/
+@font-face {
+font-family: 'Eater regular';
+src:url(Eater%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Economica
+##############################
+*/
+@font-face {
+font-family: 'Economica regular';
+src:url(Economica%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Engagement
+##############################
+*/
+@font-face {
+font-family: 'Engagement regular';
+src:url(Engagement%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Euphoria
+##############################
+*/
+@font-face {
+font-family: 'Euphoria regular';
+src:url(Euphoria%20Script%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Ewert
+##############################
+*/
+@font-face {
+font-family: 'Ewert regular';
+src:url(Ewert%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Hanalei 
+##############################
+*/
+@font-face {
+font-family: 'Hanalei fill regular';
+src:url(Hanalei%20Fill%20regular.ttf)
+}
+
+
+@font-face {
+font-family: 'Hanalei regular';
+src:url(Hanalei%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Herr von Muellerhoff
+##############################
+*/
+@font-face {
+font-family: 'Herr von Muellerhoff regular';
+src:url(Herr%20Von%20Muellerhoff%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Indie
+##############################
+*/
+@font-face {
+font-family: 'Indie Flower regular';
+src:url(Indie%20Flower%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA Josefin
+##############################
+*/
+@font-face {
+font-family: 'Josefin Sans 100';
+src:url(Josefin%20Sans%20100.ttf)
+}
+
+/*
+##############################
+LIBRERIA Kristi
+##############################
+*/
+@font-face {
+font-family: 'Kristi regular';
+src:url(Kristi%20regular.ttf)
+}
+
+/*
+##############################
+LIBRERIA ROBOTO SLAB
+##############################
+*/
+
+@font-face {
+font-family: 'Roboto Slab 100';
+src:url(Roboto%20Slab%20100.ttf)
+}
+
+@font-face {
+font-family: 'Roboto Slab 300';
+src:url(Roboto%20Slab%20300.ttf)
+}
+
+@font-face {
+font-family: 'Roboto Slab 700';
+src:url(Roboto%20Slab%20700.ttf)
+}
+
+@font-face {
+font-family: 'Roboto Slab regular';
+src:url(Roboto%20Slab%20regular.ttf)
+}
+
+
+
+/*
+##############################
+LIBRERIA ROBOTO
+##############################
+*/
+
+
+@font-face {
+font-family: 'Roboto regular';
+src:url(Roboto%20regular.ttf)
+}
+
+@font-face {
+font-family: 'Roboto italic';
+src:url(Roboto%20italic.ttf)
+}
+
+@font-face {
+font-family: 'Roboto 100';
+src:url(Roboto%20100.ttf)
+}
+
+@font-face {
+font-family: 'Roboto 100 italic';
+src:url(Roboto%20100italic.ttf)
+}
+
+@font-face {
+font-family: 'Roboto 300';
+src:url(Roboto%20300.ttf)
+}
+
+@font-face {
+font-family: 'Roboto 300 italic';
+src:url(Roboto%20300italic.ttf)
+}
+
+@font-face {
+font-family: 'Roboto 500';
+src:url(Roboto%20500.ttf)
+}
+
+@font-face {
+font-family: 'Roboto 500 italic';
+src:url(Roboto%20500italic.ttf)
+}
+
+@font-face {
+font-family: 'Roboto 700';
+src:url(Roboto%20700.ttf)
+}
+
+@font-face {
+font-family: 'Roboto 700 italic';
+src:url(Roboto%20700italic.ttf)
+}
+
+@font-face {
+font-family: 'Roboto 900';
+src:url(Roboto%2900.ttf)
+}
+
+@font-face {
+font-family: 'Roboto 900 italic';
+src:url(Roboto%20900italic.ttf)
+}
+
+
+
+/*
+##############################
+LIBRERIA OPENSANS
+##############################
+*/
+
+@font-face {
+font-family: 'Open Sans regular';
+src:url(Open%20Sans%20regular.ttf)
+}
+
+@font-face {
+font-family: 'Open Sans italic';
+src:url(Open%20Sans%20italic.ttf)
+}
+
+@font-face {
+font-family: 'Open Sans 300';
+src:url(Open%20Sans%20300.ttf)
+}
+
+@font-face {
+font-family: 'Open Sans 300 italic';
+src:url(Open%20Sans%20300italic.ttf)
+}
+
+@font-face {
+font-family: 'Open Sans 600';
+src:url(Open%20Sans%20600.ttf)
+}
+
+@font-face {
+font-family: 'Open Sans 600 italic';
+src:url(Open%20Sans%20600italic.ttf)
+}
+
+@font-face {
+font-family: 'Open Sans 700';
+src:url(Open%20Sans%20700.ttf)
+}
+
+@font-face {
+font-family: 'Open Sans 700 italic';
+src:url(Open%20Sans%20700italic.ttf)
+}
+
+@font-face {
+font-family: 'Open Sans 800';
+src:url(Open%20Sans%20800.ttf)
+}
+
+@font-face {
+font-family: 'Open Sans 800 italic';
+src:url(Open%20Sans%20800italic.ttf)
+}
+
+/*
+##############################
+LIBRERIA PACIFIC
+##############################
+*/
+
+@font-face {
+font-family: 'Pacifico_regular';
+src:url(Pacifico-regular.ttf);
+}
+
+
+/*
+##############################
+LIBRERIA Vibur
+##############################
+*/
+
+@font-face {
+font-family: 'Vibur-20regular';
+src:url(Vibur%20regular.ttf);
+}
+
+/*
+##############################
+LIBRERIA Zeyada
+##############################
+*/
+
+@font-face {
+font-family: 'Zeyada-regular';
+src:url(Zeyada%20regular.ttf)
+}
