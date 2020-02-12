@@ -2,144 +2,197 @@
 
 <html lang="es" ng-app="App">
 
-    <head>
+<head>
 
-        <title>Desmond Resume Template</title>
+    <title>Resume CV</title>
 
-        <meta name="description" content="">
+    <meta name="description" content="">
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <!-- Google Font: Lato -->
-        <link
-            href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext'
-            rel='stylesheet' type='text/css'>
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext" rel='stylesheet' type='text/css'>
 
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <!-- Nivo Lightbox-->
-        <link rel="stylesheet" href="assets/plugins/nivo-lightbox/nivo-lightbox.css" />
-        <link rel="stylesheet" href="assets/plugins/nivo-lightbox/themes/default/default.css" />
+    <!-- Nivo Lightbox-->
+    <link rel="stylesheet" href="assets/plugins/nivo-lightbox/nivo-lightbox.css" />
+    <link rel="stylesheet" href="assets/plugins/nivo-lightbox/themes/default/default.css" />
 
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
-        <!-- Themes -->
-        <!--<link rel="stylesheet" href="assets/css/themes.light.css">-->
-        <link rel="stylesheet" href="assets/css/themes.dark.css">
+    <!-- Themes -->
+    <!--<link rel="stylesheet" href="assets/css/themes.light.css">-->
+    <link rel="stylesheet" href="assets/css/themes.dark.css">
 
-        <!-- Custom CSS -->
-        <!--<link rel="stylesheet" href="assets/css/custom.css">-->
+    <!-- Full-Page -->
+    <link rel="stylesheet" href="./library/fullPage.js-master/jquery.fullPage.css">
 
-        <!-- jQuery -->
-        <script src="assets/js/jquery.min.js"></script>
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="assets/css/custom.css">-->
 
-        <!-- dense.js (Retina plugin) -->
-        <script src="assets/js/dense.js"></script>
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
 
-        <!-- Nivo Lightbox -->
-        <script src="assets/plugins/nivo-lightbox/nivo-lightbox.min.js"></script>
+    <!-- dense.js (Retina plugin) -->
+    <script src="assets/js/dense.js"></script>
 
-        <!-- ScrollReveal -->
-        <script src="assets/js/scrollreveal.min.js"></script>
+    <!-- Nivo Lightbox -->
+    <script src="assets/plugins/nivo-lightbox/nivo-lightbox.min.js"></script>
 
-        <!-- Main JS -->
-        <script src="assets/js/main.js"></script>
+    <!-- ScrollReveal -->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <style>
+        /* Style for our header texts
+                * --------------------------------------- */
         
+        h1 {
+            font-size: 5em;
+            font-family: arial, helvetica;
+            color: #fff;
+            margin: 0;
+        }
+        
+        .intro p {
+            color: #fff;
+        }
+        /* Centered texts in each section
+                * --------------------------------------- */
+        
+        .section {
+            text-align: center;
+        }
+        /* Bottom menu
+                * --------------------------------------- */
+        
+        #infoMenu li a {
+            color: #fff;
+        }
+        
+        #fp-nav ul li a span,
+        .fp-slidesNav ul li a span {
+            background: #e0a80d;
+        }
+    </style>
 
-    </head>
 
-    <body ng-controller="indexCtrl">
 
-        <div class="c-preloader  js-preloader">
-            <div class="c-preloader__spinner  t-preloader__spinner"></div>
+</head>
+
+<body ng-controller="indexCtrl">
+
+    <div class="c-preloader  js-preloader">
+        <div class="c-preloader__spinner  t-preloader__spinner"></div>
+    </div>
+
+    <div class="c-main-container  js-main-container">
+
+        <div id="fullpage">
+
+
+            <div class="section" id="section0">
+
+                <!-- ################################ -->
+                <!-- ############ HEADER ############ -->
+                <!-- ################################ -->
+
+                <ng-include src="'angular/view/header.html'"> </ng-include>
+
+            </div>
+
+            <div class="section" id="section2">
+
+                <!-- ################################ -->
+                <!-- ############ INTRO ############# -->
+                <!-- ################################ -->
+
+                <ng-include src="'angular/view/intro.html'"> </ng-include>
+            </div>
+
+            <div class="section" id="section3">
+
+                <!-- ################################ -->
+                <!-- ########## EXPERTISE ########### -->
+                <!-- ################################ -->
+
+                <div ng-include="'angular/view/expertise.html'"></div>
+            </div>
+
+
+
+            <div class="section" id="section4">
+
+                <!-- ################################ -->
+                <!-- ############ SKILLS ############ -->
+                <!-- ################################ -->
+
+                <div ng-include="'angular/view/skill.html'"></div>
+            </div>
+
+
+
+
+            <div class="section" id="section5">
+
+                <!-- ################################ -->
+                <!-- ########## EXPERIENCE ########## -->
+                <!-- ################################ -->
+
+                <div ng-include="'angular/view/experience.html'"></div>
+
+            </div>
+            <div class="section" id="section6">
+
+                <!-- ################################ -->
+                <!-- ########### EDUCATION ########## -->
+                <!-- ################################ -->
+
+                <div ng-include="'angular/view/education.html'"></div>
+
+            </div>
+
         </div>
 
-        <div class="c-main-container  js-main-container">
 
 
-
-            <!-- ################################ -->
-            <!-- ############ HEADER ############ -->
-            <!-- ################################ -->
-
-            <ng-include src="'angular/view/header.html'" > </ng-include>
-
-            <!-- ################################ -->
-            <!-- ############ INTRO ############# -->
-            <!-- ################################ -->
-
-            <ng-include src="'angular/view/intro.html'" > </ng-include>
+    </div>
 
 
-            <!-- ################################ -->
-            <!-- ########## EXPERTISE ########### -->
-            <!-- ################################ -->
-
-            <div ng-include="'angular/view/expertise.html'" ></div>
-
-            <!-- ################################ -->
-            <!-- ############ SKILLS ############ -->
-            <!-- ################################ -->
-
-            <div ng-include="'angular/view/skill.html'" ></div>
-
-            <!-- ################################ -->
-            <!-- ########## EXPERIENCE ########## -->
-            <!-- ################################ -->
-
-            <div ng-include="'angular/view/experience.html'" ></div>
-
-            <!-- ################################ -->
-            <!-- ########### EDUCATION ########## -->
-            <!-- ################################ -->
-
-            <div ng-include="'angular/view/education.html'" ></div>
+    </div>
+    <!-- /c-main-container -->
 
 
-            <!-- ################################ -->
-            <!-- ########### PROFILES ########### -->
-            <!-- ################################ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 
-            <div ng-include="'angular/view/profile.html'" ></div>
+    <script src="./angular/config.js"></script>
 
-            <!-- ################################ -->
-            <!-- ############ AWARDS ############ -->
-            <!-- ################################ -->
+    <script type="text/javascript" src="./library/fullPage.js-master/vendors/jquery.slimscroll.min.js"></script>
 
-            <div ng-include="'angular/view/award.html'" ></div>
-
-            <!-- ################################ -->
-            <!-- ########### PORTFOLIO ########## -->
-            <!-- ################################ -->
-
-            <div ng-include="'angular/view/porfolio.html'" ></div>
-
-            <!-- ################################ -->
-            <!-- ############ CLIENTS ########### -->
-            <!-- ################################ -->
-
-            <div ng-include="'angular/view/client.html'" ></div>
-
-            <!-- ################################ -->
-            <!-- ############ FOOTER ############ -->
-            <!-- ################################ -->
-
-            <div ng-include="'angular/view/footer.html'" ></div>
+    <script type="text/javascript" src="./library/fullPage.js-master/jquery.fullPage.min.js"></script>
 
 
-        </div><!-- /c-main-container -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                //anchors: ['header', 'intro', 'expertise', 'skill'],
+                //sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['header', 'intro', 'expertise', 'skill', 'experience', 'education'],
+                responsive: 900
+            });
+        });
+    </script>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-
-        <script src="./angular/config.js"></script>
-
-
-    </body>
+</body>
 
 </html>
