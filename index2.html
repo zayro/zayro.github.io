@@ -1,5 +1,6 @@
-<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es" ng-app="App">
+<!doctype html>
+
+<html lang="es" ng-app="App">
 
 <head>
 
@@ -10,10 +11,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="user-scalable=no" />
 
-
+    <!-- bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Google Font: Lato -->
@@ -27,17 +26,17 @@
     <link rel="stylesheet" href="assets/plugins/nivo-lightbox/themes/default/default.css" />
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/main.default.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- Themes -->
     <!--<link rel="stylesheet" href="assets/css/themes.light.css">-->
     <link rel="stylesheet" href="assets/css/themes.dark.css">
 
     <!-- Full-Page -->
-    <!-- <link rel="stylesheet" href="./library/fullPage.js-master/jquery.fullPage.css"> -->
+    <link rel="stylesheet" href="./library/fullPage.js-master/jquery.fullPage.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <!--<link rel="stylesheet" href="assets/css/custom.css">-->
 
     <!-- jQuery -->
     <script src="assets/js/jquery.min.js"></script>
@@ -51,10 +50,11 @@
     <!-- ScrollReveal -->
     <script src="assets/js/scrollreveal.min.js"></script>
 
+    <!-- NiceScroll-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-
-    <script src="assets/js/jquery.nicescroll.js"></script>
 
     <style>
         /* Style for our header texts
@@ -89,12 +89,14 @@
         }
     </style>
 
-</head>
+
+
+</head>g
 
 <body ng-controller="indexCtrl">
 
-    <div class="c-preloader js-preloader">
-        <div class="c-preloader__spinner t-preloader__spinner"></div>
+    <div class="c-preloader  js-preloader">
+        <div class="c-preloader__spinner  t-preloader__spinner"></div>
     </div>
 
     <div class="c-main-container js-main-container">
@@ -108,7 +110,7 @@
                 <!-- ############ HEADER ############ -->
                 <!-- ################################ -->
 
-                <ng-include src=" 'angular/view/header.html'"> </ng-include>
+                <ng-include src="'angular/view/header.html'"> </ng-include>
 
             </div>
 
@@ -118,7 +120,7 @@
                 <!-- ############ INTRO ############# -->
                 <!-- ################################ -->
 
-                <ng-include src=" 'angular/view/intro.html'"> </ng-include>
+                <ng-include src="'angular/view/intro.html'"> </ng-include>
             </div>
 
             <div class="section" id="section3">
@@ -127,8 +129,10 @@
                 <!-- ########## EXPERTISE ########### -->
                 <!-- ################################ -->
 
-                <div ng-include=" 'angular/view/expertise.html'"></div>
+                <div ng-include="'angular/view/expertise.html'"></div>
             </div>
+
+
 
             <div class="section" id="section4">
 
@@ -136,8 +140,10 @@
                 <!-- ############ SKILLS ############ -->
                 <!-- ################################ -->
 
-                <div ng-include=" 'angular/view/skill.html'"></div>
+                <div ng-include="'angular/view/skill.html'"></div>
             </div>
+
+
 
 
             <div class="section" id="section5">
@@ -146,7 +152,7 @@
                 <!-- ########## EXPERIENCE ########## -->
                 <!-- ################################ -->
 
-                <div ng-include=" 'angular/view/experience.html'"></div>
+                <div ng-include="'angular/view/experience.html'"></div>
 
             </div>
             <div class="section" id="section6">
@@ -155,17 +161,7 @@
                 <!-- ########### EDUCATION ########## -->
                 <!-- ################################ -->
 
-                <div ng-include=" 'angular/view/education.html'"></div>
-
-            </div>
-
-            <div class="section" id="section7">
-
-                <!-- ################################ -->
-                <!-- ########### EDUCATION ########## -->
-                <!-- ################################ -->
-
-                <div ng-include=" 'angular/view/footer.html'"></div>
+                <div ng-include="'angular/view/education.html'"></div>
 
             </div>
 
@@ -192,20 +188,19 @@
     <script type="text/javascript">
         $(document).ready(function() {
 
+            $('#fullpage').fullpage({
+                //anchors: ['header', 'intro', 'expertise', 'skill'],
+                //sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['header', 'intro', 'expertise', 'skill', 'experience', 'education'],
+                responsive: 900
+            });
 
-            setTimeout(function() {
-                console.log('activar scroll');
-                $("body").niceScroll({
-                    cursorwidth: 12,
-                    cursoropacitymin: 0.4,
-                    cursorcolor: '#e0a80d',
-                    cursorborder: 'none',
-                    cursorborderradius: 4,
-                    autohidemode: 'leave'
-                }); // The document page (body)
-                $("body").getNiceScroll().resize();
-            }, 2000);
 
+            // 1. Simple mode, it styles document scrollbar:
+
+            //$("html").niceScroll();
 
         });
     </script>

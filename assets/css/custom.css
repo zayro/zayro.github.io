@@ -1,0 +1,10 @@
+.o-container {
+    /* max-width: 1276px;*/
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .o-section__content-bg {
+        right: 20px;
+    }
+}
