@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" ng-app="App">
+
+<head>
+
+    <title>Resume CV</title>
+
+    <meta name="description" content="">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no" />
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext" rel='stylesheet' type='text/css'>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Nivo Lightbox-->
+    <link rel="stylesheet" href="assets/plugins/nivo-lightbox/nivo-lightbox.css" />
+    <link rel="stylesheet" href="assets/plugins/nivo-lightbox/themes/default/default.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.default.css">
+
+    <!-- Themes -->
+    <!--<link rel="stylesheet" href="assets/css/themes.light.css">-->
+    <link rel="stylesheet" href="assets/css/themes.white.css">
+
+    <!-- Full-Page -->
+    <!-- <link rel="stylesheet" href="./library/fullPage.js-master/jquery.fullPage.css"> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- dense.js (Retina plugin) -->
+    <script src="assets/js/dense.js"></script>
+
+    <!-- Nivo Lightbox -->
+    <script src="assets/plugins/nivo-lightbox/nivo-lightbox.min.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/jquery.nicescroll.js"></script>
+
+    <style>
+        /* Style for our header texts
+                * --------------------------------------- */
+        
+        h1 {
+            font-size: 5em;
+            font-family: arial, helvetica;
+            color: #fff;
+            margin: 0;
+        }
+        
+        .intro p {
+            color: #fff;
+        }
+        /* Centered texts in each section
+                * --------------------------------------- */
+        
+        .section {
+            text-align: center;
+        }
+        /* Bottom menu
+                * --------------------------------------- */
+        
+        #infoMenu li a {
+            color: #fff;
+        }
+        
+        #fp-nav ul li a span,
+        .fp-slidesNav ul li a span {
+            background: #e0a80d;
+        }
+    </style>
+
+</head>
+
+<body ng-controller="indexCtrl">
+
+    <div class="c-preloader js-preloader">
+        <div class="c-preloader__spinner t-preloader__spinner"></div>
+    </div>
+
+    <div class="c-main-container js-main-container">
+
+        <div id="fullpage">
+
+
+            <div class="section" id="section0">
+
+                <!-- ################################ -->
+                <!-- ############ HEADER ############ -->
+                <!-- ################################ -->
+
+                <ng-include src=" 'angular/view/header.html'"> </ng-include>
+
+            </div>
+
+            <div class="section" id="section2">
+
+                <!-- ################################ -->
+                <!-- ############ INTRO ############# -->
+                <!-- ################################ -->
+
+                <ng-include src=" 'angular/view/intro.html'"> </ng-include>
+            </div>
+
+            <div class="section" id="section3">
+
+                <!-- ################################ -->
+                <!-- ########## EXPERTISE ########### -->
+                <!-- ################################ -->
+
+                <div ng-include=" 'angular/view/expertise.html'"></div>
+            </div>
+
+            <div class="section" id="section4">
+
+                <!-- ################################ -->
+                <!-- ############ SKILLS ############ -->
+                <!-- ################################ -->
+
+                <div ng-include=" 'angular/view/skill.html'"></div>
+            </div>
+
+
+            <div class="section" id="section5">
+
+                <!-- ################################ -->
+                <!-- ########## EXPERIENCE ########## -->
+                <!-- ################################ -->
+
+                <div ng-include=" 'angular/view/experience.html'"></div>
+
+            </div>
+            <div class="section" id="section6">
+
+                <!-- ################################ -->
+                <!-- ########### EDUCATION ########## -->
+                <!-- ################################ -->
+
+                <div ng-include=" 'angular/view/education.html'"></div>
+
+            </div>
+
+            <div class="section" id="section7">
+
+                <!-- ################################ -->
+                <!-- ########### EDUCATION ########## -->
+                <!-- ################################ -->
+
+                <div ng-include=" 'angular/view/footer.html'"></div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    </div>
+    <!-- /c-main-container -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
+    <script src="./angular/config.js"></script>
+
+    <script type="text/javascript" src="./library/fullPage.js-master/vendors/jquery.slimscroll.min.js"></script>
+
+    <script type="text/javascript" src="./library/fullPage.js-master/jquery.fullPage.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+
+            setTimeout(function() {
+                console.log('activar scroll');
+                $("body").niceScroll({
+                    cursorwidth: 12,
+                    cursoropacitymin: 0.4,
+                    cursorcolor: '#e0a80d',
+                    cursorborder: 'none',
+                    cursorborderradius: 4,
+                    autohidemode: 'leave'
+                }); // The document page (body)
+                $("body").getNiceScroll().resize();
+            }, 2000);
+
+
+        });
+    </script>
+
+
+</body>
+
+</html>
